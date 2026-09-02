@@ -7,7 +7,7 @@ type Message = { role: "user" | "assistant"; content: string };
 const suggestions = [
   "Quais cursos existem em Botucatu?",
   "Como funciona a reserva de vagas?",
-  "Compare a procura por Medicina de 2023 a 2026",
+  "Quais são as datas do vestibular?",
   "Como é morar em Bauru?",
 ];
 
@@ -99,7 +99,7 @@ export default function Assistant() {
           <span className="avatar" aria-hidden="true">U</span>
           <div className="message assistant-message">
             <strong>Olá! Como posso ajudar?</strong>
-            <p>Posso consultar o Manual do Candidato 2027, comparar cursos e cidades ou mostrar a procura registrada entre 2023 e 2026.</p>
+            <p>Posso consultar o Manual do Candidato 2027, comparar cursos e cidades ou explicar as etapas do vestibular.</p>
           </div>
         </div>
         {messages.map((message, index) => (
