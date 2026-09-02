@@ -7,6 +7,8 @@ import professionsSource from "../../data/professions-source.md?raw";
 import studentSupport from "../../data/student-support.md?raw";
 import cutoffGuide from "../../data/cutoff-guide.md?raw";
 import cutoffData from "../../data/cutoff-data.json";
+import trajectoriesGuide from "../../data/trajectories-guide.md?raw";
+import trajectoriesSource from "../../data/trajectories-source.md?raw";
 import instructions from "../../data/system-prompt.txt?raw";
 
 export const runtime = "edge";
@@ -14,7 +16,7 @@ export const runtime = "edge";
 type ChatMessage = { role: "user" | "assistant"; content: string };
 type CutoffRecord = (typeof cutoffData.records)[number];
 
-const dataVersion = "manual-cidades-carreiras-cortes-e-permanencia-2027-20260902-followups";
+const dataVersion = "manual-cidades-carreiras-cortes-trajetorias-e-permanencia-2027-20260902";
 const manualPages = manualSource.split(/(?=## Página \d+)/).filter((part) => /^## Página \d+/.test(part));
 const cityNames = [
   "Araçatuba", "Araraquara", "Assis", "Bauru", "Botucatu", "Dracena", "Franca", "Guaratinguetá",
@@ -50,6 +52,71 @@ const professionPages = professionsSource.split(/(?=^## Página \d+)/m).filter((
 function normalizeText(value: string) {
   return value.normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[–—-]/g, " ").toLowerCase();
 }
+
+const trajectoryPages = trajectoriesSource
+  .split(/(?=^## Página \d+)/m)
+  .map((text) => ({ text, page: Number(text.match(/^## Página (\d+)/)?.[1] || 0), normalized: normalizeText(text) }))
+  .filter(({ page }) => page > 0);
+
+const trajectoryChapterStarts = [
+  { title: "Administração", start: 43, names: ["Administração"] },
+  { title: "Administração de Empresas e Agronegócios", start: 62, end: 80, names: ["Administração de Empresas e Agronegócios", "Agronegócios"] },
+  { title: "Administração Pública", start: 101, names: ["Administração Pública"] },
+  { title: "Arquitetura e Urbanismo", start: 118, names: ["Arquitetura e Urbanismo"] },
+  { title: "Arquivologia", start: 137, names: ["Arquivologia"] },
+  { title: "Arte-Teatro", start: 151, names: ["Arte-Teatro", "Artes Cênicas"] },
+  { title: "Biblioteconomia", start: 165, names: ["Biblioteconomia"] },
+  { title: "Biologia Marinha e Gerenciamento Costeiro", start: 177, names: ["Biologia Marinha e Gerenciamento Costeiro", "Biologia Marinha", "Gerenciamento Costeiro"] },
+  { title: "Ciência da Computação", start: 195, names: ["Ciência da Computação", "Ciências da Computação"] },
+  { title: "Ciências Biológicas", start: 207, names: ["Ciências Biológicas"] },
+  { title: "Ciências Econômicas", start: 225, names: ["Ciências Econômicas", "Economia"] },
+  { title: "Ciências Sociais", start: 239, names: ["Ciências Sociais"] },
+  { title: "Design", start: 252, names: ["Design"] },
+  { title: "Direito", start: 269, names: ["Direito"] },
+  { title: "Ecologia", start: 279, names: ["Ecologia"] },
+  { title: "Educação Física", start: 292, names: ["Educação Física"] },
+  { title: "Enfermagem", start: 303, names: ["Enfermagem"] },
+  { title: "Engenharia Agronômica", start: 318, names: ["Engenharia Agronômica", "Agronomia"] },
+  { title: "Engenharia Ambiental", start: 330, names: ["Engenharia Ambiental"] },
+  { title: "Engenharia de Bioprocessos e Biotecnologia", start: 343, names: ["Engenharia de Bioprocessos e Biotecnologia", "Bioprocessos e Biotecnologia"] },
+  { title: "Engenharia Cartográfica e de Agrimensura", start: 357, names: ["Engenharia Cartográfica e de Agrimensura", "Engenharia Cartográfica", "Agrimensura"] },
+  { title: "Engenharia Civil", start: 372, names: ["Engenharia Civil"] },
+  { title: "Engenharia de Alimentos", start: 391, names: ["Engenharia de Alimentos"] },
+  { title: "Engenharia de Controle e Automação", start: 407, names: ["Engenharia de Controle e Automação", "Controle e Automação"] },
+  { title: "Engenharia de Materiais", start: 420, names: ["Engenharia de Materiais"] },
+  { title: "Engenharia de Produção", start: 430, names: ["Engenharia de Produção"] },
+  { title: "Engenharia Elétrica", start: 442, names: ["Engenharia Elétrica"] },
+  { title: "Engenharia Florestal", start: 459, names: ["Engenharia Florestal"] },
+  { title: "Engenharia Industrial Madeireira", start: 473, names: ["Engenharia Industrial Madeireira", "Engenharia Industrial-Madeira"] },
+  { title: "Engenharia Mecânica", start: 490, names: ["Engenharia Mecânica"] },
+  { title: "Estatística", start: 504, names: ["Estatística"] },
+  { title: "Farmácia", start: 515, names: ["Farmácia", "Farmácia-Bioquímica"] },
+  { title: "Física", start: 531, names: ["Física"] },
+  { title: "Fonoaudiologia", start: 541, names: ["Fonoaudiologia"] },
+  { title: "Geografia", start: 555, names: ["Geografia"] },
+  { title: "Geologia", start: 568, names: ["Geologia"] },
+  { title: "História", start: 582, names: ["História"] },
+  { title: "Letras", start: 594, names: ["Letras"] },
+  { title: "Letras - Tradução", start: 612, names: ["Letras - Tradução", "Letras-Tradução", "Tradução"] },
+  { title: "Matemática", start: 628, names: ["Matemática"] },
+  { title: "Medicina", start: 640, names: ["Medicina"] },
+  { title: "Medicina Veterinária", start: 657, names: ["Medicina Veterinária"] },
+  { title: "Música", start: 676, names: ["Música"] },
+  { title: "Nutrição", start: 689, names: ["Nutrição"] },
+  { title: "Odontologia", start: 704, names: ["Odontologia"] },
+  { title: "Pedagogia", start: 721, names: ["Pedagogia"] },
+  { title: "Química", start: 739, names: ["Química"] },
+  { title: "Relações Internacionais", start: 758, names: ["Relações Internacionais"] },
+  { title: "Relações Públicas", start: 776, names: ["Relações Públicas"] },
+  { title: "Serviço Social", start: 794, names: ["Serviço Social"] },
+  { title: "Sistemas de Informação", start: 810, names: ["Sistemas de Informação"] },
+  { title: "Terapia Ocupacional", start: 828, names: ["Terapia Ocupacional"] },
+  { title: "Turismo", start: 847, names: ["Turismo"] },
+  { title: "Zootecnia", start: 864, names: ["Zootecnia"] },
+  { title: "Trajetórias internacionais", start: 880, names: ["trajetórias internacionais", "exterior", "outros países", "fora do Brasil"] },
+  { title: "Empreendedorismo", start: 909, names: ["empreendedorismo", "empreendedores", "negócio próprio", "empresas criadas"] },
+  { title: "Retrato compósito da geração", start: 926, names: ["retrato compósito", "síntese geral", "panorama geral"] },
+].map((chapter, index, chapters) => ({ ...chapter, end: chapter.end || (chapters[index + 1]?.start || 941) - 1 }));
 
 function mentionsPhrase(text: string, phrase: string) {
   const escaped = normalizeText(phrase).replace(/[.*+?^{}$()|[\]\\]/g, "\\$&");
@@ -149,6 +216,61 @@ function careerContextFor(currentQuestion: string, conversationText: string) {
   ].filter(Boolean).join("\n\n");
 }
 
+function trajectoryPagesFor(start: number, end: number, focusText: string, limit = 8) {
+  const focus = normalizeText(focusText);
+  const terms = [...new Set(focus.match(/[a-z]{4,}/g) || [])].filter((term) =>
+    !["como", "qual", "quais", "sobre", "curso", "cursos", "unesp", "estudo", "livro", "dados", "mostra", "mostram", "egresso", "egressos", "trajetoria", "trajetorias", "profissional", "profissionais"].includes(term)
+  );
+  const wantsPay = /(salari|remuner|renda|ganh)/.test(focus);
+  const wantsWork = /(empreg|mercado|trabalh|cargo|atuacao|area de formacao)/.test(focus);
+  const wantsStudy = /(pos gradu|mestrad|doutorad|especializa|continu.{0,12}estud)/.test(focus);
+  const wantsActivities = /(extracurricular|iniciacao cientifica|extensao|monitoria|intercambio|empresa junior)/.test(focus);
+  const pages = trajectoryPages.filter(({ page }) => page >= start && page <= end);
+  const ranked = pages.map((item) => {
+    let score = terms.reduce((total, term) => total + (item.normalized.match(new RegExp(term, "g")) || []).length, 0);
+    if (wantsPay && item.normalized.includes("remuneracao dos entrevistados")) score += 30;
+    if (wantsPay && /(remuneracao media|salario medio|salario mediano)/.test(item.normalized)) score += 12;
+    if (wantsWork && /(situacao profissional atual|ingresso no mercado de trabalho|cargos que ocupam)/.test(item.normalized)) score += 24;
+    if (wantsStudy && /(mestrado|doutorado|pos graduacao)/.test(item.normalized)) score += 18;
+    if (wantsActivities && item.normalized.includes("atividades extracurriculares")) score += 24;
+    if (!wantsPay && !wantsWork && !wantsStudy && !wantsActivities && /(os egressos entrevistados|situacao profissional atual|remuneracao dos entrevistados|consideracoes finais)/.test(item.normalized)) score += 8;
+    if (item.page === start) score += 20;
+    return { ...item, score };
+  });
+  return ranked
+    .sort((a, b) => b.score - a.score || a.page - b.page)
+    .slice(0, limit)
+    .sort((a, b) => a.page - b.page)
+    .map(({ text }) => text)
+    .join("\n\n");
+}
+
+function trajectoryContextFor(currentQuestion: string, conversationText: string) {
+  const current = normalizeText(currentQuestion);
+  const conversation = normalizeText(conversationText);
+  const topic = /(egress|trajetor|empreg|mercado de trabalho|salari|remuner|pos gradu|mestrad|doutorad|lideranca|empreend|fora do brasil|exterior|outros paises|onde trabalh|area de formacao|alunos a profissionais)/;
+  if (!topic.test(current) && !topic.test(conversation)) return "";
+
+  const chaptersMatching = (text: string) => trajectoryChapterStarts.filter(({ names }) => names.some((name) => mentionsPhrase(text, name)));
+  const currentMatches = chaptersMatching(current);
+  const conversationMatches = chaptersMatching(conversation);
+  const rawMatches = currentMatches.length ? currentMatches : conversationMatches;
+  const matched = rawMatches.filter((chapter) => !rawMatches.some((other) => other !== chapter && normalizeText(other.title).includes(normalizeText(chapter.title))));
+  const focusText = currentQuestion + "\n" + conversationText.slice(-2000);
+
+  if (matched.length) {
+    const excerpts = matched.slice(0, 2).map((chapter) =>
+      "## Trechos selecionados: " + chapter.title + "\n\n" + trajectoryPagesFor(chapter.start, chapter.end, focusText, matched.length > 1 ? 5 : 9)
+    );
+    return [trajectoriesGuide, ...excerpts].join("\n\n");
+  }
+
+  const summary = trajectoryChapterStarts.find(({ title }) => title === "Retrato compósito da geração");
+  return summary
+    ? trajectoriesGuide + "\n\n## Trechos selecionados: síntese geral\n\n" + trajectoryPagesFor(summary.start, summary.end, focusText, 9)
+    : trajectoriesGuide;
+}
+
 function normalizeCutoffCourse(value: string) {
   return normalizeText(value).replace(/\bciencias da computacao\b/g, "ciencia da computacao").replace(/\s+/g, " ").trim();
 }
@@ -244,10 +366,12 @@ export async function POST(request: Request) {
     const supportContext = supportContextFor(currentQuestion);
     const addressContext = addressContextFor(currentQuestion, conversationText);
     const careerContext = careerContextFor(currentQuestion, conversationText);
+    const trajectoryContext = trajectoryContextFor(currentQuestion, conversationText);
     const cutoffContext = cutoffContextFor(currentQuestion, conversationText);
     const broadCareer = Boolean(careerContext) && /(todas|todos|quais|lista|comparar varias)/.test(normalizeText(currentQuestion));
     const broadCutoff = Boolean(cutoffContext) && /(quais|ranking|maior|menor|todos|todas)/.test(normalizeText(currentQuestion));
-    const maxOutputTokens = addressContext === campusAddresses || broadCareer ? 2800 : broadCutoff ? 2400 : careerContext || cutoffContext ? 1800 : 1400;
+    const broadTrajectory = Boolean(trajectoryContext) && /(geral|panorama|sintese|compar|todos|todas)/.test(normalizeText(currentQuestion));
+    const maxOutputTokens = addressContext === campusAddresses || broadCareer || broadTrajectory ? 2800 : broadCutoff ? 2400 : trajectoryContext ? 2200 : careerContext || cutoffContext ? 1800 : 1400;
     const fullInstructions = [
       instructions,
       "GUIA RESUMIDO OFICIAL:\n" + knowledge,
@@ -255,6 +379,7 @@ export async function POST(request: Request) {
       "GUIA RELEVANTE DAS CIDADES-SEDE:\n" + (cityContext || "Nenhum contexto municipal foi necessário para esta pergunta."),
       "ENDEREÇOS RELEVANTES DAS UNIDADES:\n" + (addressContext || "Nenhum endereço foi necessário para esta pergunta."),
       "GUIA RELEVANTE DE PROFISSÕES E MERCADO:\n" + (careerContext || "Nenhum contexto de carreira foi necessário para esta pergunta."),
+      "ESTUDO RELEVANTE SOBRE TRAJETÓRIAS DE EGRESSOS:\n" + (trajectoryContext || "Nenhum trecho do estudo de egressos foi necessário para esta pergunta."),
       "DADOS HISTÓRICOS DE NOTAS DE CORTE:\n" + (cutoffContext || "Nenhuma nota de corte histórica foi necessária para esta pergunta."),
       "GUIA DE PERMANÊNCIA ESTUDANTIL:\n" + (supportContext || "Nenhum contexto de permanência foi necessário para esta pergunta.")
     ].join("\n\n");

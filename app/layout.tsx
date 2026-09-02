@@ -10,10 +10,10 @@ const metadataBase = new URL(configuredOrigin && /^https:\/\/[a-z0-9.-]+(?::\d+)
 export const metadata: Metadata = {
   metadataBase,
   title: "Assistente Vestibular Unesp 2027",
-  description: "Informações sobre cursos, regras, cidades, profissões e notas de corte no Vestibular Unesp.",
+  description: "Informações sobre cursos, regras, cidades, profissões, notas de corte e trajetórias de egressos da Unesp.",
   openGraph: {
     title: "Assistente Vestibular Unesp 2027",
-    description: "Cursos, cidades, carreiras e notas de corte explicados para estudantes.",
+    description: "Cursos, cidades, carreiras, notas de corte e trajetórias de egressos explicados para estudantes.",
     images: [{ url: "/og.png", width: 1732, height: 909, alt: "Assistente Vestibular Unesp 2027" }],
     type: "website",
     locale: "pt_BR",
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Assistente Vestibular Unesp 2027",
-    description: "Cursos, cidades, carreiras e notas de corte explicados para estudantes.",
+    description: "Cursos, cidades, carreiras, notas de corte e trajetórias de egressos explicados para estudantes.",
     images: ["/og.png"],
   },
 };

@@ -9,6 +9,7 @@ const suggestions = [
   "Como funciona a reserva de vagas?",
   "Qual foi a nota de corte de Medicina de 2023 a 2026?",
   "Como é morar em Bauru?",
+  "O que o estudo de egressos mostra sobre Medicina?",
 ];
 
 function renderInline(text: string): ReactNode[] {
@@ -99,7 +100,7 @@ export default function Assistant() {
           <span className="avatar" aria-hidden="true">U</span>
           <div className="message assistant-message">
             <strong>Olá! Como posso ajudar?</strong>
-            <p>Posso consultar o Manual do Candidato 2027, comparar cursos e cidades, explicar as etapas ou mostrar notas de corte de 2023 a 2026.</p>
+            <p>Posso consultar o Manual do Candidato 2027, comparar cursos e cidades, mostrar notas de corte ou explicar trajetórias de egressos.</p>
           </div>
         </div>
         {messages.map((message, index) => (
@@ -117,7 +118,7 @@ export default function Assistant() {
 
       <form className="composer" onSubmit={submit}>
         <label className="sr-only" htmlFor="question">Faça sua pergunta</label>
-        <textarea id="question" rows={2} value={question} onChange={(event) => setQuestion(event.target.value)} placeholder="Pergunte sobre cursos, provas, cidades ou notas de corte..." disabled={loading} onKeyDown={(event) => { if (event.key === "Enter" && !event.shiftKey) { event.preventDefault(); void ask(question); } }} />
+        <textarea id="question" rows={2} value={question} onChange={(event) => setQuestion(event.target.value)} placeholder="Pergunte sobre cursos, provas, notas de corte ou egressos..." disabled={loading} onKeyDown={(event) => { if (event.key === "Enter" && !event.shiftKey) { event.preventDefault(); void ask(question); } }} />
         <button type="submit" className="send-button" disabled={loading || !question.trim()}>Enviar</button>
       </form>
     </div>

@@ -16,7 +16,7 @@ export default function Home() {
         <p className="eyebrow">Assistente para estudantes</p>
         <h1>Seu caminho até a Unesp começa com uma boa pergunta.</h1>
         <p className="hero-copy">
-          Cursos, inscrições, cidades, carreiras e notas de corte — explicados de forma simples
+          Cursos, inscrições, cidades, carreiras, notas de corte e trajetórias de egressos — explicados de forma simples
           para você tomar decisões com mais segurança.
         </p>
       </section>
@@ -29,6 +29,7 @@ export default function Home() {
           <div className="stat"><strong>137</strong><span>cursos no Vestibular 2027</span></div>
           <div className="stat"><strong>24</strong><span>cidades-sede</span></div>
           <div className="stat"><strong>4</strong><span>edições de notas de corte</span></div>
+          <div className="stat"><strong>941</strong><span>páginas sobre trajetórias</span></div>
           <p className="coverage-note">
             Manual do Candidato, Vunesp, Unesp, IBGE e fontes municipais.
           </p>
