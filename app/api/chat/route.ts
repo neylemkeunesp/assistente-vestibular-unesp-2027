@@ -14,7 +14,7 @@ export const runtime = "edge";
 type ChatMessage = { role: "user" | "assistant"; content: string };
 type CutoffRecord = (typeof cutoffData.records)[number];
 
-const dataVersion = "manual-cidades-carreiras-cortes-e-permanencia-2027-20260902";
+const dataVersion = "manual-cidades-carreiras-cortes-e-permanencia-2027-20260902-followups";
 const manualPages = manualSource.split(/(?=## Página \d+)/).filter((part) => /^## Página \d+/.test(part));
 const cityNames = [
   "Araçatuba", "Araraquara", "Assis", "Bauru", "Botucatu", "Dracena", "Franca", "Guaratinguetá",
@@ -161,7 +161,9 @@ const canonicalCutoffCourses = [...new Set(cutoffData.records.map(({ course }) =
 
 function cutoffContextFor(currentQuestion: string, conversationText: string) {
   const current = normalizeText(currentQuestion);
-  if (!/(nota.{0,20}corte|corte|acerto|quant.{0,20}acert|convoc.{0,30}segunda fase)/.test(current)) return "";
+  const conversation = normalizeText(conversationText);
+  const cutoffTopic = /(nota.{0,20}corte|corte|acerto|quant.{0,20}acert|convoc.{0,30}segunda fase)/;
+  if (!cutoffTopic.test(current) && !cutoffTopic.test(conversation)) return "";
   const currentCutoff = normalizeCutoffCourse(currentQuestion);
   const conversationCutoff = normalizeCutoffCourse(conversationText);
   const currentCourses = canonicalCutoffCourses.filter((course) => currentCutoff.includes(course));
