@@ -1,0 +1,20 @@
+[Unit]
+Description=Assistente Vestibular Unesp 2027
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=assistente-unesp
+Group=assistente-unesp
+WorkingDirectory=/opt/assistente-vestibular-unesp-2027
+EnvironmentFile=/etc/assistente-unesp.env
+ExecStart=/usr/bin/pnpm start -- --hostname 127.0.0.1 --port 4173
+Restart=on-failure
+RestartSec=5
+TimeoutStopSec=30
+NoNewPrivileges=true
+PrivateTmp=true
+
+[Install]
+WantedBy=multi-user.target
