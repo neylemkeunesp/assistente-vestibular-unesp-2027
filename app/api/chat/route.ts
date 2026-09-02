@@ -5,16 +5,16 @@ import campusAddresses from "../../data/campus-addresses.md?raw";
 import careerGuide from "../../data/career-guide.md?raw";
 import professionsSource from "../../data/professions-source.md?raw";
 import studentSupport from "../../data/student-support.md?raw";
-import historicalDemandGuide from "../../data/historical-demand-guide.md?raw";
-import historicalDemandData from "../../data/historical-demand-data.json";
+import cutoffGuide from "../../data/cutoff-guide.md?raw";
+import cutoffData from "../../data/cutoff-data.json";
 import instructions from "../../data/system-prompt.txt?raw";
 
 export const runtime = "edge";
 
 type ChatMessage = { role: "user" | "assistant"; content: string };
-type DemandRecord = (typeof historicalDemandData.records)[number];
+type CutoffRecord = (typeof cutoffData.records)[number];
 
-const dataVersion = "manual-cidades-carreiras-procura-e-permanencia-2027-20260831";
+const dataVersion = "manual-cidades-carreiras-cortes-e-permanencia-2027-20260902";
 const manualPages = manualSource.split(/(?=## Página \d+)/).filter((part) => /^## Página \d+/.test(part));
 const cityNames = [
   "Araçatuba", "Araraquara", "Assis", "Bauru", "Botucatu", "Dracena", "Franca", "Guaratinguetá",
@@ -149,23 +149,23 @@ function careerContextFor(currentQuestion: string, conversationText: string) {
   ].filter(Boolean).join("\n\n");
 }
 
-function normalizeDemandCourse(value: string) {
+function normalizeCutoffCourse(value: string) {
   return normalizeText(value).replace(/\bciencias da computacao\b/g, "ciencia da computacao").replace(/\s+/g, " ").trim();
 }
 
-function demandCourseOf(option: string) {
-  return option.split(" - ")[0].trim();
+function cutoffCourseOf(course: string) {
+  return course.split(" - ")[0].trim();
 }
 
-const canonicalDemandCourses = [...new Set(historicalDemandData.records.map(({ option }) => normalizeDemandCourse(demandCourseOf(option))))];
+const canonicalCutoffCourses = [...new Set(cutoffData.records.map(({ course }) => normalizeCutoffCourse(cutoffCourseOf(course))))];
 
-function demandContextFor(currentQuestion: string, conversationText: string) {
+function cutoffContextFor(currentQuestion: string, conversationText: string) {
   const current = normalizeText(currentQuestion);
-  if (!/(procura|concorr|candidat.{0,12}vaga|inscrit|demanda|edicoes? anteriores?|historico|evolu|mais disputad|menos disputad)/.test(current)) return "";
-  const currentDemand = normalizeDemandCourse(currentQuestion);
-  const conversationDemand = normalizeDemandCourse(conversationText);
-  const currentCourses = canonicalDemandCourses.filter((course) => currentDemand.includes(course));
-  const conversationCourses = canonicalDemandCourses.filter((course) => conversationDemand.includes(course));
+  if (!/(nota.{0,20}corte|corte|acerto|quant.{0,20}acert|convoc.{0,30}segunda fase)/.test(current)) return "";
+  const currentCutoff = normalizeCutoffCourse(currentQuestion);
+  const conversationCutoff = normalizeCutoffCourse(conversationText);
+  const currentCourses = canonicalCutoffCourses.filter((course) => currentCutoff.includes(course));
+  const conversationCourses = canonicalCutoffCourses.filter((course) => conversationCutoff.includes(course));
   const rawCourses = currentCourses.length ? currentCourses : conversationCourses;
   const matchedCourses = rawCourses.filter((course) => !rawCourses.some((other) => other !== course && other.includes(course)));
   const currentCities = cityNames.filter((city) => mentionsPhrase(current, city));
@@ -175,46 +175,50 @@ function demandContextFor(currentQuestion: string, conversationText: string) {
   if (requestedYears.length === 2 && (current.includes("entre ") || /de 20(?:23|24|25|26) (?:a|ate) 20(?:23|24|25|26)/.test(current))) {
     const first = Math.min(...requestedYears);
     const last = Math.max(...requestedYears);
-    requestedYears = historicalDemandData.editions.filter((year) => year >= first && year <= last);
+    requestedYears = cutoffData.editions.filter((year) => year >= first && year <= last);
   }
-  const years = requestedYears.length ? requestedYears : historicalDemandData.editions;
-  const isRanking = /(mais|menos).{0,20}(procur|concorr|disput)|ranking|maior|menor/.test(current);
+  const years = requestedYears.length ? requestedYears : cutoffData.editions;
+  const isRanking = /(maior|menor|mais alta|mais baixa|ranking).{0,30}(nota|corte|acerto)|(nota|corte|acerto).{0,30}(maior|menor|mais alta|mais baixa|ranking)/.test(current);
   const relevantTerms = [...new Set(current.match(/[a-z]{4,}/g) || [])].filter((term) =>
-    !["procura", "curso", "cursos", "unesp", "vestibular", "edicao", "edicoes", "anterior", "anteriores", "historico", "historica", "historicas", "candidato", "candidatos", "vaga", "vagas", "inscrito", "inscritos", "compare", "comparar", "evolucao", "demanda"].includes(term)
+    !["nota", "notas", "corte", "cortes", "acerto", "acertos", "curso", "cursos", "unesp", "vestibular", "edicao", "edicoes", "anterior", "anteriores", "historico", "historica", "historicas", "segunda", "fase", "convocacao", "sistema", "universal", "srvbp", "srvebp", "compare", "comparar", "evolucao"].includes(term)
   );
-  let rows: DemandRecord[] = historicalDemandData.records.filter(({ edition }) => years.includes(edition));
+  let rows: CutoffRecord[] = cutoffData.records.filter(({ edition }) => years.includes(edition));
   if (matchedCourses.length) {
     const courses = new Set(matchedCourses);
-    rows = rows.filter(({ option }) => courses.has(normalizeDemandCourse(demandCourseOf(option))));
+    rows = rows.filter(({ course }) => courses.has(normalizeCutoffCourse(cutoffCourseOf(course))));
   } else if (relevantTerms.length && !matchedCities.length && !isRanking) {
-    const scored = rows.map((row) => ({ row, score: relevantTerms.reduce((total, term) => total + (normalizeText(row.option).includes(term) ? 1 : 0), 0) }));
+    const scored = rows.map((row) => ({ row, score: relevantTerms.reduce((total, term) => total + (normalizeText(row.course).includes(term) ? 1 : 0), 0) }));
     const best = Math.max(0, ...scored.map(({ score }) => score));
     if (best > 0) rows = scored.filter(({ score }) => score === best).map(({ row }) => row);
   }
   if (matchedCities.length) {
-    rows = rows.filter(({ option }) => matchedCities.some((city) => {
-      const normalizedOption = normalizeText(option);
-      return normalizedOption.includes(normalizeText(city)) || (city === "São Vicente" && normalizedOption.includes("litoral paulista"));
+    rows = rows.filter(({ city: rowCity }) => matchedCities.some((city) => {
+      const normalizedCity = normalizeText(rowCity);
+      return normalizedCity === normalizeText(city) || (city === "São Vicente" && normalizedCity === "litoral paulista");
     }));
   }
   if (isRanking) {
     rows = years.flatMap((edition) => {
       const editionRows = rows.filter((row) => row.edition === edition);
-      const metric: "applicants" | "candidatesPerVacancy" = /(inscrit|procur)/.test(current) && !/(candidat.{0,12}vaga|concorr|disput)/.test(current) ? "applicants" : "candidatesPerVacancy";
+      const metric: "srv_ebp_ppi" | "su" = /(srv|reserva|publica|ppi)/.test(current) ? "srv_ebp_ppi" : "su";
       const direction = /(menos|menor)/.test(current) ? 1 : -1;
-      return editionRows.sort((a, b) => direction * (a[metric] - b[metric])).slice(0, 12);
+      return editionRows.sort((a, b) => direction * ((a[metric] ?? -1) - (b[metric] ?? -1))).slice(0, 12);
     });
+  } else if (!matchedCourses.length && !matchedCities.length) {
+    const notice = /2027/.test(current) ? "\n\n**A nota de corte de 2027 ainda não está disponível:** ela só será conhecida depois da primeira fase e da publicação oficial da Vunesp." : "";
+    return cutoffGuide + notice + "\n\nInforme o curso e, se possível, a cidade para consultar as linhas correspondentes.";
   } else if (rows.length > 100) {
-    rows = rows.sort((a, b) => b.candidatesPerVacancy - a.candidatesPerVacancy).slice(0, 100);
+    rows = rows.sort((a, b) => b.su - a.su).slice(0, 100);
   }
-  if (!rows.length) return historicalDemandGuide + "\n\nNenhuma linha específica correspondeu aos filtros da pergunta.";
-  rows.sort((a, b) => a.edition - b.edition || a.option.localeCompare(b.option, "pt-BR"));
+  if (!rows.length) return cutoffGuide + "\n\nNenhuma linha específica correspondeu aos filtros da pergunta.";
+  rows.sort((a, b) => a.edition - b.edition || a.course.localeCompare(b.course, "pt-BR") || a.city.localeCompare(b.city, "pt-BR"));
   const table = [
-    "| Edição | Código | Opção de ingresso | Inscritos | Vagas | Candidatos/vaga |",
-    "|---:|---:|---|---:|---:|---:|",
-    ...rows.map((row) => "| " + row.edition + " | " + row.code + " | " + row.option.replace(/\|/g, "\\|") + " | " + row.applicants.toLocaleString("pt-BR") + " | " + row.vacancies.toLocaleString("pt-BR") + " | " + row.candidatesPerVacancy.toLocaleString("pt-BR", { minimumFractionDigits: 1, maximumFractionDigits: 1 }) + " |")
+    "| Edição | Código | Curso/opção | Cidade | SRVEBP e SRVEBP+PPI | SU |",
+    "|---:|---:|---|---|---:|---:|",
+    ...rows.map((row) => "| " + row.edition + " | " + row.code + " | " + row.course.replace(/\|/g, "\\|") + " | " + (row.city || "Treineiro") + " | " + row.srv_ebp_ppi + " | " + row.su + " |")
   ].join("\n");
-  return historicalDemandGuide + "\n\n## Linhas selecionadas para a pergunta\n\n" + table;
+  const currentYearNotice = /2027/.test(current) ? "\n\n**A nota de corte de 2027 ainda não está disponível.** Os números abaixo são históricos e não são uma previsão." : "";
+  return cutoffGuide + currentYearNotice + "\n\n## Linhas selecionadas para a pergunta\n\n" + table;
 }
 
 function extractAnswer(payload: { output_text?: string; output?: Array<{ content?: Array<{ type?: string; text?: string }> }> }) {
@@ -238,10 +242,10 @@ export async function POST(request: Request) {
     const supportContext = supportContextFor(currentQuestion);
     const addressContext = addressContextFor(currentQuestion, conversationText);
     const careerContext = careerContextFor(currentQuestion, conversationText);
-    const demandContext = demandContextFor(currentQuestion, conversationText);
+    const cutoffContext = cutoffContextFor(currentQuestion, conversationText);
     const broadCareer = Boolean(careerContext) && /(todas|todos|quais|lista|comparar varias)/.test(normalizeText(currentQuestion));
-    const broadDemand = Boolean(demandContext) && /(quais|ranking|mais|menos|todos|todas)/.test(normalizeText(currentQuestion));
-    const maxOutputTokens = addressContext === campusAddresses || broadCareer ? 2800 : broadDemand ? 2400 : careerContext || demandContext ? 1800 : 1400;
+    const broadCutoff = Boolean(cutoffContext) && /(quais|ranking|maior|menor|todos|todas)/.test(normalizeText(currentQuestion));
+    const maxOutputTokens = addressContext === campusAddresses || broadCareer ? 2800 : broadCutoff ? 2400 : careerContext || cutoffContext ? 1800 : 1400;
     const fullInstructions = [
       instructions,
       "GUIA RESUMIDO OFICIAL:\n" + knowledge,
@@ -249,7 +253,7 @@ export async function POST(request: Request) {
       "GUIA RELEVANTE DAS CIDADES-SEDE:\n" + (cityContext || "Nenhum contexto municipal foi necessário para esta pergunta."),
       "ENDEREÇOS RELEVANTES DAS UNIDADES:\n" + (addressContext || "Nenhum endereço foi necessário para esta pergunta."),
       "GUIA RELEVANTE DE PROFISSÕES E MERCADO:\n" + (careerContext || "Nenhum contexto de carreira foi necessário para esta pergunta."),
-      "DADOS HISTÓRICOS DE PROCURA:\n" + (demandContext || "Nenhum dado histórico de procura foi necessário para esta pergunta."),
+      "DADOS HISTÓRICOS DE NOTAS DE CORTE:\n" + (cutoffContext || "Nenhuma nota de corte histórica foi necessária para esta pergunta."),
       "GUIA DE PERMANÊNCIA ESTUDANTIL:\n" + (supportContext || "Nenhum contexto de permanência foi necessário para esta pergunta.")
     ].join("\n\n");
     const response = await fetch("https://api.openai.com/v1/responses", {

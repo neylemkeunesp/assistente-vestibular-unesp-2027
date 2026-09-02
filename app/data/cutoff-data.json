@@ -1,0 +1,5921 @@
+{
+  "title": "Número mínimo de acertos para convocação para a segunda fase",
+  "editions": [
+    2023,
+    2024,
+    2025,
+    2026
+  ],
+  "sources": [
+    {
+      "edition": 2023,
+      "event_url": "https://www.vunesp.com.br/VNSP2206/",
+      "document_url": "https://documento.vunesp.com.br/documento/stream/MzIwMTE1NQ%3D%3D"
+    },
+    {
+      "edition": 2024,
+      "event_url": "https://www.vunesp.com.br/VNSP2303/",
+      "document_url": "https://documento.vunesp.com.br/documento/stream/NTUxNTQ4Mw%3D%3D"
+    },
+    {
+      "edition": 2025,
+      "event_url": "https://www.vunesp.com.br/VNSP2404/",
+      "document_url": "https://documento.vunesp.com.br/documento/stream/NjYyMTE1Mw%3D%3D"
+    },
+    {
+      "edition": 2026,
+      "event_url": "https://www.vunesp.com.br/VNSP2504/",
+      "document_url": "https://documento.vunesp.com.br/documento/stream/NzQ4OTk4Ng%3D%3D"
+    }
+  ],
+  "records": [
+    {
+      "edition": 2023,
+      "code": "001",
+      "course": "Administração - Bacharelado - integral",
+      "city": "Tupã",
+      "srv_ebp_ppi": 22,
+      "su": 22
+    },
+    {
+      "edition": 2023,
+      "code": "002",
+      "course": "Administração - Bacharelado - noturno",
+      "city": "Jaboticabal",
+      "srv_ebp_ppi": 18,
+      "su": 19
+    },
+    {
+      "edition": 2023,
+      "code": "003",
+      "course": "Administração - Bacharelado - noturno",
+      "city": "Tupã",
+      "srv_ebp_ppi": 18,
+      "su": 19
+    },
+    {
+      "edition": 2023,
+      "code": "004",
+      "course": "Administração Pública - Bacharelado - integral",
+      "city": "Araraquara",
+      "srv_ebp_ppi": 18,
+      "su": 18
+    },
+    {
+      "edition": 2023,
+      "code": "005",
+      "course": "Administração Pública - Bacharelado - noturno",
+      "city": "Araraquara",
+      "srv_ebp_ppi": 18,
+      "su": 18
+    },
+    {
+      "edition": 2023,
+      "code": "006",
+      "course": "Arquitetura e Urbanismo - integral",
+      "city": "Bauru",
+      "srv_ebp_ppi": 18,
+      "su": 46
+    },
+    {
+      "edition": 2023,
+      "code": "007",
+      "course": "Arquitetura e Urbanismo - integral",
+      "city": "Presidente Prudente",
+      "srv_ebp_ppi": 18,
+      "su": 18
+    },
+    {
+      "edition": 2023,
+      "code": "008",
+      "course": "Arquivologia - matutino",
+      "city": "Marília",
+      "srv_ebp_ppi": 18,
+      "su": 18
+    },
+    {
+      "edition": 2023,
+      "code": "009",
+      "course": "Arte-Teatro - Licenciatura - noturno",
+      "city": "São Paulo",
+      "srv_ebp_ppi": 18,
+      "su": 19
+    },
+    {
+      "edition": 2023,
+      "code": "010",
+      "course": "Artes Cênicas - Bacharelado - Habilitação em Interpretação Teatral - integral",
+      "city": "São Paulo",
+      "srv_ebp_ppi": 18,
+      "su": 19
+    },
+    {
+      "edition": 2023,
+      "code": "011",
+      "course": "Artes Visuais - Bacharelado e Licenciatura - integral",
+      "city": "São Paulo",
+      "srv_ebp_ppi": 35,
+      "su": 49
+    },
+    {
+      "edition": 2023,
+      "code": "012",
+      "course": "Artes Visuais - Bacharelado e Licenciatura - vespertino/noturno",
+      "city": "Bauru",
+      "srv_ebp_ppi": 18,
+      "su": 18
+    },
+    {
+      "edition": 2023,
+      "code": "013",
+      "course": "Biblioteconomia - matutino",
+      "city": "Marília",
+      "srv_ebp_ppi": 20,
+      "su": 27
+    },
+    {
+      "edition": 2023,
+      "code": "014",
+      "course": "Ciência da Computação - Bacharelado - integral",
+      "city": "Bauru",
+      "srv_ebp_ppi": 36,
+      "su": 54
+    },
+    {
+      "edition": 2023,
+      "code": "015",
+      "course": "Ciência da Computação - Bacharelado - integral",
+      "city": "São José do Rio Preto",
+      "srv_ebp_ppi": 26,
+      "su": 53
+    },
+    {
+      "edition": 2023,
+      "code": "016",
+      "course": "Ciência da Computação - Bacharelado - vespertino/noturno",
+      "city": "Presidente Prudente",
+      "srv_ebp_ppi": 28,
+      "su": 48
+    },
+    {
+      "edition": 2023,
+      "code": "017",
+      "course": "Ciências Biológicas - Bacharelado - Vespertino/Noturno e Licenciatura - noturno",
+      "city": "Ilha Solteira",
+      "srv_ebp_ppi": 19,
+      "su": 19
+    },
+    {
+      "edition": 2023,
+      "code": "018",
+      "course": "Ciências Biológicas - Bacharelado e Licenciatura - integral",
+      "city": "Bauru",
+      "srv_ebp_ppi": 18,
+      "su": 18
+    },
+    {
+      "edition": 2023,
+      "code": "019",
+      "course": "Ciências Biológicas - Bacharelado e Licenciatura - integral",
+      "city": "Assis",
+      "srv_ebp_ppi": 18,
+      "su": 18
+    },
+    {
+      "edition": 2023,
+      "code": "020",
+      "course": "Ciências Biológicas - Bacharelado e Licenciatura - integral",
+      "city": "Botucatu",
+      "srv_ebp_ppi": 18,
+      "su": 18
+    },
+    {
+      "edition": 2023,
+      "code": "021",
+      "course": "Ciências Biológicas - Bacharelado e Licenciatura - integral",
+      "city": "Rio Claro",
+      "srv_ebp_ppi": 19,
+      "su": 20
+    },
+    {
+      "edition": 2023,
+      "code": "022",
+      "course": "Ciências Biológicas - Bacharelado e Licenciatura - integral",
+      "city": "São José do Rio Preto",
+      "srv_ebp_ppi": 18,
+      "su": 18
+    },
+    {
+      "edition": 2023,
+      "code": "023",
+      "course": "Ciências Biológicas - Bacharelado e Licenciatura - noturno",
+      "city": "Jaboticabal",
+      "srv_ebp_ppi": 19,
+      "su": 19
+    },
+    {
+      "edition": 2023,
+      "code": "024",
+      "course": "Ciências Biológicas - Bacharelado e Licenciatura - noturno",
+      "city": "Rio Claro",
+      "srv_ebp_ppi": 18,
+      "su": 24
+    },
+    {
+      "edition": 2023,
+      "code": "025",
+      "course": "Ciências Biológicas - Bacharelado em Biologia Marinha ou Gerenciamento Costeiro - integral",
+      "city": "São Vicente",
+      "srv_ebp_ppi": 18,
+      "su": 18
+    },
+    {
+      "edition": 2023,
+      "code": "026",
+      "course": "Ciências Biológicas - Licenciatura - noturno",
+      "city": "Bauru",
+      "srv_ebp_ppi": 18,
+      "su": 18
+    },
+    {
+      "edition": 2023,
+      "code": "027",
+      "course": "Ciências Biológicas - Licenciatura - noturno",
+      "city": "Botucatu",
+      "srv_ebp_ppi": 18,
+      "su": 18
+    },
+    {
+      "edition": 2023,
+      "code": "028",
+      "course": "Ciências Biológicas - Licenciatura - noturno",
+      "city": "São Vicente",
+      "srv_ebp_ppi": 18,
+      "su": 20
+    },
+    {
+      "edition": 2023,
+      "code": "029",
+      "course": "Ciências Biomédicas - integral",
+      "city": "Botucatu",
+      "srv_ebp_ppi": 22,
+      "su": 52
+    },
+    {
+      "edition": 2023,
+      "code": "030",
+      "course": "Ciências da Computação - Bacharelado - integral",
+      "city": "Rio Claro",
+      "srv_ebp_ppi": 33,
+      "su": 59
+    },
+    {
+      "edition": 2023,
+      "code": "031",
+      "course": "Ciências da Computação - Bacharelado - noturno",
+      "city": "Rio Claro",
+      "srv_ebp_ppi": 34,
+      "su": 50
+    },
+    {
+      "edition": 2023,
+      "code": "032",
+      "course": "Ciências Econômicas - Bacharelado - integral",
+      "city": "Araraquara",
+      "srv_ebp_ppi": 22,
+      "su": 44
+    },
+    {
+      "edition": 2023,
+      "code": "033",
+      "course": "Ciências Econômicas - Bacharelado - noturno",
+      "city": "Araraquara",
+      "srv_ebp_ppi": 18,
+      "su": 18
+    },
+    {
+      "edition": 2023,
+      "code": "034",
+      "course": "Ciências Sociais - Bacharelado e Licenciatura - matutino",
+      "city": "Araraquara",
+      "srv_ebp_ppi": 19,
+      "su": 19
+    },
+    {
+      "edition": 2023,
+      "code": "035",
+      "course": "Ciências Sociais - Bacharelado e Licenciatura - matutino",
+      "city": "Marília",
+      "srv_ebp_ppi": 21,
+      "su": 21
+    },
+    {
+      "edition": 2023,
+      "code": "036",
+      "course": "Ciências Sociais - Bacharelado e Licenciatura - noturno",
+      "city": "Araraquara",
+      "srv_ebp_ppi": 19,
+      "su": 24
+    },
+    {
+      "edition": 2023,
+      "code": "037",
+      "course": "Ciências Sociais - Bacharelado e Licenciatura - noturno",
+      "city": "Marília",
+      "srv_ebp_ppi": 18,
+      "su": 18
+    },
+    {
+      "edition": 2023,
+      "code": "038",
+      "course": "Comunicação: Rádio, Televisão e Internet - integral",
+      "city": "Bauru",
+      "srv_ebp_ppi": 22,
+      "su": 48
+    },
+    {
+      "edition": 2023,
+      "code": "039",
+      "course": "Design (Design Gráfico ou Design de Produto) - noturno",
+      "city": "Bauru",
+      "srv_ebp_ppi": 24,
+      "su": 40
+    },
+    {
+      "edition": 2023,
+      "code": "040",
+      "course": "Design (Design Gráfico) - integral",
+      "city": "Bauru",
+      "srv_ebp_ppi": 18,
+      "su": 21
+    },
+    {
+      "edition": 2023,
+      "code": "041",
+      "course": "Direito - matutino",
+      "city": "Franca",
+      "srv_ebp_ppi": 18,
+      "su": 53
+    },
+    {
+      "edition": 2023,
+      "code": "042",
+      "course": "Direito - noturno",
+      "city": "Franca",
+      "srv_ebp_ppi": 18,
+      "su": 47
+    },
+    {
+      "edition": 2023,
+      "code": "043",
+      "course": "Ecologia - integral",
+      "city": "Rio Claro",
+      "srv_ebp_ppi": 24,
+      "su": 24
+    },
+    {
+      "edition": 2023,
+      "code": "044",
+      "course": "Educação Física - Bacharelado - integral",
+      "city": "Bauru",
+      "srv_ebp_ppi": 18,
+      "su": 18
+    },
+    {
+      "edition": 2023,
+      "code": "045",
+      "course": "Educação Física - Bacharelado - noturno",
+      "city": "Bauru",
+      "srv_ebp_ppi": 18,
+      "su": 18
+    },
+    {
+      "edition": 2023,
+      "code": "046",
+      "course": "Educação Física - Bacharelado e Licenciatura - integral",
+      "city": "Presidente Prudente",
+      "srv_ebp_ppi": 18,
+      "su": 19
+    },
+    {
+      "edition": 2023,
+      "code": "047",
+      "course": "Educação Física - Bacharelado e Licenciatura - integral",
+      "city": "Rio Claro",
+      "srv_ebp_ppi": 18,
+      "su": 19
+    },
+    {
+      "edition": 2023,
+      "code": "048",
+      "course": "Educação Física - Bacharelado e Licenciatura - vespertino/noturno",
+      "city": "Presidente Prudente",
+      "srv_ebp_ppi": 18,
+      "su": 18
+    },
+    {
+      "edition": 2023,
+      "code": "049",
+      "course": "Educação Física - Licenciatura - integral",
+      "city": "Bauru",
+      "srv_ebp_ppi": 18,
+      "su": 19
+    },
+    {
+      "edition": 2023,
+      "code": "050",
+      "course": "Educação Física - Licenciatura - noturno",
+      "city": "Bauru",
+      "srv_ebp_ppi": 18,
+      "su": 19
+    },
+    {
+      "edition": 2023,
+      "code": "051",
+      "course": "Enfermagem - integral",
+      "city": "Botucatu",
+      "srv_ebp_ppi": 18,
+      "su": 18
+    },
+    {
+      "edition": 2023,
+      "code": "052",
+      "course": "Engenharia Aeronáutica - integral",
+      "city": "São João da Boa Vista",
+      "srv_ebp_ppi": 21,
+      "su": 54
+    },
+    {
+      "edition": 2023,
+      "code": "053",
+      "course": "Engenharia Agronômica - integral",
+      "city": "Botucatu",
+      "srv_ebp_ppi": 18,
+      "su": 33
+    },
+    {
+      "edition": 2023,
+      "code": "054",
+      "course": "Engenharia Agronômica - integral",
+      "city": "Dracena",
+      "srv_ebp_ppi": 18,
+      "su": 19
+    },
+    {
+      "edition": 2023,
+      "code": "055",
+      "course": "Engenharia Agronômica - integral",
+      "city": "Jaboticabal",
+      "srv_ebp_ppi": 18,
+      "su": 33
+    },
+    {
+      "edition": 2023,
+      "code": "056",
+      "course": "Engenharia Agronômica - integral",
+      "city": "Registro",
+      "srv_ebp_ppi": 18,
+      "su": 19
+    },
+    {
+      "edition": 2023,
+      "code": "057",
+      "course": "Engenharia Agronômica - integral",
+      "city": "Ilha Solteira",
+      "srv_ebp_ppi": 18,
+      "su": 18
+    },
+    {
+      "edition": 2023,
+      "code": "058",
+      "course": "Engenharia Agronômica - integral (com ingresso no meio do ano)",
+      "city": "Ilha Solteira",
+      "srv_ebp_ppi": 18,
+      "su": 18
+    },
+    {
+      "edition": 2023,
+      "code": "059",
+      "course": "Engenharia Ambiental - integral",
+      "city": "Presidente Prudente",
+      "srv_ebp_ppi": 19,
+      "su": 31
+    },
+    {
+      "edition": 2023,
+      "code": "060",
+      "course": "Engenharia Ambiental - integral",
+      "city": "São José dos Campos",
+      "srv_ebp_ppi": 22,
+      "su": 22
+    },
+    {
+      "edition": 2023,
+      "code": "061",
+      "course": "Engenharia Ambiental - integral",
+      "city": "Sorocaba",
+      "srv_ebp_ppi": 22,
+      "su": 23
+    },
+    {
+      "edition": 2023,
+      "code": "062",
+      "course": "Engenharia Ambiental - integral",
+      "city": "Rio Claro",
+      "srv_ebp_ppi": 18,
+      "su": 18
+    },
+    {
+      "edition": 2023,
+      "code": "063",
+      "course": "Engenharia Biotecnológica - integral",
+      "city": "Assis",
+      "srv_ebp_ppi": 21,
+      "su": 21
+    },
+    {
+      "edition": 2023,
+      "code": "064",
+      "course": "Engenharia Cartográfica e de Agrimensura - integral",
+      "city": "Presidente Prudente",
+      "srv_ebp_ppi": 19,
+      "su": 24
+    },
+    {
+      "edition": 2023,
+      "code": "065",
+      "course": "Engenharia Civil - integral",
+      "city": "Bauru",
+      "srv_ebp_ppi": 19,
+      "su": 19
+    },
+    {
+      "edition": 2023,
+      "code": "066",
+      "course": "Engenharia Civil - integral",
+      "city": "Guaratinguetá",
+      "srv_ebp_ppi": 20,
+      "su": 20
+    },
+    {
+      "edition": 2023,
+      "code": "067",
+      "course": "Engenharia Civil - integral",
+      "city": "Ilha Solteira",
+      "srv_ebp_ppi": 18,
+      "su": 18
+    },
+    {
+      "edition": 2023,
+      "code": "068",
+      "course": "Engenharia Civil - integral (com ingresso no meio do ano)",
+      "city": "Ilha Solteira",
+      "srv_ebp_ppi": 19,
+      "su": 19
+    },
+    {
+      "edition": 2023,
+      "code": "069",
+      "course": "Engenharia de Alimentos - integral",
+      "city": "São José do Rio Preto",
+      "srv_ebp_ppi": 18,
+      "su": 18
+    },
+    {
+      "edition": 2023,
+      "code": "070",
+      "course": "Engenharia de Bioprocessos e Biotecnologia - integral",
+      "city": "Botucatu",
+      "srv_ebp_ppi": 22,
+      "su": 23
+    },
+    {
+      "edition": 2023,
+      "code": "071",
+      "course": "Engenharia de Bioprocessos e Biotecnologia - integral",
+      "city": "Araraquara",
+      "srv_ebp_ppi": 20,
+      "su": 23
+    },
+    {
+      "edition": 2023,
+      "code": "072",
+      "course": "Engenharia de Biossistemas - integral",
+      "city": "Tupã",
+      "srv_ebp_ppi": 19,
+      "su": 21
+    },
+    {
+      "edition": 2023,
+      "code": "073",
+      "course": "Engenharia de Controle e Automação - integral",
+      "city": "Sorocaba",
+      "srv_ebp_ppi": 19,
+      "su": 19
+    },
+    {
+      "edition": 2023,
+      "code": "074",
+      "course": "Engenharia de Energia - integral",
+      "city": "Rosana",
+      "srv_ebp_ppi": 21,
+      "su": 23
+    },
+    {
+      "edition": 2023,
+      "code": "075",
+      "course": "Engenharia de Materiais - integral",
+      "city": "Guaratinguetá",
+      "srv_ebp_ppi": 19,
+      "su": 23
+    },
+    {
+      "edition": 2023,
+      "code": "076",
+      "course": "Engenharia de Pesca - integral",
+      "city": "Registro",
+      "srv_ebp_ppi": 21,
+      "su": 21
+    },
+    {
+      "edition": 2023,
+      "code": "077",
+      "course": "Engenharia de Produção - integral",
+      "city": "Guaratinguetá",
+      "srv_ebp_ppi": 19,
+      "su": 20
+    },
+    {
+      "edition": 2023,
+      "code": "078",
+      "course": "Engenharia de Produção - vespertino/noturno",
+      "city": "Bauru",
+      "srv_ebp_ppi": 18,
+      "su": 18
+    },
+    {
+      "edition": 2023,
+      "code": "079",
+      "course": "Engenharia de Produção - vespertino/noturno",
+      "city": "Itapeva",
+      "srv_ebp_ppi": 18,
+      "su": 20
+    },
+    {
+      "edition": 2023,
+      "code": "080",
+      "course": "Engenharia Elétrica - integral",
+      "city": "Bauru",
+      "srv_ebp_ppi": 19,
+      "su": 23
+    },
+    {
+      "edition": 2023,
+      "code": "081",
+      "course": "Engenharia Elétrica - integral",
+      "city": "Guaratinguetá",
+      "srv_ebp_ppi": 19,
+      "su": 19
+    },
+    {
+      "edition": 2023,
+      "code": "082",
+      "course": "Engenharia Elétrica - integral",
+      "city": "Ilha Solteira",
+      "srv_ebp_ppi": 18,
+      "su": 25
+    },
+    {
+      "edition": 2023,
+      "code": "083",
+      "course": "Engenharia Elétrica - integral (com ingresso no meio do ano)",
+      "city": "Ilha Solteira",
+      "srv_ebp_ppi": 20,
+      "su": 20
+    },
+    {
+      "edition": 2023,
+      "code": "084",
+      "course": "Engenharia Eletrônica e de Telecomunicações - integral",
+      "city": "São João da Boa Vista",
+      "srv_ebp_ppi": 20,
+      "su": 23
+    },
+    {
+      "edition": 2023,
+      "code": "085",
+      "course": "Engenharia Florestal - integral",
+      "city": "Botucatu",
+      "srv_ebp_ppi": 19,
+      "su": 21
+    },
+    {
+      "edition": 2023,
+      "code": "086",
+      "course": "Engenharia Industrial-Madeira - integral",
+      "city": "Itapeva",
+      "srv_ebp_ppi": 18,
+      "su": 18
+    },
+    {
+      "edition": 2023,
+      "code": "087",
+      "course": "Engenharia Mecânica - integral",
+      "city": "Bauru",
+      "srv_ebp_ppi": 18,
+      "su": 20
+    },
+    {
+      "edition": 2023,
+      "code": "088",
+      "course": "Engenharia Mecânica - integral",
+      "city": "Guaratinguetá",
+      "srv_ebp_ppi": 22,
+      "su": 22
+    },
+    {
+      "edition": 2023,
+      "code": "089",
+      "course": "Engenharia Mecânica - integral",
+      "city": "Ilha Solteira",
+      "srv_ebp_ppi": 18,
+      "su": 20
+    },
+    {
+      "edition": 2023,
+      "code": "090",
+      "course": "Engenharia Mecânica - integral (com ingresso no meio do ano)",
+      "city": "Ilha Solteira",
+      "srv_ebp_ppi": 18,
+      "su": 18
+    },
+    {
+      "edition": 2023,
+      "code": "091",
+      "course": "Engenharia Mecânica - noturno",
+      "city": "Guaratinguetá",
+      "srv_ebp_ppi": 19,
+      "su": 20
+    },
+    {
+      "edition": 2023,
+      "code": "092",
+      "course": "Engenharia Química - integral",
+      "city": "Araraquara",
+      "srv_ebp_ppi": 19,
+      "su": 19
+    },
+    {
+      "edition": 2023,
+      "code": "093",
+      "course": "Estatística - integral",
+      "city": "Presidente Prudente",
+      "srv_ebp_ppi": 19,
+      "su": 19
+    },
+    {
+      "edition": 2023,
+      "code": "094",
+      "course": "Farmácia - integral",
+      "city": "Araraquara",
+      "srv_ebp_ppi": 18,
+      "su": 39
+    },
+    {
+      "edition": 2023,
+      "code": "095",
+      "course": "Farmácia - noturno",
+      "city": "Araraquara",
+      "srv_ebp_ppi": 27,
+      "su": 47
+    },
+    {
+      "edition": 2023,
+      "code": "096",
+      "course": "Filosofia - Bacharelado e Licenciatura - noturno",
+      "city": "Marília",
+      "srv_ebp_ppi": 21,
+      "su": 24
+    },
+    {
+      "edition": 2023,
+      "code": "097",
+      "course": "Física - Bacharelado e Licenciatura - integral",
+      "city": "Rio Claro",
+      "srv_ebp_ppi": 19,
+      "su": 19
+    },
+    {
+      "edition": 2023,
+      "code": "098",
+      "course": "Física - Bacharelado e Licenciatura - noturno",
+      "city": "Guaratinguetá",
+      "srv_ebp_ppi": 19,
+      "su": 32
+    },
+    {
+      "edition": 2023,
+      "code": "099",
+      "course": "Física - Bacharelado em Física Biológica e Licenciatura em Física - integral",
+      "city": "São José do Rio Preto",
+      "srv_ebp_ppi": 20,
+      "su": 29
+    },
+    {
+      "edition": 2023,
+      "code": "100",
+      "course": "Física - Bacharelado em Física de Materiais - vespertino/noturno e Licenciatura em Física - noturno",
+      "city": "Bauru",
+      "srv_ebp_ppi": 20,
+      "su": 20
+    },
+    {
+      "edition": 2023,
+      "code": "101",
+      "course": "Física - Licenciatura - noturno",
+      "city": "Presidente Prudente",
+      "srv_ebp_ppi": 21,
+      "su": 27
+    },
+    {
+      "edition": 2023,
+      "code": "102",
+      "course": "Física - Licenciatura - noturno",
+      "city": "Ilha Solteira",
+      "srv_ebp_ppi": 27,
+      "su": 35
+    },
+    {
+      "edition": 2023,
+      "code": "103",
+      "course": "Física Médica - integral",
+      "city": "Botucatu",
+      "srv_ebp_ppi": 19,
+      "su": 20
+    },
+    {
+      "edition": 2023,
+      "code": "104",
+      "course": "Fisioterapia - integral",
+      "city": "Presidente Prudente",
+      "srv_ebp_ppi": 18,
+      "su": 18
+    },
+    {
+      "edition": 2023,
+      "code": "105",
+      "course": "Fisioterapia - integral",
+      "city": "Marília",
+      "srv_ebp_ppi": 21,
+      "su": 37
+    },
+    {
+      "edition": 2023,
+      "code": "106",
+      "course": "Fonoaudiologia - integral",
+      "city": "Marília",
+      "srv_ebp_ppi": 18,
+      "su": 18
+    },
+    {
+      "edition": 2023,
+      "code": "107",
+      "course": "Geografia - Bacharelado e Licenciatura - integral",
+      "city": "Rio Claro",
+      "srv_ebp_ppi": 22,
+      "su": 24
+    },
+    {
+      "edition": 2023,
+      "code": "108",
+      "course": "Geografia - Bacharelado e Licenciatura - matutino",
+      "city": "Presidente Prudente",
+      "srv_ebp_ppi": 18,
+      "su": 18
+    },
+    {
+      "edition": 2023,
+      "code": "109",
+      "course": "Geografia - Bacharelado e Licenciatura - matutino",
+      "city": "Ourinhos",
+      "srv_ebp_ppi": 22,
+      "su": 30
+    },
+    {
+      "edition": 2023,
+      "code": "110",
+      "course": "Geografia - Bacharelado e Licenciatura - noturno",
+      "city": "Presidente Prudente",
+      "srv_ebp_ppi": 18,
+      "su": 23
+    },
+    {
+      "edition": 2023,
+      "code": "111",
+      "course": "Geografia - Bacharelado e Licenciatura - noturno",
+      "city": "Ourinhos",
+      "srv_ebp_ppi": 20,
+      "su": 24
+    },
+    {
+      "edition": 2023,
+      "code": "112",
+      "course": "Geografia - Licenciatura - noturno",
+      "city": "Rio Claro",
+      "srv_ebp_ppi": 18,
+      "su": 20
+    },
+    {
+      "edition": 2023,
+      "code": "113",
+      "course": "Geologia - integral",
+      "city": "Rio Claro",
+      "srv_ebp_ppi": 20,
+      "su": 20
+    },
+    {
+      "edition": 2023,
+      "code": "114",
+      "course": "História - Bacharelado e Licenciatura - matutino",
+      "city": "Franca",
+      "srv_ebp_ppi": 19,
+      "su": 20
+    },
+    {
+      "edition": 2023,
+      "code": "115",
+      "course": "História - Bacharelado e Licenciatura - noturno",
+      "city": "Franca",
+      "srv_ebp_ppi": 19,
+      "su": 24
+    },
+    {
+      "edition": 2023,
+      "code": "116",
+      "course": "História - Licenciatura - matutino",
+      "city": "Assis",
+      "srv_ebp_ppi": 19,
+      "su": 22
+    },
+    {
+      "edition": 2023,
+      "code": "117",
+      "course": "História - Licenciatura - noturno",
+      "city": "Assis",
+      "srv_ebp_ppi": 18,
+      "su": 18
+    },
+    {
+      "edition": 2023,
+      "code": "118",
+      "course": "Jornalismo - matutino",
+      "city": "Bauru",
+      "srv_ebp_ppi": 20,
+      "su": 44
+    },
+    {
+      "edition": 2023,
+      "code": "119",
+      "course": "Jornalismo - noturno",
+      "city": "Bauru",
+      "srv_ebp_ppi": 25,
+      "su": 45
+    },
+    {
+      "edition": 2023,
+      "code": "120",
+      "course": "Letras - Bacharelado e Licenciatura - matutino",
+      "city": "Araraquara",
+      "srv_ebp_ppi": 20,
+      "su": 20
+    },
+    {
+      "edition": 2023,
+      "code": "121",
+      "course": "Letras - Bacharelado e Licenciatura - noturno",
+      "city": "Araraquara",
+      "srv_ebp_ppi": 18,
+      "su": 20
+    },
+    {
+      "edition": 2023,
+      "code": "122",
+      "course": "Letras - Licenciatura - integral",
+      "city": "São José do Rio Preto",
+      "srv_ebp_ppi": 19,
+      "su": 22
+    },
+    {
+      "edition": 2023,
+      "code": "123",
+      "course": "Letras - Licenciatura - matutino",
+      "city": "Assis",
+      "srv_ebp_ppi": 19,
+      "su": 19
+    },
+    {
+      "edition": 2023,
+      "code": "124",
+      "course": "Letras - Licenciatura - noturno",
+      "city": "Assis",
+      "srv_ebp_ppi": 18,
+      "su": 18
+    },
+    {
+      "edition": 2023,
+      "code": "125",
+      "course": "Letras - Licenciatura - noturno",
+      "city": "São José do Rio Preto",
+      "srv_ebp_ppi": 19,
+      "su": 19
+    },
+    {
+      "edition": 2023,
+      "code": "126",
+      "course": "Letras-Tradução - Bacharelado - integral",
+      "city": "São José do Rio Preto",
+      "srv_ebp_ppi": 21,
+      "su": 28
+    },
+    {
+      "edition": 2023,
+      "code": "127",
+      "course": "Licenciatura em Música - integral",
+      "city": "São Paulo",
+      "srv_ebp_ppi": 18,
+      "su": 29
+    },
+    {
+      "edition": 2023,
+      "code": "128",
+      "course": "Matemática - Bacharelado e Licenciatura - integral",
+      "city": "São José do Rio Preto",
+      "srv_ebp_ppi": 20,
+      "su": 20
+    },
+    {
+      "edition": 2023,
+      "code": "129",
+      "course": "Matemática - Bacharelado e Licenciatura - integral",
+      "city": "Rio Claro",
+      "srv_ebp_ppi": 20,
+      "su": 23
+    },
+    {
+      "edition": 2023,
+      "code": "130",
+      "course": "Matemática - Licenciatura - matutino",
+      "city": "Presidente Prudente",
+      "srv_ebp_ppi": 18,
+      "su": 21
+    },
+    {
+      "edition": 2023,
+      "code": "131",
+      "course": "Matemática - Licenciatura - noturno",
+      "city": "Bauru",
+      "srv_ebp_ppi": 20,
+      "su": 20
+    },
+    {
+      "edition": 2023,
+      "code": "132",
+      "course": "Matemática - Licenciatura - noturno",
+      "city": "Presidente Prudente",
+      "srv_ebp_ppi": 18,
+      "su": 26
+    },
+    {
+      "edition": 2023,
+      "code": "133",
+      "course": "Matemática - Licenciatura - noturno",
+      "city": "Guaratinguetá",
+      "srv_ebp_ppi": 18,
+      "su": 26
+    },
+    {
+      "edition": 2023,
+      "code": "134",
+      "course": "Matemática - Licenciatura - noturno",
+      "city": "Ilha Solteira",
+      "srv_ebp_ppi": 21,
+      "su": 21
+    },
+    {
+      "edition": 2023,
+      "code": "135",
+      "course": "Matemática - Licenciatura - noturno",
+      "city": "São José do Rio Preto",
+      "srv_ebp_ppi": 20,
+      "su": 25
+    },
+    {
+      "edition": 2023,
+      "code": "136",
+      "course": "Medicina - integral",
+      "city": "Botucatu",
+      "srv_ebp_ppi": 60,
+      "su": 77
+    },
+    {
+      "edition": 2023,
+      "code": "137",
+      "course": "Medicina Veterinária - integral",
+      "city": "Jaboticabal",
+      "srv_ebp_ppi": 28,
+      "su": 45
+    },
+    {
+      "edition": 2023,
+      "code": "138",
+      "course": "Medicina Veterinária - integral",
+      "city": "Araçatuba",
+      "srv_ebp_ppi": 23,
+      "su": 40
+    },
+    {
+      "edition": 2023,
+      "code": "139",
+      "course": "Medicina Veterinária - integral",
+      "city": "Botucatu",
+      "srv_ebp_ppi": 25,
+      "su": 48
+    },
+    {
+      "edition": 2023,
+      "code": "140",
+      "course": "Meteorologia - Bacharelado - integral",
+      "city": "Bauru",
+      "srv_ebp_ppi": 18,
+      "su": 24
+    },
+    {
+      "edition": 2023,
+      "code": "141",
+      "course": "Música - Bacharelado - Habilitação em Canto - integral",
+      "city": "São Paulo",
+      "srv_ebp_ppi": 18,
+      "su": 18
+    },
+    {
+      "edition": 2023,
+      "code": "142",
+      "course": "Música - Bacharelado - Habilitação em Composição - integral",
+      "city": "São Paulo",
+      "srv_ebp_ppi": 19,
+      "su": 22
+    },
+    {
+      "edition": 2023,
+      "code": "143",
+      "course": "Música - Bacharelado - Habilitação em Instrumento: Cordas (Contrabaixo Acústico, Viola, Violino, Violoncelo) - integral",
+      "city": "São Paulo",
+      "srv_ebp_ppi": 21,
+      "su": 21
+    },
+    {
+      "edition": 2023,
+      "code": "144",
+      "course": "Música - Bacharelado - Habilitação em Instrumento: Percussão - integral",
+      "city": "São Paulo",
+      "srv_ebp_ppi": 20,
+      "su": 35
+    },
+    {
+      "edition": 2023,
+      "code": "145",
+      "course": "Música - Bacharelado - Habilitação em Instrumento: Sopros (Clarineta, Flauta, Instrumento Antigo - Flauta Doce, Oboé) - integral",
+      "city": "São Paulo",
+      "srv_ebp_ppi": 18,
+      "su": 19
+    },
+    {
+      "edition": 2023,
+      "code": "146",
+      "course": "Música - Bacharelado - Habilitação em Instrumento: Teclados - integral",
+      "city": "São Paulo",
+      "srv_ebp_ppi": 20,
+      "su": 22
+    },
+    {
+      "edition": 2023,
+      "code": "147",
+      "course": "Música - Bacharelado - Habilitação em Instrumento: Violão - integral",
+      "city": "São Paulo",
+      "srv_ebp_ppi": 21,
+      "su": 21
+    },
+    {
+      "edition": 2023,
+      "code": "148",
+      "course": "Música - Bacharelado - Habilitação em Regência - integral",
+      "city": "São Paulo",
+      "srv_ebp_ppi": 22,
+      "su": 28
+    },
+    {
+      "edition": 2023,
+      "code": "149",
+      "course": "Nutrição - vespertino/noturno",
+      "city": "Botucatu",
+      "srv_ebp_ppi": 22,
+      "su": 37
+    },
+    {
+      "edition": 2023,
+      "code": "150",
+      "course": "Odontologia - integral",
+      "city": "Araçatuba",
+      "srv_ebp_ppi": 18,
+      "su": 18
+    },
+    {
+      "edition": 2023,
+      "code": "151",
+      "course": "Odontologia - integral",
+      "city": "Araraquara",
+      "srv_ebp_ppi": 20,
+      "su": 38
+    },
+    {
+      "edition": 2023,
+      "code": "152",
+      "course": "Odontologia - integral",
+      "city": "São José dos Campos",
+      "srv_ebp_ppi": 18,
+      "su": 18
+    },
+    {
+      "edition": 2023,
+      "code": "153",
+      "course": "Odontologia - vespertino/noturno",
+      "city": "Araçatuba",
+      "srv_ebp_ppi": 18,
+      "su": 18
+    },
+    {
+      "edition": 2023,
+      "code": "154",
+      "course": "Odontologia - vespertino/noturno",
+      "city": "São José dos Campos",
+      "srv_ebp_ppi": 22,
+      "su": 41
+    },
+    {
+      "edition": 2023,
+      "code": "155",
+      "course": "Pedagogia - Licenciatura - matutino",
+      "city": "Marília",
+      "srv_ebp_ppi": 18,
+      "su": 18
+    },
+    {
+      "edition": 2023,
+      "code": "156",
+      "course": "Pedagogia - Licenciatura - noturno",
+      "city": "Bauru",
+      "srv_ebp_ppi": 18,
+      "su": 18
+    },
+    {
+      "edition": 2023,
+      "code": "157",
+      "course": "Pedagogia - Licenciatura - noturno",
+      "city": "Araraquara",
+      "srv_ebp_ppi": 18,
+      "su": 20
+    },
+    {
+      "edition": 2023,
+      "code": "158",
+      "course": "Pedagogia - Licenciatura - noturno",
+      "city": "Presidente Prudente",
+      "srv_ebp_ppi": 18,
+      "su": 20
+    },
+    {
+      "edition": 2023,
+      "code": "159",
+      "course": "Pedagogia - Licenciatura - noturno",
+      "city": "Marília",
+      "srv_ebp_ppi": 18,
+      "su": 20
+    },
+    {
+      "edition": 2023,
+      "code": "160",
+      "course": "Pedagogia - Licenciatura - noturno",
+      "city": "Rio Claro",
+      "srv_ebp_ppi": 18,
+      "su": 19
+    },
+    {
+      "edition": 2023,
+      "code": "161",
+      "course": "Pedagogia - Licenciatura - noturno",
+      "city": "São José do Rio Preto",
+      "srv_ebp_ppi": 18,
+      "su": 18
+    },
+    {
+      "edition": 2023,
+      "code": "162",
+      "course": "Pedagogia - Licenciatura - vespertino",
+      "city": "Araraquara",
+      "srv_ebp_ppi": 18,
+      "su": 18
+    },
+    {
+      "edition": 2023,
+      "code": "163",
+      "course": "Pedagogia - Licenciatura - vespertino",
+      "city": "Presidente Prudente",
+      "srv_ebp_ppi": 18,
+      "su": 18
+    },
+    {
+      "edition": 2023,
+      "code": "164",
+      "course": "Psicologia - integral",
+      "city": "Bauru",
+      "srv_ebp_ppi": 35,
+      "su": 57
+    },
+    {
+      "edition": 2023,
+      "code": "165",
+      "course": "Psicologia - integral",
+      "city": "Assis",
+      "srv_ebp_ppi": 19,
+      "su": 47
+    },
+    {
+      "edition": 2023,
+      "code": "166",
+      "course": "Psicologia - noturno",
+      "city": "Bauru",
+      "srv_ebp_ppi": 38,
+      "su": 54
+    },
+    {
+      "edition": 2023,
+      "code": "167",
+      "course": "Psicologia - vespertino/noturno",
+      "city": "Assis",
+      "srv_ebp_ppi": 18,
+      "su": 47
+    },
+    {
+      "edition": 2023,
+      "code": "168",
+      "course": "Química - Bacharelado em Química Ambiental e Licenciatura em Química - integral",
+      "city": "São José do Rio Preto",
+      "srv_ebp_ppi": 20,
+      "su": 21
+    },
+    {
+      "edition": 2023,
+      "code": "169",
+      "course": "Química - Bacharelado em Química e em Química Tecnológica - integral",
+      "city": "Araraquara",
+      "srv_ebp_ppi": 21,
+      "su": 21
+    },
+    {
+      "edition": 2023,
+      "code": "170",
+      "course": "Química - Bacharelado em Química Tecnológica - vespertino-noturno",
+      "city": "Bauru",
+      "srv_ebp_ppi": 19,
+      "su": 21
+    },
+    {
+      "edition": 2023,
+      "code": "171",
+      "course": "Química - Licenciatura - noturno",
+      "city": "Bauru",
+      "srv_ebp_ppi": 19,
+      "su": 19
+    },
+    {
+      "edition": 2023,
+      "code": "172",
+      "course": "Química - Licenciatura - noturno",
+      "city": "Presidente Prudente",
+      "srv_ebp_ppi": 20,
+      "su": 20
+    },
+    {
+      "edition": 2023,
+      "code": "173",
+      "course": "Química - Licenciatura - noturno",
+      "city": "Araraquara",
+      "srv_ebp_ppi": 20,
+      "su": 26
+    },
+    {
+      "edition": 2023,
+      "code": "174",
+      "course": "Relações Internacionais - noturno",
+      "city": "Franca",
+      "srv_ebp_ppi": 24,
+      "su": 49
+    },
+    {
+      "edition": 2023,
+      "code": "175",
+      "course": "Relações Internacionais - noturno",
+      "city": "Marília",
+      "srv_ebp_ppi": 20,
+      "su": 44
+    },
+    {
+      "edition": 2023,
+      "code": "176",
+      "course": "Relações Internacionais - vespertino",
+      "city": "Franca",
+      "srv_ebp_ppi": 19,
+      "su": 48
+    },
+    {
+      "edition": 2023,
+      "code": "177",
+      "course": "Relações Públicas - noturno",
+      "city": "Bauru",
+      "srv_ebp_ppi": 18,
+      "su": 19
+    },
+    {
+      "edition": 2023,
+      "code": "178",
+      "course": "Serviço Social - matutino",
+      "city": "Franca",
+      "srv_ebp_ppi": 18,
+      "su": 18
+    },
+    {
+      "edition": 2023,
+      "code": "179",
+      "course": "Serviço Social - noturno",
+      "city": "Franca",
+      "srv_ebp_ppi": 18,
+      "su": 20
+    },
+    {
+      "edition": 2023,
+      "code": "180",
+      "course": "Sistemas de Informação - Bacharelado - noturno",
+      "city": "Bauru",
+      "srv_ebp_ppi": 40,
+      "su": 50
+    },
+    {
+      "edition": 2023,
+      "code": "181",
+      "course": "Terapia Ocupacional - integral",
+      "city": "Marília",
+      "srv_ebp_ppi": 18,
+      "su": 18
+    },
+    {
+      "edition": 2023,
+      "code": "182",
+      "course": "Turismo - integral",
+      "city": "Rosana",
+      "srv_ebp_ppi": 18,
+      "su": 24
+    },
+    {
+      "edition": 2023,
+      "code": "183",
+      "course": "Zootecnia - integral",
+      "city": "Dracena",
+      "srv_ebp_ppi": 20,
+      "su": 20
+    },
+    {
+      "edition": 2023,
+      "code": "184",
+      "course": "Zootecnia - integral",
+      "city": "Jaboticabal",
+      "srv_ebp_ppi": 18,
+      "su": 18
+    },
+    {
+      "edition": 2023,
+      "code": "185",
+      "course": "Zootecnia - integral",
+      "city": "Ilha Solteira",
+      "srv_ebp_ppi": 18,
+      "su": 19
+    },
+    {
+      "edition": 2023,
+      "code": "186",
+      "course": "Zootecnia - integral",
+      "city": "Botucatu",
+      "srv_ebp_ppi": 18,
+      "su": 18
+    },
+    {
+      "edition": 2023,
+      "code": "187",
+      "course": "Treineiro",
+      "city": "",
+      "srv_ebp_ppi": 18,
+      "su": 18
+    },
+    {
+      "edition": 2024,
+      "code": "001",
+      "course": "Administração - Bacharelado - integral",
+      "city": "Tupã",
+      "srv_ebp_ppi": 20,
+      "su": 23
+    },
+    {
+      "edition": 2024,
+      "code": "002",
+      "course": "Administração - Bacharelado - noturno",
+      "city": "Jaboticabal",
+      "srv_ebp_ppi": 19,
+      "su": 22
+    },
+    {
+      "edition": 2024,
+      "code": "003",
+      "course": "Administração - Bacharelado - noturno",
+      "city": "Tupã",
+      "srv_ebp_ppi": 18,
+      "su": 18
+    },
+    {
+      "edition": 2024,
+      "code": "004",
+      "course": "Administração Pública - Bacharelado - integral",
+      "city": "Araraquara",
+      "srv_ebp_ppi": 21,
+      "su": 22
+    },
+    {
+      "edition": 2024,
+      "code": "005",
+      "course": "Administração Pública - Bacharelado - noturno",
+      "city": "Araraquara",
+      "srv_ebp_ppi": 20,
+      "su": 25
+    },
+    {
+      "edition": 2024,
+      "code": "006",
+      "course": "Arquitetura e Urbanismo - integral",
+      "city": "Bauru",
+      "srv_ebp_ppi": 21,
+      "su": 52
+    },
+    {
+      "edition": 2024,
+      "code": "007",
+      "course": "Arquitetura e Urbanismo - integral",
+      "city": "Presidente Prudente",
+      "srv_ebp_ppi": 18,
+      "su": 20
+    },
+    {
+      "edition": 2024,
+      "code": "008",
+      "course": "Arquivologia - matutino",
+      "city": "Marília",
+      "srv_ebp_ppi": 19,
+      "su": 21
+    },
+    {
+      "edition": 2024,
+      "code": "009",
+      "course": "Arte-Teatro - Licenciatura - noturno",
+      "city": "São Paulo",
+      "srv_ebp_ppi": 22,
+      "su": 30
+    },
+    {
+      "edition": 2024,
+      "code": "010",
+      "course": "Artes Cênicas - Bacharelado - Habilitação em Interpretação Teatral - integral",
+      "city": "São Paulo",
+      "srv_ebp_ppi": 19,
+      "su": 19
+    },
+    {
+      "edition": 2024,
+      "code": "011",
+      "course": "Artes Visuais - Bacharelado e Licenciatura - integral",
+      "city": "São Paulo",
+      "srv_ebp_ppi": 43,
+      "su": 58
+    },
+    {
+      "edition": 2024,
+      "code": "012",
+      "course": "Artes Visuais - Bacharelado e Licenciatura - vespertino/noturno",
+      "city": "Bauru",
+      "srv_ebp_ppi": 18,
+      "su": 20
+    },
+    {
+      "edition": 2024,
+      "code": "013",
+      "course": "Biblioteconomia - matutino",
+      "city": "Marília",
+      "srv_ebp_ppi": 19,
+      "su": 21
+    },
+    {
+      "edition": 2024,
+      "code": "014",
+      "course": "Ciência da Computação - Bacharelado - integral",
+      "city": "Bauru",
+      "srv_ebp_ppi": 41,
+      "su": 62
+    },
+    {
+      "edition": 2024,
+      "code": "015",
+      "course": "Ciência da Computação - Bacharelado - integral",
+      "city": "São José do Rio Preto",
+      "srv_ebp_ppi": 40,
+      "su": 62
+    },
+    {
+      "edition": 2024,
+      "code": "016",
+      "course": "Ciência da Computação - Bacharelado - vespertino/noturno",
+      "city": "Presidente Prudente",
+      "srv_ebp_ppi": 38,
+      "su": 56
+    },
+    {
+      "edition": 2024,
+      "code": "017",
+      "course": "Ciências Biológicas - Bacharelado - Vespertino/Noturno e Licenciatura - noturno",
+      "city": "Ilha Solteira",
+      "srv_ebp_ppi": 18,
+      "su": 18
+    },
+    {
+      "edition": 2024,
+      "code": "018",
+      "course": "Ciências Biológicas - Bacharelado e Licenciatura - integral",
+      "city": "Bauru",
+      "srv_ebp_ppi": 18,
+      "su": 18
+    },
+    {
+      "edition": 2024,
+      "code": "019",
+      "course": "Ciências Biológicas - Bacharelado e Licenciatura - integral",
+      "city": "Assis",
+      "srv_ebp_ppi": 19,
+      "su": 20
+    },
+    {
+      "edition": 2024,
+      "code": "020",
+      "course": "Ciências Biológicas - Bacharelado - integral",
+      "city": "Botucatu",
+      "srv_ebp_ppi": 18,
+      "su": 50
+    },
+    {
+      "edition": 2024,
+      "code": "021",
+      "course": "Ciências Biológicas - Bacharelado e Licenciatura - integral",
+      "city": "Rio Claro",
+      "srv_ebp_ppi": 20,
+      "su": 27
+    },
+    {
+      "edition": 2024,
+      "code": "022",
+      "course": "Ciências Biológicas - Bacharelado e Licenciatura - integral",
+      "city": "São José do Rio Preto",
+      "srv_ebp_ppi": 18,
+      "su": 22
+    },
+    {
+      "edition": 2024,
+      "code": "023",
+      "course": "Ciências Biológicas - Bacharelado e Licenciatura - noturno",
+      "city": "Jaboticabal",
+      "srv_ebp_ppi": 18,
+      "su": 20
+    },
+    {
+      "edition": 2024,
+      "code": "024",
+      "course": "Ciências Biológicas - Bacharelado e Licenciatura - noturno",
+      "city": "Rio Claro",
+      "srv_ebp_ppi": 18,
+      "su": 22
+    },
+    {
+      "edition": 2024,
+      "code": "025",
+      "course": "Ciências Biológicas - Bacharelado em Biologia Marinha ou Gerenciamento Costeiro - integral",
+      "city": "Litoral Paulista",
+      "srv_ebp_ppi": 30,
+      "su": 47
+    },
+    {
+      "edition": 2024,
+      "code": "026",
+      "course": "Ciências Biológicas - Licenciatura - noturno",
+      "city": "Bauru",
+      "srv_ebp_ppi": 23,
+      "su": 26
+    },
+    {
+      "edition": 2024,
+      "code": "027",
+      "course": "Ciências Biológicas - Licenciatura - noturno",
+      "city": "Botucatu",
+      "srv_ebp_ppi": 23,
+      "su": 23
+    },
+    {
+      "edition": 2024,
+      "code": "028",
+      "course": "Ciências Biológicas - Licenciatura - noturno",
+      "city": "Litoral Paulista",
+      "srv_ebp_ppi": 20,
+      "su": 20
+    },
+    {
+      "edition": 2024,
+      "code": "029",
+      "course": "Ciências Biomédicas - integral",
+      "city": "Botucatu",
+      "srv_ebp_ppi": 24,
+      "su": 58
+    },
+    {
+      "edition": 2024,
+      "code": "030",
+      "course": "Ciências da Computação - Bacharelado - integral",
+      "city": "Rio Claro",
+      "srv_ebp_ppi": 35,
+      "su": 61
+    },
+    {
+      "edition": 2024,
+      "code": "031",
+      "course": "Ciências da Computação - Bacharelado - noturno",
+      "city": "Rio Claro",
+      "srv_ebp_ppi": 47,
+      "su": 63
+    },
+    {
+      "edition": 2024,
+      "code": "032",
+      "course": "Ciências Econômicas - Bacharelado - integral",
+      "city": "Araraquara",
+      "srv_ebp_ppi": 22,
+      "su": 48
+    },
+    {
+      "edition": 2024,
+      "code": "033",
+      "course": "Ciências Econômicas - Bacharelado - noturno",
+      "city": "Araraquara",
+      "srv_ebp_ppi": 19,
+      "su": 53
+    },
+    {
+      "edition": 2024,
+      "code": "034",
+      "course": "Ciências Sociais - Bacharelado e Licenciatura - matutino",
+      "city": "Araraquara",
+      "srv_ebp_ppi": 21,
+      "su": 27
+    },
+    {
+      "edition": 2024,
+      "code": "035",
+      "course": "Ciências Sociais - Bacharelado e Licenciatura - matutino",
+      "city": "Marília",
+      "srv_ebp_ppi": 21,
+      "su": 31
+    },
+    {
+      "edition": 2024,
+      "code": "036",
+      "course": "Ciências Sociais - Bacharelado e Licenciatura - noturno",
+      "city": "Araraquara",
+      "srv_ebp_ppi": 20,
+      "su": 23
+    },
+    {
+      "edition": 2024,
+      "code": "037",
+      "course": "Ciências Sociais - Bacharelado e Licenciatura - noturno",
+      "city": "Marília",
+      "srv_ebp_ppi": 19,
+      "su": 28
+    },
+    {
+      "edition": 2024,
+      "code": "038",
+      "course": "Comunicação: Rádio, Televisão e Internet - integral",
+      "city": "Bauru",
+      "srv_ebp_ppi": 32,
+      "su": 53
+    },
+    {
+      "edition": 2024,
+      "code": "039",
+      "course": "Design - noturno",
+      "city": "Bauru",
+      "srv_ebp_ppi": 18,
+      "su": 18
+    },
+    {
+      "edition": 2024,
+      "code": "040",
+      "course": "Design - integral",
+      "city": "Bauru",
+      "srv_ebp_ppi": 18,
+      "su": 18
+    },
+    {
+      "edition": 2024,
+      "code": "041",
+      "course": "Direito - matutino",
+      "city": "Franca",
+      "srv_ebp_ppi": 19,
+      "su": 59
+    },
+    {
+      "edition": 2024,
+      "code": "042",
+      "course": "Direito - noturno",
+      "city": "Franca",
+      "srv_ebp_ppi": 29,
+      "su": 55
+    },
+    {
+      "edition": 2024,
+      "code": "043",
+      "course": "Ecologia - integral",
+      "city": "Rio Claro",
+      "srv_ebp_ppi": 26,
+      "su": 26
+    },
+    {
+      "edition": 2024,
+      "code": "044",
+      "course": "Educação Física - Bacharelado - integral",
+      "city": "Bauru",
+      "srv_ebp_ppi": 18,
+      "su": 18
+    },
+    {
+      "edition": 2024,
+      "code": "045",
+      "course": "Educação Física - Bacharelado - noturno",
+      "city": "Bauru",
+      "srv_ebp_ppi": 35,
+      "su": 41
+    },
+    {
+      "edition": 2024,
+      "code": "046",
+      "course": "Educação Física - Bacharelado e Licenciatura - integral",
+      "city": "Presidente Prudente",
+      "srv_ebp_ppi": 18,
+      "su": 20
+    },
+    {
+      "edition": 2024,
+      "code": "047",
+      "course": "Educação Física - Bacharelado e Licenciatura - integral",
+      "city": "Rio Claro",
+      "srv_ebp_ppi": 19,
+      "su": 20
+    },
+    {
+      "edition": 2024,
+      "code": "048",
+      "course": "Educação Física - Bacharelado e Licenciatura - vespertino/noturno",
+      "city": "Presidente Prudente",
+      "srv_ebp_ppi": 18,
+      "su": 18
+    },
+    {
+      "edition": 2024,
+      "code": "049",
+      "course": "Educação Física - Licenciatura - integral",
+      "city": "Bauru",
+      "srv_ebp_ppi": 18,
+      "su": 25
+    },
+    {
+      "edition": 2024,
+      "code": "050",
+      "course": "Educação Física - Licenciatura - noturno",
+      "city": "Bauru",
+      "srv_ebp_ppi": 18,
+      "su": 21
+    },
+    {
+      "edition": 2024,
+      "code": "051",
+      "course": "Enfermagem - integral",
+      "city": "Botucatu",
+      "srv_ebp_ppi": 19,
+      "su": 21
+    },
+    {
+      "edition": 2024,
+      "code": "052",
+      "course": "Engenharia Aeronáutica - integral",
+      "city": "São João da Boa Vista",
+      "srv_ebp_ppi": 26,
+      "su": 61
+    },
+    {
+      "edition": 2024,
+      "code": "053",
+      "course": "Engenharia Agronômica - integral",
+      "city": "Botucatu",
+      "srv_ebp_ppi": 18,
+      "su": 43
+    },
+    {
+      "edition": 2024,
+      "code": "054",
+      "course": "Engenharia Agronômica - integral",
+      "city": "Dracena",
+      "srv_ebp_ppi": 18,
+      "su": 18
+    },
+    {
+      "edition": 2024,
+      "code": "055",
+      "course": "Engenharia Agronômica - integral",
+      "city": "Jaboticabal",
+      "srv_ebp_ppi": 20,
+      "su": 41
+    },
+    {
+      "edition": 2024,
+      "code": "056",
+      "course": "Engenharia Agronômica - integral",
+      "city": "Registro",
+      "srv_ebp_ppi": 18,
+      "su": 18
+    },
+    {
+      "edition": 2024,
+      "code": "057",
+      "course": "Engenharia Agronômica - integral",
+      "city": "Ilha Solteira",
+      "srv_ebp_ppi": 18,
+      "su": 18
+    },
+    {
+      "edition": 2024,
+      "code": "058",
+      "course": "Engenharia Ambiental - integral",
+      "city": "Presidente Prudente",
+      "srv_ebp_ppi": 22,
+      "su": 23
+    },
+    {
+      "edition": 2024,
+      "code": "059",
+      "course": "Engenharia Ambiental - integral",
+      "city": "São José dos Campos",
+      "srv_ebp_ppi": 23,
+      "su": 25
+    },
+    {
+      "edition": 2024,
+      "code": "060",
+      "course": "Engenharia Ambiental - integral",
+      "city": "Sorocaba",
+      "srv_ebp_ppi": 20,
+      "su": 20
+    },
+    {
+      "edition": 2024,
+      "code": "061",
+      "course": "Engenharia Ambiental - integral",
+      "city": "Rio Claro",
+      "srv_ebp_ppi": 26,
+      "su": 27
+    },
+    {
+      "edition": 2024,
+      "code": "062",
+      "course": "Engenharia Cartográfica e de Agrimensura - integral",
+      "city": "Presidente Prudente",
+      "srv_ebp_ppi": 18,
+      "su": 18
+    },
+    {
+      "edition": 2024,
+      "code": "063",
+      "course": "Engenharia Civil - integral",
+      "city": "Bauru",
+      "srv_ebp_ppi": 19,
+      "su": 19
+    },
+    {
+      "edition": 2024,
+      "code": "064",
+      "course": "Engenharia Civil - integral",
+      "city": "Guaratinguetá",
+      "srv_ebp_ppi": 23,
+      "su": 28
+    },
+    {
+      "edition": 2024,
+      "code": "065",
+      "course": "Engenharia Civil - integral",
+      "city": "Ilha Solteira",
+      "srv_ebp_ppi": 18,
+      "su": 22
+    },
+    {
+      "edition": 2024,
+      "code": "066",
+      "course": "Engenharia de Alimentos - integral",
+      "city": "São José do Rio Preto",
+      "srv_ebp_ppi": 18,
+      "su": 22
+    },
+    {
+      "edition": 2024,
+      "code": "067",
+      "course": "Engenharia de Bioprocessos e Biotecnologia - integral",
+      "city": "Botucatu",
+      "srv_ebp_ppi": 18,
+      "su": 28
+    },
+    {
+      "edition": 2024,
+      "code": "068",
+      "course": "Engenharia de Bioprocessos e Biotecnologia - integral",
+      "city": "Araraquara",
+      "srv_ebp_ppi": 26,
+      "su": 26
+    },
+    {
+      "edition": 2024,
+      "code": "069",
+      "course": "Engenharia de Bioprocessos e Biotecnologia - integral",
+      "city": "Assis",
+      "srv_ebp_ppi": 26,
+      "su": 26
+    },
+    {
+      "edition": 2024,
+      "code": "070",
+      "course": "Engenharia de Biossistemas - integral",
+      "city": "Tupã",
+      "srv_ebp_ppi": 20,
+      "su": 20
+    },
+    {
+      "edition": 2024,
+      "code": "071",
+      "course": "Engenharia de Controle e Automação - integral",
+      "city": "Sorocaba",
+      "srv_ebp_ppi": 19,
+      "su": 22
+    },
+    {
+      "edition": 2024,
+      "code": "072",
+      "course": "Engenharia de Energia - integral",
+      "city": "Rosana",
+      "srv_ebp_ppi": 20,
+      "su": 24
+    },
+    {
+      "edition": 2024,
+      "code": "073",
+      "course": "Engenharia de Materiais - integral",
+      "city": "Guaratinguetá",
+      "srv_ebp_ppi": 25,
+      "su": 25
+    },
+    {
+      "edition": 2024,
+      "code": "074",
+      "course": "Engenharia de Pesca - integral",
+      "city": "Registro",
+      "srv_ebp_ppi": 18,
+      "su": 28
+    },
+    {
+      "edition": 2024,
+      "code": "075",
+      "course": "Engenharia de Produção - integral",
+      "city": "Guaratinguetá",
+      "srv_ebp_ppi": 20,
+      "su": 20
+    },
+    {
+      "edition": 2024,
+      "code": "076",
+      "course": "Engenharia de Produção - vespertino/noturno",
+      "city": "Bauru",
+      "srv_ebp_ppi": 20,
+      "su": 21
+    },
+    {
+      "edition": 2024,
+      "code": "077",
+      "course": "Engenharia de Produção - vespertino/noturno",
+      "city": "Itapeva",
+      "srv_ebp_ppi": 20,
+      "su": 24
+    },
+    {
+      "edition": 2024,
+      "code": "078",
+      "course": "Engenharia Elétrica - integral",
+      "city": "Bauru",
+      "srv_ebp_ppi": 23,
+      "su": 23
+    },
+    {
+      "edition": 2024,
+      "code": "079",
+      "course": "Engenharia Elétrica - integral",
+      "city": "Guaratinguetá",
+      "srv_ebp_ppi": 21,
+      "su": 27
+    },
+    {
+      "edition": 2024,
+      "code": "080",
+      "course": "Engenharia Elétrica - integral",
+      "city": "Ilha Solteira",
+      "srv_ebp_ppi": 19,
+      "su": 19
+    },
+    {
+      "edition": 2024,
+      "code": "081",
+      "course": "Engenharia Eletrônica e de Telecomunicações - integral",
+      "city": "São João da Boa Vista",
+      "srv_ebp_ppi": 19,
+      "su": 26
+    },
+    {
+      "edition": 2024,
+      "code": "082",
+      "course": "Engenharia Florestal - integral",
+      "city": "Botucatu",
+      "srv_ebp_ppi": 20,
+      "su": 22
+    },
+    {
+      "edition": 2024,
+      "code": "083",
+      "course": "Engenharia Industrial-Madeira - integral",
+      "city": "Itapeva",
+      "srv_ebp_ppi": 19,
+      "su": 19
+    },
+    {
+      "edition": 2024,
+      "code": "084",
+      "course": "Engenharia Mecânica - integral",
+      "city": "Bauru",
+      "srv_ebp_ppi": 20,
+      "su": 21
+    },
+    {
+      "edition": 2024,
+      "code": "085",
+      "course": "Engenharia Mecânica - integral",
+      "city": "Guaratinguetá",
+      "srv_ebp_ppi": 21,
+      "su": 22
+    },
+    {
+      "edition": 2024,
+      "code": "086",
+      "course": "Engenharia Mecânica - integral",
+      "city": "Ilha Solteira",
+      "srv_ebp_ppi": 19,
+      "su": 19
+    },
+    {
+      "edition": 2024,
+      "code": "087",
+      "course": "Engenharia Mecânica - noturno",
+      "city": "Guaratinguetá",
+      "srv_ebp_ppi": 19,
+      "su": 25
+    },
+    {
+      "edition": 2024,
+      "code": "088",
+      "course": "Engenharia Química - integral",
+      "city": "Araraquara",
+      "srv_ebp_ppi": 19,
+      "su": 22
+    },
+    {
+      "edition": 2024,
+      "code": "089",
+      "course": "Estatística - integral",
+      "city": "Presidente Prudente",
+      "srv_ebp_ppi": 21,
+      "su": 26
+    },
+    {
+      "edition": 2024,
+      "code": "090",
+      "course": "Farmácia - integral",
+      "city": "Araraquara",
+      "srv_ebp_ppi": 22,
+      "su": 49
+    },
+    {
+      "edition": 2024,
+      "code": "091",
+      "course": "Farmácia - noturno",
+      "city": "Araraquara",
+      "srv_ebp_ppi": 19,
+      "su": 19
+    },
+    {
+      "edition": 2024,
+      "code": "092",
+      "course": "Filosofia - Bacharelado e Licenciatura - noturno",
+      "city": "Marília",
+      "srv_ebp_ppi": 21,
+      "su": 22
+    },
+    {
+      "edition": 2024,
+      "code": "093",
+      "course": "Física - Bacharelado e Licenciatura - integral",
+      "city": "Rio Claro",
+      "srv_ebp_ppi": 27,
+      "su": 27
+    },
+    {
+      "edition": 2024,
+      "code": "094",
+      "course": "Física - Bacharelado e Licenciatura - noturno",
+      "city": "Guaratinguetá",
+      "srv_ebp_ppi": 21,
+      "su": 26
+    },
+    {
+      "edition": 2024,
+      "code": "095",
+      "course": "Física - Bacharelado em Física Biológica e Licenciatura em Física - integral",
+      "city": "São José do Rio Preto",
+      "srv_ebp_ppi": 22,
+      "su": 26
+    },
+    {
+      "edition": 2024,
+      "code": "096",
+      "course": "Física - Bacharelado em Física de Materiais - vespertino/noturno e Licenciatura em Física - noturno",
+      "city": "Bauru",
+      "srv_ebp_ppi": 18,
+      "su": 29
+    },
+    {
+      "edition": 2024,
+      "code": "097",
+      "course": "Física - Licenciatura - noturno",
+      "city": "Presidente Prudente",
+      "srv_ebp_ppi": 18,
+      "su": 18
+    },
+    {
+      "edition": 2024,
+      "code": "098",
+      "course": "Física - Licenciatura - noturno",
+      "city": "Ilha Solteira",
+      "srv_ebp_ppi": 24,
+      "su": 24
+    },
+    {
+      "edition": 2024,
+      "code": "099",
+      "course": "Física Médica - integral",
+      "city": "Botucatu",
+      "srv_ebp_ppi": 22,
+      "su": 22
+    },
+    {
+      "edition": 2024,
+      "code": "100",
+      "course": "Fisioterapia - integral",
+      "city": "Presidente Prudente",
+      "srv_ebp_ppi": 18,
+      "su": 19
+    },
+    {
+      "edition": 2024,
+      "code": "101",
+      "course": "Fisioterapia - integral",
+      "city": "Marília",
+      "srv_ebp_ppi": 20,
+      "su": 42
+    },
+    {
+      "edition": 2024,
+      "code": "102",
+      "course": "Fonoaudiologia - integral",
+      "city": "Marília",
+      "srv_ebp_ppi": 21,
+      "su": 22
+    },
+    {
+      "edition": 2024,
+      "code": "103",
+      "course": "Geografia - Bacharelado e Licenciatura - integral",
+      "city": "Rio Claro",
+      "srv_ebp_ppi": 19,
+      "su": 19
+    },
+    {
+      "edition": 2024,
+      "code": "104",
+      "course": "Geografia - Bacharelado e Licenciatura - matutino",
+      "city": "Presidente Prudente",
+      "srv_ebp_ppi": 21,
+      "su": 29
+    },
+    {
+      "edition": 2024,
+      "code": "105",
+      "course": "Geografia - Bacharelado e Licenciatura - matutino",
+      "city": "Ourinhos",
+      "srv_ebp_ppi": 18,
+      "su": 24
+    },
+    {
+      "edition": 2024,
+      "code": "106",
+      "course": "Geografia - Bacharelado e Licenciatura - noturno",
+      "city": "Presidente Prudente",
+      "srv_ebp_ppi": 21,
+      "su": 27
+    },
+    {
+      "edition": 2024,
+      "code": "107",
+      "course": "Geografia - Bacharelado e Licenciatura - noturno",
+      "city": "Ourinhos",
+      "srv_ebp_ppi": 18,
+      "su": 22
+    },
+    {
+      "edition": 2024,
+      "code": "108",
+      "course": "Geografia - Licenciatura - noturno",
+      "city": "Rio Claro",
+      "srv_ebp_ppi": 20,
+      "su": 28
+    },
+    {
+      "edition": 2024,
+      "code": "109",
+      "course": "Geologia - integral",
+      "city": "Rio Claro",
+      "srv_ebp_ppi": 22,
+      "su": 22
+    },
+    {
+      "edition": 2024,
+      "code": "110",
+      "course": "História - Bacharelado e Licenciatura - matutino",
+      "city": "Franca",
+      "srv_ebp_ppi": 21,
+      "su": 21
+    },
+    {
+      "edition": 2024,
+      "code": "111",
+      "course": "História - Bacharelado e Licenciatura - noturno",
+      "city": "Franca",
+      "srv_ebp_ppi": 20,
+      "su": 20
+    },
+    {
+      "edition": 2024,
+      "code": "112",
+      "course": "História - Licenciatura - matutino",
+      "city": "Assis",
+      "srv_ebp_ppi": 21,
+      "su": 21
+    },
+    {
+      "edition": 2024,
+      "code": "113",
+      "course": "História - Licenciatura - noturno",
+      "city": "Assis",
+      "srv_ebp_ppi": 19,
+      "su": 20
+    },
+    {
+      "edition": 2024,
+      "code": "114",
+      "course": "Jornalismo - matutino",
+      "city": "Bauru",
+      "srv_ebp_ppi": 23,
+      "su": 50
+    },
+    {
+      "edition": 2024,
+      "code": "115",
+      "course": "Jornalismo - noturno",
+      "city": "Bauru",
+      "srv_ebp_ppi": 18,
+      "su": 25
+    },
+    {
+      "edition": 2024,
+      "code": "116",
+      "course": "Letras - Bacharelado e Licenciatura - matutino",
+      "city": "Araraquara",
+      "srv_ebp_ppi": 21,
+      "su": 21
+    },
+    {
+      "edition": 2024,
+      "code": "117",
+      "course": "Letras - Bacharelado e Licenciatura - noturno",
+      "city": "Araraquara",
+      "srv_ebp_ppi": 19,
+      "su": 20
+    },
+    {
+      "edition": 2024,
+      "code": "118",
+      "course": "Letras - Licenciatura - integral",
+      "city": "São José do Rio Preto",
+      "srv_ebp_ppi": 26,
+      "su": 31
+    },
+    {
+      "edition": 2024,
+      "code": "119",
+      "course": "Letras - Licenciatura - matutino",
+      "city": "Assis",
+      "srv_ebp_ppi": 18,
+      "su": 23
+    },
+    {
+      "edition": 2024,
+      "code": "120",
+      "course": "Letras - Licenciatura - noturno",
+      "city": "Assis",
+      "srv_ebp_ppi": 18,
+      "su": 21
+    },
+    {
+      "edition": 2024,
+      "code": "121",
+      "course": "Letras - Licenciatura - noturno",
+      "city": "São José do Rio Preto",
+      "srv_ebp_ppi": 20,
+      "su": 25
+    },
+    {
+      "edition": 2024,
+      "code": "122",
+      "course": "Letras-Tradução - Bacharelado - integral",
+      "city": "São José do Rio Preto",
+      "srv_ebp_ppi": 19,
+      "su": 19
+    },
+    {
+      "edition": 2024,
+      "code": "123",
+      "course": "Licenciatura em Música - integral",
+      "city": "São Paulo",
+      "srv_ebp_ppi": 22,
+      "su": 23
+    },
+    {
+      "edition": 2024,
+      "code": "124",
+      "course": "Matemática - Bacharelado e Licenciatura - integral",
+      "city": "São José do Rio Preto",
+      "srv_ebp_ppi": 18,
+      "su": 27
+    },
+    {
+      "edition": 2024,
+      "code": "125",
+      "course": "Matemática - Bacharelado e Licenciatura - integral",
+      "city": "Rio Claro",
+      "srv_ebp_ppi": 23,
+      "su": 37
+    },
+    {
+      "edition": 2024,
+      "code": "126",
+      "course": "Matemática - Licenciatura - matutino",
+      "city": "Presidente Prudente",
+      "srv_ebp_ppi": 27,
+      "su": 27
+    },
+    {
+      "edition": 2024,
+      "code": "127",
+      "course": "Matemática - Licenciatura - noturno",
+      "city": "Bauru",
+      "srv_ebp_ppi": 22,
+      "su": 22
+    },
+    {
+      "edition": 2024,
+      "code": "128",
+      "course": "Matemática - Licenciatura - noturno",
+      "city": "Presidente Prudente",
+      "srv_ebp_ppi": 23,
+      "su": 26
+    },
+    {
+      "edition": 2024,
+      "code": "129",
+      "course": "Matemática - Licenciatura - noturno",
+      "city": "Guaratinguetá",
+      "srv_ebp_ppi": 28,
+      "su": 36
+    },
+    {
+      "edition": 2024,
+      "code": "130",
+      "course": "Matemática - Licenciatura - noturno",
+      "city": "Ilha Solteira",
+      "srv_ebp_ppi": 26,
+      "su": 26
+    },
+    {
+      "edition": 2024,
+      "code": "131",
+      "course": "Matemática - Licenciatura - noturno",
+      "city": "São José do Rio Preto",
+      "srv_ebp_ppi": 22,
+      "su": 26
+    },
+    {
+      "edition": 2024,
+      "code": "132",
+      "course": "Medicina - integral",
+      "city": "Botucatu",
+      "srv_ebp_ppi": 66,
+      "su": 80
+    },
+    {
+      "edition": 2024,
+      "code": "133",
+      "course": "Medicina Veterinária - integral",
+      "city": "Jaboticabal",
+      "srv_ebp_ppi": 32,
+      "su": 51
+    },
+    {
+      "edition": 2024,
+      "code": "134",
+      "course": "Medicina Veterinária - integral",
+      "city": "Araçatuba",
+      "srv_ebp_ppi": 26,
+      "su": 47
+    },
+    {
+      "edition": 2024,
+      "code": "135",
+      "course": "Medicina Veterinária - integral",
+      "city": "Botucatu",
+      "srv_ebp_ppi": 26,
+      "su": 54
+    },
+    {
+      "edition": 2024,
+      "code": "136",
+      "course": "Meteorologia - Bacharelado - integral",
+      "city": "Bauru",
+      "srv_ebp_ppi": 18,
+      "su": 18
+    },
+    {
+      "edition": 2024,
+      "code": "137",
+      "course": "Música - Bacharelado - Habilitação em Canto - integral",
+      "city": "São Paulo",
+      "srv_ebp_ppi": 22,
+      "su": 22
+    },
+    {
+      "edition": 2024,
+      "code": "138",
+      "course": "Música - Bacharelado - Habilitação em Composição - integral",
+      "city": "São Paulo",
+      "srv_ebp_ppi": 29,
+      "su": 37
+    },
+    {
+      "edition": 2024,
+      "code": "139",
+      "course": "Música - Bacharelado - Habilitação em Instrumento: Cordas (Contrabaixo Acústico, Viola, Violino, Violoncelo) - integral",
+      "city": "São Paulo",
+      "srv_ebp_ppi": 23,
+      "su": 25
+    },
+    {
+      "edition": 2024,
+      "code": "140",
+      "course": "Música - Bacharelado - Habilitação em Instrumento: Percussão - integral",
+      "city": "São Paulo",
+      "srv_ebp_ppi": 18,
+      "su": 23
+    },
+    {
+      "edition": 2024,
+      "code": "141",
+      "course": "Música - Bacharelado - Habilitação em Instrumento: Sopros (Clarineta, Flauta, Instrumento Antigo - Flauta Doce, Oboé) - integral",
+      "city": "São Paulo",
+      "srv_ebp_ppi": 23,
+      "su": 33
+    },
+    {
+      "edition": 2024,
+      "code": "142",
+      "course": "Música - Bacharelado - Habilitação em Instrumento: Teclados - integral",
+      "city": "São Paulo",
+      "srv_ebp_ppi": 21,
+      "su": 21
+    },
+    {
+      "edition": 2024,
+      "code": "143",
+      "course": "Música - Bacharelado - Habilitação em Instrumento: Violão - integral",
+      "city": "São Paulo",
+      "srv_ebp_ppi": 18,
+      "su": 25
+    },
+    {
+      "edition": 2024,
+      "code": "144",
+      "course": "Música - Bacharelado - Habilitação em Regência - integral",
+      "city": "São Paulo",
+      "srv_ebp_ppi": 36,
+      "su": 38
+    },
+    {
+      "edition": 2024,
+      "code": "145",
+      "course": "Nutrição - vespertino/noturno",
+      "city": "Botucatu",
+      "srv_ebp_ppi": 25,
+      "su": 44
+    },
+    {
+      "edition": 2024,
+      "code": "146",
+      "course": "Odontologia - integral",
+      "city": "Araçatuba",
+      "srv_ebp_ppi": 18,
+      "su": 18
+    },
+    {
+      "edition": 2024,
+      "code": "147",
+      "course": "Odontologia - integral",
+      "city": "Araraquara",
+      "srv_ebp_ppi": 18,
+      "su": 43
+    },
+    {
+      "edition": 2024,
+      "code": "148",
+      "course": "Odontologia - integral",
+      "city": "São José dos Campos",
+      "srv_ebp_ppi": 18,
+      "su": 47
+    },
+    {
+      "edition": 2024,
+      "code": "149",
+      "course": "Odontologia - vespertino/noturno",
+      "city": "Araçatuba",
+      "srv_ebp_ppi": 18,
+      "su": 21
+    },
+    {
+      "edition": 2024,
+      "code": "150",
+      "course": "Odontologia - vespertino/noturno",
+      "city": "São José dos Campos",
+      "srv_ebp_ppi": 18,
+      "su": 20
+    },
+    {
+      "edition": 2024,
+      "code": "151",
+      "course": "Pedagogia - Licenciatura - matutino",
+      "city": "Marília",
+      "srv_ebp_ppi": 19,
+      "su": 24
+    },
+    {
+      "edition": 2024,
+      "code": "152",
+      "course": "Pedagogia - Licenciatura - noturno",
+      "city": "Bauru",
+      "srv_ebp_ppi": 19,
+      "su": 19
+    },
+    {
+      "edition": 2024,
+      "code": "153",
+      "course": "Pedagogia - Licenciatura - noturno",
+      "city": "Araraquara",
+      "srv_ebp_ppi": 19,
+      "su": 19
+    },
+    {
+      "edition": 2024,
+      "code": "154",
+      "course": "Pedagogia - Licenciatura - noturno",
+      "city": "Presidente Prudente",
+      "srv_ebp_ppi": 19,
+      "su": 19
+    },
+    {
+      "edition": 2024,
+      "code": "155",
+      "course": "Pedagogia - Licenciatura - noturno",
+      "city": "Marília",
+      "srv_ebp_ppi": 18,
+      "su": 18
+    },
+    {
+      "edition": 2024,
+      "code": "156",
+      "course": "Pedagogia - Licenciatura - noturno",
+      "city": "Rio Claro",
+      "srv_ebp_ppi": 20,
+      "su": 25
+    },
+    {
+      "edition": 2024,
+      "code": "157",
+      "course": "Pedagogia - Licenciatura - noturno",
+      "city": "São José do Rio Preto",
+      "srv_ebp_ppi": 18,
+      "su": 19
+    },
+    {
+      "edition": 2024,
+      "code": "158",
+      "course": "Pedagogia - Licenciatura - vespertino",
+      "city": "Araraquara",
+      "srv_ebp_ppi": 19,
+      "su": 19
+    },
+    {
+      "edition": 2024,
+      "code": "159",
+      "course": "Pedagogia - Licenciatura - vespertino",
+      "city": "Presidente Prudente",
+      "srv_ebp_ppi": 18,
+      "su": 20
+    },
+    {
+      "edition": 2024,
+      "code": "160",
+      "course": "Psicologia - integral",
+      "city": "Bauru",
+      "srv_ebp_ppi": 43,
+      "su": 62
+    },
+    {
+      "edition": 2024,
+      "code": "161",
+      "course": "Psicologia - integral",
+      "city": "Assis",
+      "srv_ebp_ppi": 19,
+      "su": 56
+    },
+    {
+      "edition": 2024,
+      "code": "162",
+      "course": "Psicologia - noturno",
+      "city": "Bauru",
+      "srv_ebp_ppi": 47,
+      "su": 59
+    },
+    {
+      "edition": 2024,
+      "code": "163",
+      "course": "Psicologia - vespertino/noturno",
+      "city": "Assis",
+      "srv_ebp_ppi": 31,
+      "su": 49
+    },
+    {
+      "edition": 2024,
+      "code": "164",
+      "course": "Química - Bacharelado em Química Ambiental e Licenciatura em Química - integral",
+      "city": "São José do Rio Preto",
+      "srv_ebp_ppi": 20,
+      "su": 23
+    },
+    {
+      "edition": 2024,
+      "code": "165",
+      "course": "Química - Bacharelado em Química e em Química Tecnológica - integral",
+      "city": "Araraquara",
+      "srv_ebp_ppi": 24,
+      "su": 24
+    },
+    {
+      "edition": 2024,
+      "code": "166",
+      "course": "Química - Bacharelado em Química Tecnológica - vespertino-noturno",
+      "city": "Bauru",
+      "srv_ebp_ppi": 19,
+      "su": 22
+    },
+    {
+      "edition": 2024,
+      "code": "167",
+      "course": "Química - Licenciatura - noturno",
+      "city": "Bauru",
+      "srv_ebp_ppi": 21,
+      "su": 28
+    },
+    {
+      "edition": 2024,
+      "code": "168",
+      "course": "Química - Licenciatura - noturno",
+      "city": "Presidente Prudente",
+      "srv_ebp_ppi": 18,
+      "su": 21
+    },
+    {
+      "edition": 2024,
+      "code": "169",
+      "course": "Química - Licenciatura - noturno",
+      "city": "Araraquara",
+      "srv_ebp_ppi": 21,
+      "su": 21
+    },
+    {
+      "edition": 2024,
+      "code": "170",
+      "course": "Relações Internacionais - noturno",
+      "city": "Franca",
+      "srv_ebp_ppi": 35,
+      "su": 53
+    },
+    {
+      "edition": 2024,
+      "code": "171",
+      "course": "Relações Internacionais - noturno",
+      "city": "Marília",
+      "srv_ebp_ppi": 19,
+      "su": 52
+    },
+    {
+      "edition": 2024,
+      "code": "172",
+      "course": "Relações Internacionais - vespertino",
+      "city": "Franca",
+      "srv_ebp_ppi": 27,
+      "su": 54
+    },
+    {
+      "edition": 2024,
+      "code": "173",
+      "course": "Relações Públicas - noturno",
+      "city": "Bauru",
+      "srv_ebp_ppi": 21,
+      "su": 22
+    },
+    {
+      "edition": 2024,
+      "code": "174",
+      "course": "Serviço Social - matutino",
+      "city": "Franca",
+      "srv_ebp_ppi": 19,
+      "su": 25
+    },
+    {
+      "edition": 2024,
+      "code": "175",
+      "course": "Serviço Social - noturno",
+      "city": "Franca",
+      "srv_ebp_ppi": 25,
+      "su": 28
+    },
+    {
+      "edition": 2024,
+      "code": "176",
+      "course": "Sistemas de Informação - Bacharelado - noturno",
+      "city": "Bauru",
+      "srv_ebp_ppi": 45,
+      "su": 57
+    },
+    {
+      "edition": 2024,
+      "code": "177",
+      "course": "Terapia Ocupacional - integral",
+      "city": "Marília",
+      "srv_ebp_ppi": 18,
+      "su": 18
+    },
+    {
+      "edition": 2024,
+      "code": "178",
+      "course": "Turismo - integral",
+      "city": "Rosana",
+      "srv_ebp_ppi": 19,
+      "su": 25
+    },
+    {
+      "edition": 2024,
+      "code": "179",
+      "course": "Zootecnia - integral",
+      "city": "Dracena",
+      "srv_ebp_ppi": 20,
+      "su": 21
+    },
+    {
+      "edition": 2024,
+      "code": "180",
+      "course": "Zootecnia - integral",
+      "city": "Jaboticabal",
+      "srv_ebp_ppi": 19,
+      "su": 19
+    },
+    {
+      "edition": 2024,
+      "code": "181",
+      "course": "Zootecnia - integral",
+      "city": "Ilha Solteira",
+      "srv_ebp_ppi": 18,
+      "su": 18
+    },
+    {
+      "edition": 2024,
+      "code": "182",
+      "course": "Zootecnia - integral",
+      "city": "Botucatu",
+      "srv_ebp_ppi": 18,
+      "su": 20
+    },
+    {
+      "edition": 2024,
+      "code": "183",
+      "course": "Treineiro",
+      "city": "",
+      "srv_ebp_ppi": 18,
+      "su": 18
+    },
+    {
+      "edition": 2025,
+      "code": "001",
+      "course": "Administração - Bacharelado - integral",
+      "city": "Tupã",
+      "srv_ebp_ppi": 19,
+      "su": 19
+    },
+    {
+      "edition": 2025,
+      "code": "002",
+      "course": "Administração - Bacharelado - noturno",
+      "city": "Jaboticabal",
+      "srv_ebp_ppi": 19,
+      "su": 20
+    },
+    {
+      "edition": 2025,
+      "code": "003",
+      "course": "Administração - Bacharelado - noturno",
+      "city": "Tupã",
+      "srv_ebp_ppi": 18,
+      "su": 18
+    },
+    {
+      "edition": 2025,
+      "code": "004",
+      "course": "Administração Pública - Bacharelado - integral",
+      "city": "Araraquara",
+      "srv_ebp_ppi": 22,
+      "su": 22
+    },
+    {
+      "edition": 2025,
+      "code": "005",
+      "course": "Administração Pública - Bacharelado - noturno",
+      "city": "Araraquara",
+      "srv_ebp_ppi": 19,
+      "su": 21
+    },
+    {
+      "edition": 2025,
+      "code": "006",
+      "course": "Arquitetura e Urbanismo - integral",
+      "city": "Bauru",
+      "srv_ebp_ppi": 20,
+      "su": 50
+    },
+    {
+      "edition": 2025,
+      "code": "007",
+      "course": "Arquitetura e Urbanismo - integral",
+      "city": "Presidente Prudente",
+      "srv_ebp_ppi": 19,
+      "su": 19
+    },
+    {
+      "edition": 2025,
+      "code": "008",
+      "course": "Arquivologia - matutino",
+      "city": "Marília",
+      "srv_ebp_ppi": 19,
+      "su": 39
+    },
+    {
+      "edition": 2025,
+      "code": "009",
+      "course": "Arte-Teatro - Licenciatura - noturno",
+      "city": "São Paulo",
+      "srv_ebp_ppi": 19,
+      "su": 24
+    },
+    {
+      "edition": 2025,
+      "code": "010",
+      "course": "Artes Cênicas - Bacharelado - Habilitação em Interpretação Teatral - integral",
+      "city": "São Paulo",
+      "srv_ebp_ppi": 21,
+      "su": 21
+    },
+    {
+      "edition": 2025,
+      "code": "011",
+      "course": "Artes Visuais - Bacharelado e Licenciatura - integral",
+      "city": "São Paulo",
+      "srv_ebp_ppi": 26,
+      "su": 48
+    },
+    {
+      "edition": 2025,
+      "code": "012",
+      "course": "Artes Visuais - Bacharelado e Licenciatura - vespertino/noturno",
+      "city": "Bauru",
+      "srv_ebp_ppi": 19,
+      "su": 19
+    },
+    {
+      "edition": 2025,
+      "code": "013",
+      "course": "Biblioteconomia - matutino",
+      "city": "Marília",
+      "srv_ebp_ppi": 29,
+      "su": 29
+    },
+    {
+      "edition": 2025,
+      "code": "014",
+      "course": "Ciência da Computação - Bacharelado - integral",
+      "city": "Bauru",
+      "srv_ebp_ppi": 32,
+      "su": 59
+    },
+    {
+      "edition": 2025,
+      "code": "015",
+      "course": "Ciência da Computação - Bacharelado - integral",
+      "city": "São José do Rio Preto",
+      "srv_ebp_ppi": 34,
+      "su": 60
+    },
+    {
+      "edition": 2025,
+      "code": "016",
+      "course": "Ciência da Computação - Bacharelado - vespertino/noturno",
+      "city": "Presidente Prudente",
+      "srv_ebp_ppi": 35,
+      "su": 54
+    },
+    {
+      "edition": 2025,
+      "code": "017",
+      "course": "Ciências Biológicas - Bacharelado - integral",
+      "city": "Botucatu",
+      "srv_ebp_ppi": 19,
+      "su": 19
+    },
+    {
+      "edition": 2025,
+      "code": "018",
+      "course": "Ciências Biológicas - Bacharelado - Vespertino/Noturno e Licenciatura - noturno",
+      "city": "Ilha Solteira",
+      "srv_ebp_ppi": 18,
+      "su": 21
+    },
+    {
+      "edition": 2025,
+      "code": "019",
+      "course": "Ciências Biológicas - Bacharelado - Integral",
+      "city": "Bauru",
+      "srv_ebp_ppi": 19,
+      "su": 21
+    },
+    {
+      "edition": 2025,
+      "code": "020",
+      "course": "Ciências Biológicas - Bacharelado e Licenciatura - integral",
+      "city": "Assis",
+      "srv_ebp_ppi": 18,
+      "su": 18
+    },
+    {
+      "edition": 2025,
+      "code": "021",
+      "course": "Ciências Biológicas - Bacharelado e Licenciatura - integral",
+      "city": "Rio Claro",
+      "srv_ebp_ppi": 19,
+      "su": 19
+    },
+    {
+      "edition": 2025,
+      "code": "022",
+      "course": "Ciências Biológicas - Bacharelado e Licenciatura - integral",
+      "city": "São José do Rio Preto",
+      "srv_ebp_ppi": 19,
+      "su": 19
+    },
+    {
+      "edition": 2025,
+      "code": "023",
+      "course": "Ciências Biológicas - Bacharelado e Licenciatura - noturno",
+      "city": "Jaboticabal",
+      "srv_ebp_ppi": 18,
+      "su": 18
+    },
+    {
+      "edition": 2025,
+      "code": "024",
+      "course": "Ciências Biológicas - Bacharelado e Licenciatura - noturno",
+      "city": "Rio Claro",
+      "srv_ebp_ppi": 21,
+      "su": 24
+    },
+    {
+      "edition": 2025,
+      "code": "025",
+      "course": "Ciências Biológicas - Bacharelado em Biologia Marinha ou Gerenciamento Costeiro - integral",
+      "city": "Litoral Paulista",
+      "srv_ebp_ppi": 20,
+      "su": 20
+    },
+    {
+      "edition": 2025,
+      "code": "026",
+      "course": "Ciências Biológicas - Licenciatura - noturno",
+      "city": "Bauru",
+      "srv_ebp_ppi": 19,
+      "su": 19
+    },
+    {
+      "edition": 2025,
+      "code": "027",
+      "course": "Ciências Biológicas - Licenciatura - noturno",
+      "city": "Botucatu",
+      "srv_ebp_ppi": 19,
+      "su": 21
+    },
+    {
+      "edition": 2025,
+      "code": "028",
+      "course": "Ciências Biológicas - Licenciatura - noturno",
+      "city": "Litoral Paulista",
+      "srv_ebp_ppi": 21,
+      "su": 24
+    },
+    {
+      "edition": 2025,
+      "code": "029",
+      "course": "Ciências Biomédicas - integral",
+      "city": "Botucatu",
+      "srv_ebp_ppi": 18,
+      "su": 55
+    },
+    {
+      "edition": 2025,
+      "code": "030",
+      "course": "Ciências da Computação - Bacharelado - integral",
+      "city": "Rio Claro",
+      "srv_ebp_ppi": 35,
+      "su": 64
+    },
+    {
+      "edition": 2025,
+      "code": "031",
+      "course": "Ciências da Computação - Bacharelado - noturno",
+      "city": "Rio Claro",
+      "srv_ebp_ppi": 35,
+      "su": 54
+    },
+    {
+      "edition": 2025,
+      "code": "032",
+      "course": "Ciências Econômicas - Bacharelado - integral",
+      "city": "Araraquara",
+      "srv_ebp_ppi": 20,
+      "su": 52
+    },
+    {
+      "edition": 2025,
+      "code": "033",
+      "course": "Ciências Econômicas - Bacharelado - noturno",
+      "city": "Araraquara",
+      "srv_ebp_ppi": 18,
+      "su": 22
+    },
+    {
+      "edition": 2025,
+      "code": "034",
+      "course": "Ciências Sociais - Bacharelado e Licenciatura - matutino",
+      "city": "Araraquara",
+      "srv_ebp_ppi": 20,
+      "su": 24
+    },
+    {
+      "edition": 2025,
+      "code": "035",
+      "course": "Ciências Sociais - Bacharelado e Licenciatura - matutino",
+      "city": "Marília",
+      "srv_ebp_ppi": 21,
+      "su": 24
+    },
+    {
+      "edition": 2025,
+      "code": "036",
+      "course": "Ciências Sociais - Bacharelado e Licenciatura - noturno",
+      "city": "Araraquara",
+      "srv_ebp_ppi": 22,
+      "su": 22
+    },
+    {
+      "edition": 2025,
+      "code": "037",
+      "course": "Ciências Sociais - Bacharelado e Licenciatura - noturno",
+      "city": "Marília",
+      "srv_ebp_ppi": 20,
+      "su": 25
+    },
+    {
+      "edition": 2025,
+      "code": "038",
+      "course": "Comunicação: Rádio, Televisão e Internet - integral",
+      "city": "Bauru",
+      "srv_ebp_ppi": 20,
+      "su": 27
+    },
+    {
+      "edition": 2025,
+      "code": "039",
+      "course": "Design - integral",
+      "city": "Bauru",
+      "srv_ebp_ppi": 18,
+      "su": 18
+    },
+    {
+      "edition": 2025,
+      "code": "040",
+      "course": "Design - noturno",
+      "city": "Bauru",
+      "srv_ebp_ppi": 18,
+      "su": 21
+    },
+    {
+      "edition": 2025,
+      "code": "041",
+      "course": "Direito - matutino",
+      "city": "Franca",
+      "srv_ebp_ppi": 19,
+      "su": 60
+    },
+    {
+      "edition": 2025,
+      "code": "042",
+      "course": "Direito - noturno",
+      "city": "Franca",
+      "srv_ebp_ppi": 19,
+      "su": 57
+    },
+    {
+      "edition": 2025,
+      "code": "043",
+      "course": "Ecologia - integral",
+      "city": "Rio Claro",
+      "srv_ebp_ppi": 18,
+      "su": 23
+    },
+    {
+      "edition": 2025,
+      "code": "044",
+      "course": "Educação Física - Bacharelado - integral",
+      "city": "Bauru",
+      "srv_ebp_ppi": 18,
+      "su": 23
+    },
+    {
+      "edition": 2025,
+      "code": "045",
+      "course": "Educação Física - Bacharelado - noturno",
+      "city": "Bauru",
+      "srv_ebp_ppi": 20,
+      "su": 20
+    },
+    {
+      "edition": 2025,
+      "code": "046",
+      "course": "Educação Física - Bacharelado e Licenciatura - integral",
+      "city": "Presidente Prudente",
+      "srv_ebp_ppi": 18,
+      "su": 21
+    },
+    {
+      "edition": 2025,
+      "code": "047",
+      "course": "Educação Física - Bacharelado e Licenciatura - integral",
+      "city": "Rio Claro",
+      "srv_ebp_ppi": 18,
+      "su": 18
+    },
+    {
+      "edition": 2025,
+      "code": "048",
+      "course": "Educação Física - Bacharelado e Licenciatura - vespertino/noturno",
+      "city": "Presidente Prudente",
+      "srv_ebp_ppi": 18,
+      "su": 18
+    },
+    {
+      "edition": 2025,
+      "code": "049",
+      "course": "Educação Física - Licenciatura - integral",
+      "city": "Bauru",
+      "srv_ebp_ppi": 18,
+      "su": 23
+    },
+    {
+      "edition": 2025,
+      "code": "050",
+      "course": "Educação Física - Licenciatura - noturno",
+      "city": "Bauru",
+      "srv_ebp_ppi": 18,
+      "su": 18
+    },
+    {
+      "edition": 2025,
+      "code": "051",
+      "course": "Enfermagem - integral",
+      "city": "Botucatu",
+      "srv_ebp_ppi": 18,
+      "su": 18
+    },
+    {
+      "edition": 2025,
+      "code": "052",
+      "course": "Engenharia Aeronáutica - integral",
+      "city": "São João da Boa Vista",
+      "srv_ebp_ppi": 18,
+      "su": 65
+    },
+    {
+      "edition": 2025,
+      "code": "053",
+      "course": "Engenharia Agronômica - integral",
+      "city": "Botucatu",
+      "srv_ebp_ppi": 18,
+      "su": 41
+    },
+    {
+      "edition": 2025,
+      "code": "054",
+      "course": "Engenharia Agronômica - integral",
+      "city": "Dracena",
+      "srv_ebp_ppi": 18,
+      "su": 19
+    },
+    {
+      "edition": 2025,
+      "code": "055",
+      "course": "Engenharia Agronômica - integral",
+      "city": "Jaboticabal",
+      "srv_ebp_ppi": 18,
+      "su": 39
+    },
+    {
+      "edition": 2025,
+      "code": "056",
+      "course": "Engenharia Agronômica - integral",
+      "city": "Registro",
+      "srv_ebp_ppi": 18,
+      "su": 18
+    },
+    {
+      "edition": 2025,
+      "code": "057",
+      "course": "Engenharia Agronômica - integral",
+      "city": "Ilha Solteira",
+      "srv_ebp_ppi": 18,
+      "su": 18
+    },
+    {
+      "edition": 2025,
+      "code": "058",
+      "course": "Engenharia Ambiental - integral",
+      "city": "Presidente Prudente",
+      "srv_ebp_ppi": 20,
+      "su": 20
+    },
+    {
+      "edition": 2025,
+      "code": "059",
+      "course": "Engenharia Ambiental - integral",
+      "city": "São José dos Campos",
+      "srv_ebp_ppi": 19,
+      "su": 20
+    },
+    {
+      "edition": 2025,
+      "code": "060",
+      "course": "Engenharia Ambiental - integral",
+      "city": "Sorocaba",
+      "srv_ebp_ppi": 18,
+      "su": 25
+    },
+    {
+      "edition": 2025,
+      "code": "061",
+      "course": "Engenharia Ambiental - integral",
+      "city": "Rio Claro",
+      "srv_ebp_ppi": 19,
+      "su": 25
+    },
+    {
+      "edition": 2025,
+      "code": "062",
+      "course": "Engenharia Cartográfica e de Agrimensura - integral",
+      "city": "Presidente Prudente",
+      "srv_ebp_ppi": 21,
+      "su": 28
+    },
+    {
+      "edition": 2025,
+      "code": "063",
+      "course": "Engenharia Civil - integral",
+      "city": "Bauru",
+      "srv_ebp_ppi": 18,
+      "su": 22
+    },
+    {
+      "edition": 2025,
+      "code": "064",
+      "course": "Engenharia Civil - integral",
+      "city": "Guaratinguetá",
+      "srv_ebp_ppi": 22,
+      "su": 27
+    },
+    {
+      "edition": 2025,
+      "code": "065",
+      "course": "Engenharia Civil - integral",
+      "city": "Ilha Solteira",
+      "srv_ebp_ppi": 18,
+      "su": 18
+    },
+    {
+      "edition": 2025,
+      "code": "066",
+      "course": "Engenharia de Alimentos - integral",
+      "city": "São José do Rio Preto",
+      "srv_ebp_ppi": 19,
+      "su": 20
+    },
+    {
+      "edition": 2025,
+      "code": "067",
+      "course": "Engenharia de Bioprocessos e Biotecnologia - integral",
+      "city": "Botucatu",
+      "srv_ebp_ppi": 20,
+      "su": 23
+    },
+    {
+      "edition": 2025,
+      "code": "068",
+      "course": "Engenharia de Bioprocessos e Biotecnologia - integral",
+      "city": "Araraquara",
+      "srv_ebp_ppi": 20,
+      "su": 20
+    },
+    {
+      "edition": 2025,
+      "code": "069",
+      "course": "Engenharia de Bioprocessos e Biotecnologia - integral",
+      "city": "Assis",
+      "srv_ebp_ppi": 19,
+      "su": 26
+    },
+    {
+      "edition": 2025,
+      "code": "070",
+      "course": "Engenharia de Biossistemas - integral",
+      "city": "Tupã",
+      "srv_ebp_ppi": 20,
+      "su": 20
+    },
+    {
+      "edition": 2025,
+      "code": "071",
+      "course": "Engenharia de Controle e Automação - integral",
+      "city": "Sorocaba",
+      "srv_ebp_ppi": 20,
+      "su": 20
+    },
+    {
+      "edition": 2025,
+      "code": "072",
+      "course": "Engenharia de Energia - integral",
+      "city": "Rosana",
+      "srv_ebp_ppi": 18,
+      "su": 18
+    },
+    {
+      "edition": 2025,
+      "code": "073",
+      "course": "Engenharia de Materiais - integral",
+      "city": "Guaratinguetá",
+      "srv_ebp_ppi": 25,
+      "su": 26
+    },
+    {
+      "edition": 2025,
+      "code": "074",
+      "course": "Engenharia de Pesca - integral",
+      "city": "Registro",
+      "srv_ebp_ppi": 18,
+      "su": 24
+    },
+    {
+      "edition": 2025,
+      "code": "075",
+      "course": "Engenharia de Produção - integral",
+      "city": "Guaratinguetá",
+      "srv_ebp_ppi": 21,
+      "su": 21
+    },
+    {
+      "edition": 2025,
+      "code": "076",
+      "course": "Engenharia de Produção - vespertino/noturno",
+      "city": "Bauru",
+      "srv_ebp_ppi": 18,
+      "su": 19
+    },
+    {
+      "edition": 2025,
+      "code": "077",
+      "course": "Engenharia de Produção - vespertino/noturno",
+      "city": "Itapeva",
+      "srv_ebp_ppi": 19,
+      "su": 22
+    },
+    {
+      "edition": 2025,
+      "code": "078",
+      "course": "Engenharia Elétrica - integral",
+      "city": "Bauru",
+      "srv_ebp_ppi": 19,
+      "su": 20
+    },
+    {
+      "edition": 2025,
+      "code": "079",
+      "course": "Engenharia Elétrica - integral",
+      "city": "Guaratinguetá",
+      "srv_ebp_ppi": 18,
+      "su": 18
+    },
+    {
+      "edition": 2025,
+      "code": "080",
+      "course": "Engenharia Elétrica - integral",
+      "city": "Ilha Solteira",
+      "srv_ebp_ppi": 18,
+      "su": 19
+    },
+    {
+      "edition": 2025,
+      "code": "081",
+      "course": "Engenharia Eletrônica e de Telecomunicações - integral",
+      "city": "São João da Boa Vista",
+      "srv_ebp_ppi": 20,
+      "su": 20
+    },
+    {
+      "edition": 2025,
+      "code": "082",
+      "course": "Engenharia Florestal - integral",
+      "city": "Botucatu",
+      "srv_ebp_ppi": 19,
+      "su": 19
+    },
+    {
+      "edition": 2025,
+      "code": "083",
+      "course": "Engenharia Industrial-Madeira - integral",
+      "city": "Itapeva",
+      "srv_ebp_ppi": 18,
+      "su": 26
+    },
+    {
+      "edition": 2025,
+      "code": "084",
+      "course": "Engenharia Mecânica - integral",
+      "city": "Bauru",
+      "srv_ebp_ppi": 18,
+      "su": 18
+    },
+    {
+      "edition": 2025,
+      "code": "085",
+      "course": "Engenharia Mecânica - integral",
+      "city": "Guaratinguetá",
+      "srv_ebp_ppi": 22,
+      "su": 23
+    },
+    {
+      "edition": 2025,
+      "code": "086",
+      "course": "Engenharia Mecânica - integral",
+      "city": "Ilha Solteira",
+      "srv_ebp_ppi": 18,
+      "su": 21
+    },
+    {
+      "edition": 2025,
+      "code": "087",
+      "course": "Engenharia Mecânica - noturno",
+      "city": "Guaratinguetá",
+      "srv_ebp_ppi": 19,
+      "su": 19
+    },
+    {
+      "edition": 2025,
+      "code": "088",
+      "course": "Engenharia Química - integral",
+      "city": "Araraquara",
+      "srv_ebp_ppi": 19,
+      "su": 19
+    },
+    {
+      "edition": 2025,
+      "code": "089",
+      "course": "Estatística - integral",
+      "city": "Presidente Prudente",
+      "srv_ebp_ppi": 18,
+      "su": 30
+    },
+    {
+      "edition": 2025,
+      "code": "090",
+      "course": "Farmácia - integral",
+      "city": "Araraquara",
+      "srv_ebp_ppi": 20,
+      "su": 49
+    },
+    {
+      "edition": 2025,
+      "code": "091",
+      "course": "Farmácia - noturno",
+      "city": "Araraquara",
+      "srv_ebp_ppi": 30,
+      "su": 46
+    },
+    {
+      "edition": 2025,
+      "code": "092",
+      "course": "Filosofia - Bacharelado e Licenciatura - noturno",
+      "city": "Marília",
+      "srv_ebp_ppi": 22,
+      "su": 36
+    },
+    {
+      "edition": 2025,
+      "code": "093",
+      "course": "Física - Bacharelado e Licenciatura - integral",
+      "city": "Rio Claro",
+      "srv_ebp_ppi": 18,
+      "su": 18
+    },
+    {
+      "edition": 2025,
+      "code": "094",
+      "course": "Física - Bacharelado e Licenciatura - noturno",
+      "city": "Guaratinguetá",
+      "srv_ebp_ppi": 21,
+      "su": 28
+    },
+    {
+      "edition": 2025,
+      "code": "095",
+      "course": "Física - Bacharelado em Física Biológica e Licenciatura em Física - integral",
+      "city": "São José do Rio Preto",
+      "srv_ebp_ppi": 24,
+      "su": 24
+    },
+    {
+      "edition": 2025,
+      "code": "096",
+      "course": "Física - Bacharelado em Física de Materiais, Bacharelado em Física Computacional - vespertino/noturno e Licenciatura em Física - noturno",
+      "city": "Bauru",
+      "srv_ebp_ppi": 20,
+      "su": 27
+    },
+    {
+      "edition": 2025,
+      "code": "097",
+      "course": "Física - Licenciatura - noturno",
+      "city": "Presidente Prudente",
+      "srv_ebp_ppi": 23,
+      "su": 23
+    },
+    {
+      "edition": 2025,
+      "code": "098",
+      "course": "Física - Licenciatura - noturno",
+      "city": "Ilha Solteira",
+      "srv_ebp_ppi": 31,
+      "su": 31
+    },
+    {
+      "edition": 2025,
+      "code": "099",
+      "course": "Física Médica - integral",
+      "city": "Botucatu",
+      "srv_ebp_ppi": 21,
+      "su": 30
+    },
+    {
+      "edition": 2025,
+      "code": "100",
+      "course": "Fisioterapia - integral",
+      "city": "Presidente Prudente",
+      "srv_ebp_ppi": 18,
+      "su": 18
+    },
+    {
+      "edition": 2025,
+      "code": "101",
+      "course": "Fisioterapia - integral",
+      "city": "Marília",
+      "srv_ebp_ppi": 22,
+      "su": 44
+    },
+    {
+      "edition": 2025,
+      "code": "102",
+      "course": "Fonoaudiologia - integral",
+      "city": "Marília",
+      "srv_ebp_ppi": 18,
+      "su": 18
+    },
+    {
+      "edition": 2025,
+      "code": "103",
+      "course": "Geografia - Bacharelado e Licenciatura - integral",
+      "city": "Rio Claro",
+      "srv_ebp_ppi": 26,
+      "su": 26
+    },
+    {
+      "edition": 2025,
+      "code": "104",
+      "course": "Geografia - Bacharelado e Licenciatura - matutino",
+      "city": "Presidente Prudente",
+      "srv_ebp_ppi": 19,
+      "su": 23
+    },
+    {
+      "edition": 2025,
+      "code": "105",
+      "course": "Geografia - Bacharelado e Licenciatura - matutino",
+      "city": "Ourinhos",
+      "srv_ebp_ppi": 18,
+      "su": 32
+    },
+    {
+      "edition": 2025,
+      "code": "106",
+      "course": "Geografia - Bacharelado e Licenciatura - noturno",
+      "city": "Presidente Prudente",
+      "srv_ebp_ppi": 19,
+      "su": 22
+    },
+    {
+      "edition": 2025,
+      "code": "107",
+      "course": "Geografia - Bacharelado e Licenciatura - noturno",
+      "city": "Ourinhos",
+      "srv_ebp_ppi": 19,
+      "su": 29
+    },
+    {
+      "edition": 2025,
+      "code": "108",
+      "course": "Geografia - Licenciatura - noturno",
+      "city": "Rio Claro",
+      "srv_ebp_ppi": 18,
+      "su": 27
+    },
+    {
+      "edition": 2025,
+      "code": "109",
+      "course": "Geologia - integral",
+      "city": "Rio Claro",
+      "srv_ebp_ppi": 19,
+      "su": 22
+    },
+    {
+      "edition": 2025,
+      "code": "110",
+      "course": "História - Bacharelado e Licenciatura - matutino",
+      "city": "Franca",
+      "srv_ebp_ppi": 26,
+      "su": 29
+    },
+    {
+      "edition": 2025,
+      "code": "111",
+      "course": "História - Bacharelado e Licenciatura - noturno",
+      "city": "Franca",
+      "srv_ebp_ppi": 20,
+      "su": 23
+    },
+    {
+      "edition": 2025,
+      "code": "112",
+      "course": "História - Licenciatura - matutino",
+      "city": "Assis",
+      "srv_ebp_ppi": 19,
+      "su": 19
+    },
+    {
+      "edition": 2025,
+      "code": "113",
+      "course": "História - Licenciatura - noturno",
+      "city": "Assis",
+      "srv_ebp_ppi": 19,
+      "su": 22
+    },
+    {
+      "edition": 2025,
+      "code": "114",
+      "course": "Jornalismo - matutino",
+      "city": "Bauru",
+      "srv_ebp_ppi": 18,
+      "su": 18
+    },
+    {
+      "edition": 2025,
+      "code": "115",
+      "course": "Jornalismo - noturno",
+      "city": "Bauru",
+      "srv_ebp_ppi": 25,
+      "su": 51
+    },
+    {
+      "edition": 2025,
+      "code": "116",
+      "course": "Letras - Bacharelado e Licenciatura - matutino",
+      "city": "Araraquara",
+      "srv_ebp_ppi": 18,
+      "su": 23
+    },
+    {
+      "edition": 2025,
+      "code": "117",
+      "course": "Letras - Bacharelado e Licenciatura - noturno",
+      "city": "Araraquara",
+      "srv_ebp_ppi": 18,
+      "su": 21
+    },
+    {
+      "edition": 2025,
+      "code": "118",
+      "course": "Letras - Licenciatura - integral",
+      "city": "São José do Rio Preto",
+      "srv_ebp_ppi": 19,
+      "su": 19
+    },
+    {
+      "edition": 2025,
+      "code": "119",
+      "course": "Letras - Licenciatura - matutino",
+      "city": "Assis",
+      "srv_ebp_ppi": 22,
+      "su": 30
+    },
+    {
+      "edition": 2025,
+      "code": "120",
+      "course": "Letras - Licenciatura - noturno",
+      "city": "Assis",
+      "srv_ebp_ppi": 24,
+      "su": 26
+    },
+    {
+      "edition": 2025,
+      "code": "121",
+      "course": "Letras - Licenciatura - noturno",
+      "city": "São José do Rio Preto",
+      "srv_ebp_ppi": 19,
+      "su": 21
+    },
+    {
+      "edition": 2025,
+      "code": "122",
+      "course": "Letras-Tradução - Bacharelado - integral",
+      "city": "São José do Rio Preto",
+      "srv_ebp_ppi": 18,
+      "su": 32
+    },
+    {
+      "edition": 2025,
+      "code": "123",
+      "course": "Licenciatura em Música - integral",
+      "city": "São Paulo",
+      "srv_ebp_ppi": 22,
+      "su": 22
+    },
+    {
+      "edition": 2025,
+      "code": "124",
+      "course": "Matemática - Bacharelado e Licenciatura - integral",
+      "city": "São José do Rio Preto",
+      "srv_ebp_ppi": 21,
+      "su": 21
+    },
+    {
+      "edition": 2025,
+      "code": "125",
+      "course": "Matemática - Bacharelado e Licenciatura - integral",
+      "city": "Rio Claro",
+      "srv_ebp_ppi": 20,
+      "su": 20
+    },
+    {
+      "edition": 2025,
+      "code": "126",
+      "course": "Matemática - Licenciatura - matutino",
+      "city": "Presidente Prudente",
+      "srv_ebp_ppi": 18,
+      "su": 26
+    },
+    {
+      "edition": 2025,
+      "code": "127",
+      "course": "Matemática - Licenciatura - noturno",
+      "city": "Bauru",
+      "srv_ebp_ppi": 24,
+      "su": 24
+    },
+    {
+      "edition": 2025,
+      "code": "128",
+      "course": "Matemática - Licenciatura - noturno",
+      "city": "Presidente Prudente",
+      "srv_ebp_ppi": 22,
+      "su": 26
+    },
+    {
+      "edition": 2025,
+      "code": "129",
+      "course": "Matemática - Licenciatura - noturno",
+      "city": "Guaratinguetá",
+      "srv_ebp_ppi": 18,
+      "su": 22
+    },
+    {
+      "edition": 2025,
+      "code": "130",
+      "course": "Matemática - Licenciatura - noturno",
+      "city": "Ilha Solteira",
+      "srv_ebp_ppi": 24,
+      "su": 42
+    },
+    {
+      "edition": 2025,
+      "code": "131",
+      "course": "Matemática - Licenciatura - noturno",
+      "city": "São José do Rio Preto",
+      "srv_ebp_ppi": 20,
+      "su": 42
+    },
+    {
+      "edition": 2025,
+      "code": "132",
+      "course": "Medicina - integral",
+      "city": "Botucatu",
+      "srv_ebp_ppi": 66,
+      "su": 81
+    },
+    {
+      "edition": 2025,
+      "code": "133",
+      "course": "Medicina Veterinária - integral",
+      "city": "Jaboticabal",
+      "srv_ebp_ppi": 26,
+      "su": 51
+    },
+    {
+      "edition": 2025,
+      "code": "134",
+      "course": "Medicina Veterinária - integral",
+      "city": "Araçatuba",
+      "srv_ebp_ppi": 18,
+      "su": 44
+    },
+    {
+      "edition": 2025,
+      "code": "135",
+      "course": "Medicina Veterinária - integral",
+      "city": "Botucatu",
+      "srv_ebp_ppi": 18,
+      "su": 52
+    },
+    {
+      "edition": 2025,
+      "code": "136",
+      "course": "Meteorologia - Bacharelado - integral",
+      "city": "Bauru",
+      "srv_ebp_ppi": 21,
+      "su": 21
+    },
+    {
+      "edition": 2025,
+      "code": "137",
+      "course": "Música - Bacharelado - Habilitação em Canto - integral",
+      "city": "São Paulo",
+      "srv_ebp_ppi": 21,
+      "su": 26
+    },
+    {
+      "edition": 2025,
+      "code": "138",
+      "course": "Música - Bacharelado - Habilitação em Composição - integral",
+      "city": "São Paulo",
+      "srv_ebp_ppi": 32,
+      "su": 32
+    },
+    {
+      "edition": 2025,
+      "code": "139",
+      "course": "Música - Bacharelado - Habilitação em Instrumento: Cordas (Contrabaixo Acústico, Viola, Violino, Violoncelo) - integral",
+      "city": "São Paulo",
+      "srv_ebp_ppi": 19,
+      "su": 24
+    },
+    {
+      "edition": 2025,
+      "code": "140",
+      "course": "Música - Bacharelado - Habilitação em Instrumento: Percussão - integral",
+      "city": "São Paulo",
+      "srv_ebp_ppi": 18,
+      "su": 28
+    },
+    {
+      "edition": 2025,
+      "code": "141",
+      "course": "Música - Bacharelado - Habilitação em Instrumento: Sopros (Clarineta, Flauta, Instrumento Antigo - Flauta Doce, Oboé) - integral",
+      "city": "São Paulo",
+      "srv_ebp_ppi": 25,
+      "su": 25
+    },
+    {
+      "edition": 2025,
+      "code": "142",
+      "course": "Música - Bacharelado - Habilitação em Instrumento: Teclados - integral",
+      "city": "São Paulo",
+      "srv_ebp_ppi": 30,
+      "su": 30
+    },
+    {
+      "edition": 2025,
+      "code": "143",
+      "course": "Música - Bacharelado - Habilitação em Instrumento: Violão - integral",
+      "city": "São Paulo",
+      "srv_ebp_ppi": 19,
+      "su": 20
+    },
+    {
+      "edition": 2025,
+      "code": "144",
+      "course": "Música - Bacharelado - Habilitação em Regência - integral",
+      "city": "São Paulo",
+      "srv_ebp_ppi": 29,
+      "su": 29
+    },
+    {
+      "edition": 2025,
+      "code": "145",
+      "course": "Nutrição - vespertino/noturno",
+      "city": "Botucatu",
+      "srv_ebp_ppi": 28,
+      "su": 45
+    },
+    {
+      "edition": 2025,
+      "code": "146",
+      "course": "Odontologia - integral",
+      "city": "Araçatuba",
+      "srv_ebp_ppi": 18,
+      "su": 18
+    },
+    {
+      "edition": 2025,
+      "code": "147",
+      "course": "Odontologia - integral",
+      "city": "Araraquara",
+      "srv_ebp_ppi": 19,
+      "su": 39
+    },
+    {
+      "edition": 2025,
+      "code": "148",
+      "course": "Odontologia - integral",
+      "city": "São José dos Campos",
+      "srv_ebp_ppi": 20,
+      "su": 22
+    },
+    {
+      "edition": 2025,
+      "code": "149",
+      "course": "Odontologia - vespertino/noturno",
+      "city": "Araçatuba",
+      "srv_ebp_ppi": 18,
+      "su": 19
+    },
+    {
+      "edition": 2025,
+      "code": "150",
+      "course": "Odontologia - vespertino/noturno",
+      "city": "São José dos Campos",
+      "srv_ebp_ppi": 23,
+      "su": 52
+    },
+    {
+      "edition": 2025,
+      "code": "151",
+      "course": "Pedagogia - Licenciatura - matutino",
+      "city": "Marília",
+      "srv_ebp_ppi": 18,
+      "su": 18
+    },
+    {
+      "edition": 2025,
+      "code": "152",
+      "course": "Pedagogia - Licenciatura - noturno",
+      "city": "Bauru",
+      "srv_ebp_ppi": 18,
+      "su": 19
+    },
+    {
+      "edition": 2025,
+      "code": "153",
+      "course": "Pedagogia - Licenciatura - noturno",
+      "city": "Araraquara",
+      "srv_ebp_ppi": 18,
+      "su": 19
+    },
+    {
+      "edition": 2025,
+      "code": "154",
+      "course": "Pedagogia - Licenciatura - noturno",
+      "city": "Presidente Prudente",
+      "srv_ebp_ppi": 18,
+      "su": 18
+    },
+    {
+      "edition": 2025,
+      "code": "155",
+      "course": "Pedagogia - Licenciatura - noturno",
+      "city": "Marília",
+      "srv_ebp_ppi": 19,
+      "su": 24
+    },
+    {
+      "edition": 2025,
+      "code": "156",
+      "course": "Pedagogia - Licenciatura - noturno",
+      "city": "Rio Claro",
+      "srv_ebp_ppi": 18,
+      "su": 22
+    },
+    {
+      "edition": 2025,
+      "code": "157",
+      "course": "Pedagogia - Licenciatura - noturno",
+      "city": "São José do Rio Preto",
+      "srv_ebp_ppi": 18,
+      "su": 19
+    },
+    {
+      "edition": 2025,
+      "code": "158",
+      "course": "Pedagogia - Licenciatura - vespertino",
+      "city": "Araraquara",
+      "srv_ebp_ppi": 19,
+      "su": 20
+    },
+    {
+      "edition": 2025,
+      "code": "159",
+      "course": "Pedagogia - Licenciatura - vespertino",
+      "city": "Presidente Prudente",
+      "srv_ebp_ppi": 18,
+      "su": 20
+    },
+    {
+      "edition": 2025,
+      "code": "160",
+      "course": "Psicologia - integral",
+      "city": "Bauru",
+      "srv_ebp_ppi": 33,
+      "su": 62
+    },
+    {
+      "edition": 2025,
+      "code": "161",
+      "course": "Psicologia - integral",
+      "city": "Assis",
+      "srv_ebp_ppi": 21,
+      "su": 54
+    },
+    {
+      "edition": 2025,
+      "code": "162",
+      "course": "Psicologia - noturno",
+      "city": "Bauru",
+      "srv_ebp_ppi": 42,
+      "su": 58
+    },
+    {
+      "edition": 2025,
+      "code": "163",
+      "course": "Psicologia - vespertino/noturno",
+      "city": "Assis",
+      "srv_ebp_ppi": 19,
+      "su": 52
+    },
+    {
+      "edition": 2025,
+      "code": "164",
+      "course": "Química - Bacharelado em Química Ambiental e Licenciatura em Química - integral",
+      "city": "São José do Rio Preto",
+      "srv_ebp_ppi": 22,
+      "su": 22
+    },
+    {
+      "edition": 2025,
+      "code": "165",
+      "course": "Química - Bacharelado em Química e em Química Tecnológica - integral",
+      "city": "Araraquara",
+      "srv_ebp_ppi": 18,
+      "su": 20
+    },
+    {
+      "edition": 2025,
+      "code": "166",
+      "course": "Química - Bacharelado em Química Tecnológica - vespertino-noturno",
+      "city": "Bauru",
+      "srv_ebp_ppi": 20,
+      "su": 20
+    },
+    {
+      "edition": 2025,
+      "code": "167",
+      "course": "Química - Licenciatura - noturno",
+      "city": "Bauru",
+      "srv_ebp_ppi": 24,
+      "su": 27
+    },
+    {
+      "edition": 2025,
+      "code": "168",
+      "course": "Química - Licenciatura - noturno",
+      "city": "Presidente Prudente",
+      "srv_ebp_ppi": 21,
+      "su": 21
+    },
+    {
+      "edition": 2025,
+      "code": "169",
+      "course": "Química - Licenciatura - noturno",
+      "city": "Araraquara",
+      "srv_ebp_ppi": 24,
+      "su": 24
+    },
+    {
+      "edition": 2025,
+      "code": "170",
+      "course": "Relações Internacionais - noturno",
+      "city": "Franca",
+      "srv_ebp_ppi": 30,
+      "su": 52
+    },
+    {
+      "edition": 2025,
+      "code": "171",
+      "course": "Relações Internacionais - noturno",
+      "city": "Marília",
+      "srv_ebp_ppi": 19,
+      "su": 24
+    },
+    {
+      "edition": 2025,
+      "code": "172",
+      "course": "Relações Internacionais - vespertino",
+      "city": "Franca",
+      "srv_ebp_ppi": 24,
+      "su": 50
+    },
+    {
+      "edition": 2025,
+      "code": "173",
+      "course": "Relações Públicas - noturno",
+      "city": "Bauru",
+      "srv_ebp_ppi": 18,
+      "su": 18
+    },
+    {
+      "edition": 2025,
+      "code": "174",
+      "course": "Serviço Social - matutino",
+      "city": "Franca",
+      "srv_ebp_ppi": 20,
+      "su": 29
+    },
+    {
+      "edition": 2025,
+      "code": "175",
+      "course": "Serviço Social - noturno",
+      "city": "Franca",
+      "srv_ebp_ppi": 18,
+      "su": 18
+    },
+    {
+      "edition": 2025,
+      "code": "176",
+      "course": "Sistemas de Informação - Bacharelado - noturno",
+      "city": "Bauru",
+      "srv_ebp_ppi": 44,
+      "su": 56
+    },
+    {
+      "edition": 2025,
+      "code": "177",
+      "course": "Terapia Ocupacional - integral",
+      "city": "Marília",
+      "srv_ebp_ppi": 18,
+      "su": 18
+    },
+    {
+      "edition": 2025,
+      "code": "178",
+      "course": "Turismo - integral",
+      "city": "Rosana",
+      "srv_ebp_ppi": 18,
+      "su": 19
+    },
+    {
+      "edition": 2025,
+      "code": "179",
+      "course": "Zootecnia - integral",
+      "city": "Dracena",
+      "srv_ebp_ppi": 18,
+      "su": 23
+    },
+    {
+      "edition": 2025,
+      "code": "180",
+      "course": "Zootecnia - integral",
+      "city": "Jaboticabal",
+      "srv_ebp_ppi": 18,
+      "su": 19
+    },
+    {
+      "edition": 2025,
+      "code": "181",
+      "course": "Zootecnia - integral",
+      "city": "Ilha Solteira",
+      "srv_ebp_ppi": 20,
+      "su": 20
+    },
+    {
+      "edition": 2025,
+      "code": "182",
+      "course": "Zootecnia - integral",
+      "city": "Botucatu",
+      "srv_ebp_ppi": 18,
+      "su": 19
+    },
+    {
+      "edition": 2025,
+      "code": "183",
+      "course": "Treineiro",
+      "city": "",
+      "srv_ebp_ppi": 18,
+      "su": 18
+    },
+    {
+      "edition": 2026,
+      "code": "001",
+      "course": "Administração - Bacharelado - integral",
+      "city": "Tupã",
+      "srv_ebp_ppi": 21,
+      "su": 21
+    },
+    {
+      "edition": 2026,
+      "code": "002",
+      "course": "Administração - Bacharelado - noturno",
+      "city": "Jaboticabal",
+      "srv_ebp_ppi": 18,
+      "su": 18
+    },
+    {
+      "edition": 2026,
+      "code": "003",
+      "course": "Administração - Bacharelado - noturno",
+      "city": "Tupã",
+      "srv_ebp_ppi": 19,
+      "su": 19
+    },
+    {
+      "edition": 2026,
+      "code": "004",
+      "course": "Administração Pública - Bacharelado - integral",
+      "city": "Araraquara",
+      "srv_ebp_ppi": 19,
+      "su": 20
+    },
+    {
+      "edition": 2026,
+      "code": "005",
+      "course": "Administração Pública - Bacharelado - noturno",
+      "city": "Araraquara",
+      "srv_ebp_ppi": 18,
+      "su": 18
+    },
+    {
+      "edition": 2026,
+      "code": "006",
+      "course": "Arquitetura e Urbanismo - integral",
+      "city": "Bauru",
+      "srv_ebp_ppi": 18,
+      "su": 44
+    },
+    {
+      "edition": 2026,
+      "code": "007",
+      "course": "Arquitetura e Urbanismo - integral",
+      "city": "Presidente Prudente",
+      "srv_ebp_ppi": 19,
+      "su": 19
+    },
+    {
+      "edition": 2026,
+      "code": "008",
+      "course": "Arquivologia - matutino",
+      "city": "Marília",
+      "srv_ebp_ppi": 19,
+      "su": 28
+    },
+    {
+      "edition": 2026,
+      "code": "009",
+      "course": "Artes Cênicas - Bacharelado - Habilitação em Interpretação Teatral - integral",
+      "city": "São Paulo",
+      "srv_ebp_ppi": 18,
+      "su": 18
+    },
+    {
+      "edition": 2026,
+      "code": "010",
+      "course": "Artes Visuais - Bacharelado e Licenciatura - integral",
+      "city": "São Paulo",
+      "srv_ebp_ppi": 33,
+      "su": 50
+    },
+    {
+      "edition": 2026,
+      "code": "011",
+      "course": "Artes Visuais - Bacharelado e Licenciatura - vespertino/noturno",
+      "city": "Bauru",
+      "srv_ebp_ppi": 18,
+      "su": 18
+    },
+    {
+      "edition": 2026,
+      "code": "012",
+      "course": "Arte-Teatro - Licenciatura - noturno",
+      "city": "São Paulo",
+      "srv_ebp_ppi": 20,
+      "su": 23
+    },
+    {
+      "edition": 2026,
+      "code": "013",
+      "course": "Biblioteconomia - matutino",
+      "city": "Marília",
+      "srv_ebp_ppi": 20,
+      "su": 27
+    },
+    {
+      "edition": 2026,
+      "code": "014",
+      "course": "Ciência da Computação - Bacharelado - integral",
+      "city": "Bauru",
+      "srv_ebp_ppi": 35,
+      "su": 53
+    },
+    {
+      "edition": 2026,
+      "code": "015",
+      "course": "Ciência da Computação - Bacharelado - integral",
+      "city": "São José do Rio Preto",
+      "srv_ebp_ppi": 31,
+      "su": 53
+    },
+    {
+      "edition": 2026,
+      "code": "016",
+      "course": "Ciência da Computação - Bacharelado - vespertino/noturno",
+      "city": "Presidente Prudente",
+      "srv_ebp_ppi": 29,
+      "su": 49
+    },
+    {
+      "edition": 2026,
+      "code": "017",
+      "course": "Ciências Biológicas - Bacharelado - Vespertino/Noturno e Licenciatura - noturno",
+      "city": "Ilha Solteira",
+      "srv_ebp_ppi": 18,
+      "su": 20
+    },
+    {
+      "edition": 2026,
+      "code": "018",
+      "course": "Ciências Biológicas - Bacharelado - Integral",
+      "city": "Bauru",
+      "srv_ebp_ppi": 18,
+      "su": 19
+    },
+    {
+      "edition": 2026,
+      "code": "019",
+      "course": "Ciências Biológicas - Bacharelado e Licenciatura - integral",
+      "city": "Assis",
+      "srv_ebp_ppi": 19,
+      "su": 23
+    },
+    {
+      "edition": 2026,
+      "code": "020",
+      "course": "Ciências Biológicas - Bacharelado - integral",
+      "city": "Botucatu",
+      "srv_ebp_ppi": 22,
+      "su": 45
+    },
+    {
+      "edition": 2026,
+      "code": "021",
+      "course": "Ciências Biológicas - Bacharelado e Licenciatura - integral",
+      "city": "Rio Claro",
+      "srv_ebp_ppi": 22,
+      "su": 23
+    },
+    {
+      "edition": 2026,
+      "code": "022",
+      "course": "Ciências Biológicas - Bacharelado e Licenciatura - integral",
+      "city": "São José do Rio Preto",
+      "srv_ebp_ppi": 26,
+      "su": 36
+    },
+    {
+      "edition": 2026,
+      "code": "023",
+      "course": "Ciências Biológicas - Bacharelado e Licenciatura - noturno",
+      "city": "Jaboticabal",
+      "srv_ebp_ppi": 19,
+      "su": 19
+    },
+    {
+      "edition": 2026,
+      "code": "024",
+      "course": "Ciências Biológicas - Bacharelado e Licenciatura - noturno",
+      "city": "Rio Claro",
+      "srv_ebp_ppi": 18,
+      "su": 19
+    },
+    {
+      "edition": 2026,
+      "code": "025",
+      "course": "Ciências Biológicas - Bacharelado em Biologia Marinha ou Gerenciamento Costeiro - integral",
+      "city": "Litoral Paulista",
+      "srv_ebp_ppi": 18,
+      "su": 18
+    },
+    {
+      "edition": 2026,
+      "code": "026",
+      "course": "Ciências Biológicas - Licenciatura - noturno",
+      "city": "Bauru",
+      "srv_ebp_ppi": 19,
+      "su": 19
+    },
+    {
+      "edition": 2026,
+      "code": "027",
+      "course": "Ciências Biológicas - Licenciatura - noturno",
+      "city": "Botucatu",
+      "srv_ebp_ppi": 18,
+      "su": 18
+    },
+    {
+      "edition": 2026,
+      "code": "028",
+      "course": "Ciências Biológicas - Licenciatura - noturno",
+      "city": "Litoral Paulista",
+      "srv_ebp_ppi": 18,
+      "su": 18
+    },
+    {
+      "edition": 2026,
+      "code": "029",
+      "course": "Ciências Biomédicas - integral",
+      "city": "Botucatu",
+      "srv_ebp_ppi": 18,
+      "su": 49
+    },
+    {
+      "edition": 2026,
+      "code": "030",
+      "course": "Ciências da Computação - Bacharelado - integral",
+      "city": "Rio Claro",
+      "srv_ebp_ppi": 30,
+      "su": 54
+    },
+    {
+      "edition": 2026,
+      "code": "031",
+      "course": "Ciências da Computação - Bacharelado - noturno",
+      "city": "Rio Claro",
+      "srv_ebp_ppi": 42,
+      "su": 53
+    },
+    {
+      "edition": 2026,
+      "code": "032",
+      "course": "Ciências Econômicas - Bacharelado - integral",
+      "city": "Araraquara",
+      "srv_ebp_ppi": 18,
+      "su": 49
+    },
+    {
+      "edition": 2026,
+      "code": "033",
+      "course": "Ciências Econômicas - Bacharelado - noturno",
+      "city": "Araraquara",
+      "srv_ebp_ppi": 22,
+      "su": 49
+    },
+    {
+      "edition": 2026,
+      "code": "034",
+      "course": "Ciências Sociais - Bacharelado e Licenciatura - matutino",
+      "city": "Araraquara",
+      "srv_ebp_ppi": 22,
+      "su": 22
+    },
+    {
+      "edition": 2026,
+      "code": "035",
+      "course": "Ciências Sociais - Bacharelado e Licenciatura - matutino",
+      "city": "Marília",
+      "srv_ebp_ppi": 18,
+      "su": 22
+    },
+    {
+      "edition": 2026,
+      "code": "036",
+      "course": "Ciências Sociais - Bacharelado e Licenciatura - noturno",
+      "city": "Araraquara",
+      "srv_ebp_ppi": 20,
+      "su": 27
+    },
+    {
+      "edition": 2026,
+      "code": "037",
+      "course": "Ciências Sociais - Bacharelado e Licenciatura - noturno",
+      "city": "Marília",
+      "srv_ebp_ppi": 20,
+      "su": 20
+    },
+    {
+      "edition": 2026,
+      "code": "038",
+      "course": "Comunicação: Rádio, Televisão e Internet - integral",
+      "city": "Bauru",
+      "srv_ebp_ppi": 19,
+      "su": 19
+    },
+    {
+      "edition": 2026,
+      "code": "039",
+      "course": "Design - integral",
+      "city": "Bauru",
+      "srv_ebp_ppi": 18,
+      "su": 18
+    },
+    {
+      "edition": 2026,
+      "code": "040",
+      "course": "Design - noturno",
+      "city": "Bauru",
+      "srv_ebp_ppi": 20,
+      "su": 24
+    },
+    {
+      "edition": 2026,
+      "code": "041",
+      "course": "Direito - matutino",
+      "city": "Franca",
+      "srv_ebp_ppi": 19,
+      "su": 56
+    },
+    {
+      "edition": 2026,
+      "code": "042",
+      "course": "Direito - noturno",
+      "city": "Franca",
+      "srv_ebp_ppi": 24,
+      "su": 51
+    },
+    {
+      "edition": 2026,
+      "code": "043",
+      "course": "Ecologia - integral",
+      "city": "Rio Claro",
+      "srv_ebp_ppi": 24,
+      "su": 24
+    },
+    {
+      "edition": 2026,
+      "code": "044",
+      "course": "Educação Física - Bacharelado - integral",
+      "city": "Bauru",
+      "srv_ebp_ppi": 21,
+      "su": 22
+    },
+    {
+      "edition": 2026,
+      "code": "045",
+      "course": "Educação Física - Bacharelado - noturno",
+      "city": "Bauru",
+      "srv_ebp_ppi": 18,
+      "su": 19
+    },
+    {
+      "edition": 2026,
+      "code": "046",
+      "course": "Educação Física - Bacharelado e Licenciatura - integral",
+      "city": "Presidente Prudente",
+      "srv_ebp_ppi": 19,
+      "su": 20
+    },
+    {
+      "edition": 2026,
+      "code": "047",
+      "course": "Educação Física - Bacharelado e Licenciatura - integral",
+      "city": "Rio Claro",
+      "srv_ebp_ppi": 18,
+      "su": 18
+    },
+    {
+      "edition": 2026,
+      "code": "048",
+      "course": "Educação Física - Bacharelado e Licenciatura - vespertino/noturno",
+      "city": "Presidente Prudente",
+      "srv_ebp_ppi": 18,
+      "su": 18
+    },
+    {
+      "edition": 2026,
+      "code": "049",
+      "course": "Educação Física - Licenciatura - integral",
+      "city": "Bauru",
+      "srv_ebp_ppi": 18,
+      "su": 18
+    },
+    {
+      "edition": 2026,
+      "code": "050",
+      "course": "Educação Física - Licenciatura - noturno",
+      "city": "Bauru",
+      "srv_ebp_ppi": 19,
+      "su": 19
+    },
+    {
+      "edition": 2026,
+      "code": "051",
+      "course": "Enfermagem - integral",
+      "city": "Botucatu",
+      "srv_ebp_ppi": 18,
+      "su": 18
+    },
+    {
+      "edition": 2026,
+      "code": "052",
+      "course": "Engenharia Aeronáutica - integral",
+      "city": "São João da Boa Vista",
+      "srv_ebp_ppi": 21,
+      "su": 61
+    },
+    {
+      "edition": 2026,
+      "code": "053",
+      "course": "Engenharia Agronômica - integral",
+      "city": "Botucatu",
+      "srv_ebp_ppi": 18,
+      "su": 35
+    },
+    {
+      "edition": 2026,
+      "code": "054",
+      "course": "Engenharia Agronômica - integral",
+      "city": "Dracena",
+      "srv_ebp_ppi": 18,
+      "su": 18
+    },
+    {
+      "edition": 2026,
+      "code": "055",
+      "course": "Engenharia Agronômica - integral",
+      "city": "Jaboticabal",
+      "srv_ebp_ppi": 18,
+      "su": 35
+    },
+    {
+      "edition": 2026,
+      "code": "056",
+      "course": "Engenharia Agronômica - integral",
+      "city": "Registro",
+      "srv_ebp_ppi": 18,
+      "su": 18
+    },
+    {
+      "edition": 2026,
+      "code": "057",
+      "course": "Engenharia Agronômica - integral",
+      "city": "Ilha Solteira",
+      "srv_ebp_ppi": 18,
+      "su": 18
+    },
+    {
+      "edition": 2026,
+      "code": "058",
+      "course": "Engenharia Ambiental - integral",
+      "city": "Presidente Prudente",
+      "srv_ebp_ppi": 19,
+      "su": 19
+    },
+    {
+      "edition": 2026,
+      "code": "059",
+      "course": "Engenharia Ambiental - integral",
+      "city": "São José dos Campos",
+      "srv_ebp_ppi": 21,
+      "su": 26
+    },
+    {
+      "edition": 2026,
+      "code": "060",
+      "course": "Engenharia Ambiental - integral",
+      "city": "Sorocaba",
+      "srv_ebp_ppi": 20,
+      "su": 21
+    },
+    {
+      "edition": 2026,
+      "code": "061",
+      "course": "Engenharia Ambiental - integral",
+      "city": "Rio Claro",
+      "srv_ebp_ppi": 18,
+      "su": 21
+    },
+    {
+      "edition": 2026,
+      "code": "062",
+      "course": "Engenharia Cartográfica e de Agrimensura - integral",
+      "city": "Presidente Prudente",
+      "srv_ebp_ppi": 20,
+      "su": 22
+    },
+    {
+      "edition": 2026,
+      "code": "063",
+      "course": "Engenharia Civil - integral",
+      "city": "Bauru",
+      "srv_ebp_ppi": 18,
+      "su": 18
+    },
+    {
+      "edition": 2026,
+      "code": "064",
+      "course": "Engenharia Civil - integral",
+      "city": "Guaratinguetá",
+      "srv_ebp_ppi": 18,
+      "su": 22
+    },
+    {
+      "edition": 2026,
+      "code": "065",
+      "course": "Engenharia Civil - integral",
+      "city": "Ilha Solteira",
+      "srv_ebp_ppi": 18,
+      "su": 18
+    },
+    {
+      "edition": 2026,
+      "code": "066",
+      "course": "Engenharia de Alimentos - integral",
+      "city": "São José do Rio Preto",
+      "srv_ebp_ppi": 19,
+      "su": 21
+    },
+    {
+      "edition": 2026,
+      "code": "067",
+      "course": "Engenharia de Bioprocessos e Biotecnologia - integral",
+      "city": "Botucatu",
+      "srv_ebp_ppi": 19,
+      "su": 21
+    },
+    {
+      "edition": 2026,
+      "code": "068",
+      "course": "Engenharia de Bioprocessos e Biotecnologia - integral",
+      "city": "Araraquara",
+      "srv_ebp_ppi": 21,
+      "su": 25
+    },
+    {
+      "edition": 2026,
+      "code": "069",
+      "course": "Engenharia de Bioprocessos e Biotecnologia - integral",
+      "city": "Assis",
+      "srv_ebp_ppi": 18,
+      "su": 30
+    },
+    {
+      "edition": 2026,
+      "code": "070",
+      "course": "Engenharia de Biossistemas - integral",
+      "city": "Tupã",
+      "srv_ebp_ppi": 18,
+      "su": 24
+    },
+    {
+      "edition": 2026,
+      "code": "071",
+      "course": "Engenharia de Controle e Automação - integral",
+      "city": "Sorocaba",
+      "srv_ebp_ppi": 18,
+      "su": 18
+    },
+    {
+      "edition": 2026,
+      "code": "072",
+      "course": "Engenharia de Energia - integral",
+      "city": "Rosana",
+      "srv_ebp_ppi": 18,
+      "su": 20
+    },
+    {
+      "edition": 2026,
+      "code": "073",
+      "course": "Engenharia de Materiais - integral",
+      "city": "Guaratinguetá",
+      "srv_ebp_ppi": 21,
+      "su": 25
+    },
+    {
+      "edition": 2026,
+      "code": "074",
+      "course": "Engenharia de Pesca - integral",
+      "city": "Registro",
+      "srv_ebp_ppi": 19,
+      "su": 19
+    },
+    {
+      "edition": 2026,
+      "code": "075",
+      "course": "Engenharia de Produção - integral",
+      "city": "Guaratinguetá",
+      "srv_ebp_ppi": 20,
+      "su": 49
+    },
+    {
+      "edition": 2026,
+      "code": "076",
+      "course": "Engenharia de Produção - vespertino/noturno",
+      "city": "Bauru",
+      "srv_ebp_ppi": 19,
+      "su": 45
+    },
+    {
+      "edition": 2026,
+      "code": "077",
+      "course": "Engenharia de Produção - vespertino/noturno",
+      "city": "Itapeva",
+      "srv_ebp_ppi": 19,
+      "su": 21
+    },
+    {
+      "edition": 2026,
+      "code": "078",
+      "course": "Engenharia Elétrica - integral",
+      "city": "Bauru",
+      "srv_ebp_ppi": 18,
+      "su": 18
+    },
+    {
+      "edition": 2026,
+      "code": "079",
+      "course": "Engenharia Elétrica - integral",
+      "city": "Guaratinguetá",
+      "srv_ebp_ppi": 19,
+      "su": 19
+    },
+    {
+      "edition": 2026,
+      "code": "080",
+      "course": "Engenharia Elétrica - integral",
+      "city": "Ilha Solteira",
+      "srv_ebp_ppi": 20,
+      "su": 20
+    },
+    {
+      "edition": 2026,
+      "code": "081",
+      "course": "Engenharia Eletrônica e de Telecomunicações - integral",
+      "city": "São João da Boa Vista",
+      "srv_ebp_ppi": 18,
+      "su": 22
+    },
+    {
+      "edition": 2026,
+      "code": "082",
+      "course": "Engenharia Florestal - integral",
+      "city": "Botucatu",
+      "srv_ebp_ppi": 19,
+      "su": 21
+    },
+    {
+      "edition": 2026,
+      "code": "083",
+      "course": "Engenharia Industrial - Madeira - integral",
+      "city": "Itapeva",
+      "srv_ebp_ppi": 20,
+      "su": 25
+    },
+    {
+      "edition": 2026,
+      "code": "084",
+      "course": "Engenharia Mecânica - integral",
+      "city": "Bauru",
+      "srv_ebp_ppi": 19,
+      "su": 46
+    },
+    {
+      "edition": 2026,
+      "code": "085",
+      "course": "Engenharia Mecânica - integral",
+      "city": "Guaratinguetá",
+      "srv_ebp_ppi": 19,
+      "su": 21
+    },
+    {
+      "edition": 2026,
+      "code": "086",
+      "course": "Engenharia Mecânica - integral",
+      "city": "Ilha Solteira",
+      "srv_ebp_ppi": 19,
+      "su": 20
+    },
+    {
+      "edition": 2026,
+      "code": "087",
+      "course": "Engenharia Mecânica - noturno",
+      "city": "Guaratinguetá",
+      "srv_ebp_ppi": 20,
+      "su": 21
+    },
+    {
+      "edition": 2026,
+      "code": "088",
+      "course": "Engenharia Química - integral",
+      "city": "Araraquara",
+      "srv_ebp_ppi": 21,
+      "su": 46
+    },
+    {
+      "edition": 2026,
+      "code": "089",
+      "course": "Estatística - integral",
+      "city": "Presidente Prudente",
+      "srv_ebp_ppi": 19,
+      "su": 19
+    },
+    {
+      "edition": 2026,
+      "code": "090",
+      "course": "Farmácia - integral",
+      "city": "Araraquara",
+      "srv_ebp_ppi": 19,
+      "su": 48
+    },
+    {
+      "edition": 2026,
+      "code": "091",
+      "course": "Farmácia - noturno",
+      "city": "Araraquara",
+      "srv_ebp_ppi": 32,
+      "su": 48
+    },
+    {
+      "edition": 2026,
+      "code": "092",
+      "course": "Filosofia - Bacharelado e Licenciatura - noturno",
+      "city": "Marília",
+      "srv_ebp_ppi": 23,
+      "su": 23
+    },
+    {
+      "edition": 2026,
+      "code": "093",
+      "course": "Física - Bacharelado e Licenciatura - integral",
+      "city": "Rio Claro",
+      "srv_ebp_ppi": 18,
+      "su": 18
+    },
+    {
+      "edition": 2026,
+      "code": "094",
+      "course": "Física - Bacharelado e Licenciatura - noturno",
+      "city": "Guaratinguetá",
+      "srv_ebp_ppi": 26,
+      "su": 29
+    },
+    {
+      "edition": 2026,
+      "code": "095",
+      "course": "Física - Bacharelado em Física Biológica e Licenciatura em Física - integral",
+      "city": "São José do Rio Preto",
+      "srv_ebp_ppi": 18,
+      "su": 18
+    },
+    {
+      "edition": 2026,
+      "code": "096",
+      "course": "Física - Bacharelado em Física de Materiais ou Física Computacional - vespertino/noturno e Licenciatura em Física - noturno",
+      "city": "Bauru",
+      "srv_ebp_ppi": 18,
+      "su": 18
+    },
+    {
+      "edition": 2026,
+      "code": "097",
+      "course": "Física - Licenciatura - noturno",
+      "city": "Presidente Prudente",
+      "srv_ebp_ppi": 19,
+      "su": 20
+    },
+    {
+      "edition": 2026,
+      "code": "098",
+      "course": "Física - Licenciatura - noturno",
+      "city": "Ilha Solteira",
+      "srv_ebp_ppi": 18,
+      "su": 25
+    },
+    {
+      "edition": 2026,
+      "code": "099",
+      "course": "Física Médica - integral",
+      "city": "Botucatu",
+      "srv_ebp_ppi": 18,
+      "su": 21
+    },
+    {
+      "edition": 2026,
+      "code": "100",
+      "course": "Fisioterapia - integral",
+      "city": "Presidente Prudente",
+      "srv_ebp_ppi": 18,
+      "su": 34
+    },
+    {
+      "edition": 2026,
+      "code": "101",
+      "course": "Fisioterapia - integral",
+      "city": "Marília",
+      "srv_ebp_ppi": 25,
+      "su": 44
+    },
+    {
+      "edition": 2026,
+      "code": "102",
+      "course": "Fonoaudiologia - integral",
+      "city": "Marília",
+      "srv_ebp_ppi": 27,
+      "su": 40
+    },
+    {
+      "edition": 2026,
+      "code": "103",
+      "course": "Geografia - Bacharelado e Licenciatura - integral",
+      "city": "Rio Claro",
+      "srv_ebp_ppi": 19,
+      "su": 21
+    },
+    {
+      "edition": 2026,
+      "code": "104",
+      "course": "Geografia - Bacharelado e Licenciatura - matutino",
+      "city": "Presidente Prudente",
+      "srv_ebp_ppi": 22,
+      "su": 22
+    },
+    {
+      "edition": 2026,
+      "code": "105",
+      "course": "Geografia - Bacharelado e Licenciatura - matutino",
+      "city": "Ourinhos",
+      "srv_ebp_ppi": 26,
+      "su": 26
+    },
+    {
+      "edition": 2026,
+      "code": "106",
+      "course": "Geografia - Bacharelado e Licenciatura - noturno",
+      "city": "Presidente Prudente",
+      "srv_ebp_ppi": 24,
+      "su": 26
+    },
+    {
+      "edition": 2026,
+      "code": "107",
+      "course": "Geografia - Bacharelado e Licenciatura - noturno",
+      "city": "Ourinhos",
+      "srv_ebp_ppi": 20,
+      "su": 21
+    },
+    {
+      "edition": 2026,
+      "code": "108",
+      "course": "Geografia - Licenciatura - noturno",
+      "city": "Rio Claro",
+      "srv_ebp_ppi": 21,
+      "su": 23
+    },
+    {
+      "edition": 2026,
+      "code": "109",
+      "course": "Geologia - integral",
+      "city": "Rio Claro",
+      "srv_ebp_ppi": 18,
+      "su": 19
+    },
+    {
+      "edition": 2026,
+      "code": "110",
+      "course": "História - Bacharelado e Licenciatura - matutino",
+      "city": "Franca",
+      "srv_ebp_ppi": 19,
+      "su": 23
+    },
+    {
+      "edition": 2026,
+      "code": "111",
+      "course": "História - Bacharelado e Licenciatura - noturno",
+      "city": "Franca",
+      "srv_ebp_ppi": 20,
+      "su": 27
+    },
+    {
+      "edition": 2026,
+      "code": "112",
+      "course": "História - Licenciatura - noturno",
+      "city": "Assis",
+      "srv_ebp_ppi": 20,
+      "su": 26
+    },
+    {
+      "edition": 2026,
+      "code": "113",
+      "course": "História - Licenciatura - matutino",
+      "city": "Assis",
+      "srv_ebp_ppi": 18,
+      "su": 18
+    },
+    {
+      "edition": 2026,
+      "code": "114",
+      "course": "Jornalismo - matutino",
+      "city": "Bauru",
+      "srv_ebp_ppi": 20,
+      "su": 40
+    },
+    {
+      "edition": 2026,
+      "code": "115",
+      "course": "Jornalismo - noturno",
+      "city": "Bauru",
+      "srv_ebp_ppi": 18,
+      "su": 18
+    },
+    {
+      "edition": 2026,
+      "code": "116",
+      "course": "Letras - Bacharelado e Licenciatura - matutino",
+      "city": "Araraquara",
+      "srv_ebp_ppi": 22,
+      "su": 22
+    },
+    {
+      "edition": 2026,
+      "code": "117",
+      "course": "Letras - Bacharelado e Licenciatura - noturno",
+      "city": "Araraquara",
+      "srv_ebp_ppi": 18,
+      "su": 19
+    },
+    {
+      "edition": 2026,
+      "code": "118",
+      "course": "Letras - Licenciatura - integral",
+      "city": "São José do Rio Preto",
+      "srv_ebp_ppi": 18,
+      "su": 18
+    },
+    {
+      "edition": 2026,
+      "code": "119",
+      "course": "Letras - Licenciatura - matutino",
+      "city": "Assis",
+      "srv_ebp_ppi": 20,
+      "su": 28
+    },
+    {
+      "edition": 2026,
+      "code": "120",
+      "course": "Letras - Licenciatura - noturno",
+      "city": "Assis",
+      "srv_ebp_ppi": 18,
+      "su": 18
+    },
+    {
+      "edition": 2026,
+      "code": "121",
+      "course": "Letras - Licenciatura - noturno",
+      "city": "São José do Rio Preto",
+      "srv_ebp_ppi": 19,
+      "su": 19
+    },
+    {
+      "edition": 2026,
+      "code": "122",
+      "course": "Letras - Tradução - Bacharelado - integral",
+      "city": "São José do Rio Preto",
+      "srv_ebp_ppi": 23,
+      "su": 31
+    },
+    {
+      "edition": 2026,
+      "code": "123",
+      "course": "Licenciatura em Música - integral",
+      "city": "São Paulo",
+      "srv_ebp_ppi": 19,
+      "su": 24
+    },
+    {
+      "edition": 2026,
+      "code": "124",
+      "course": "Matemática - Bacharelado e Licenciatura - integral",
+      "city": "São José do Rio Preto",
+      "srv_ebp_ppi": 22,
+      "su": 22
+    },
+    {
+      "edition": 2026,
+      "code": "125",
+      "course": "Matemática - Bacharelado e Licenciatura - integral",
+      "city": "Rio Claro",
+      "srv_ebp_ppi": 21,
+      "su": 21
+    },
+    {
+      "edition": 2026,
+      "code": "126",
+      "course": "Matemática - Licenciatura - matutino",
+      "city": "Presidente Prudente",
+      "srv_ebp_ppi": 23,
+      "su": 25
+    },
+    {
+      "edition": 2026,
+      "code": "127",
+      "course": "Matemática - Licenciatura - noturno",
+      "city": "Bauru",
+      "srv_ebp_ppi": 20,
+      "su": 20
+    },
+    {
+      "edition": 2026,
+      "code": "128",
+      "course": "Matemática - Licenciatura - noturno",
+      "city": "Presidente Prudente",
+      "srv_ebp_ppi": 18,
+      "su": 22
+    },
+    {
+      "edition": 2026,
+      "code": "129",
+      "course": "Matemática - Licenciatura - noturno",
+      "city": "Guaratinguetá",
+      "srv_ebp_ppi": 20,
+      "su": 22
+    },
+    {
+      "edition": 2026,
+      "code": "130",
+      "course": "Matemática - Licenciatura - noturno",
+      "city": "Ilha Solteira",
+      "srv_ebp_ppi": 22,
+      "su": 23
+    },
+    {
+      "edition": 2026,
+      "code": "131",
+      "course": "Matemática - Licenciatura - noturno",
+      "city": "São José do Rio Preto",
+      "srv_ebp_ppi": 21,
+      "su": 21
+    },
+    {
+      "edition": 2026,
+      "code": "132",
+      "course": "Medicina - integral",
+      "city": "Botucatu",
+      "srv_ebp_ppi": 60,
+      "su": 78
+    },
+    {
+      "edition": 2026,
+      "code": "133",
+      "course": "Medicina Veterinária - integral",
+      "city": "Jaboticabal",
+      "srv_ebp_ppi": 26,
+      "su": 42
+    },
+    {
+      "edition": 2026,
+      "code": "134",
+      "course": "Medicina Veterinária - integral",
+      "city": "Araçatuba",
+      "srv_ebp_ppi": 18,
+      "su": 36
+    },
+    {
+      "edition": 2026,
+      "code": "135",
+      "course": "Medicina Veterinária - integral",
+      "city": "Botucatu",
+      "srv_ebp_ppi": 18,
+      "su": 48
+    },
+    {
+      "edition": 2026,
+      "code": "136",
+      "course": "Meteorologia - Bacharelado - integral",
+      "city": "Bauru",
+      "srv_ebp_ppi": 22,
+      "su": 24
+    },
+    {
+      "edition": 2026,
+      "code": "137",
+      "course": "Música - Bacharelado - Habilitação em Canto - integral",
+      "city": "São Paulo",
+      "srv_ebp_ppi": 20,
+      "su": 27
+    },
+    {
+      "edition": 2026,
+      "code": "138",
+      "course": "Música - Bacharelado - Habilitação em Composição - integral",
+      "city": "São Paulo",
+      "srv_ebp_ppi": 20,
+      "su": 34
+    },
+    {
+      "edition": 2026,
+      "code": "139",
+      "course": "Música - Bacharelado - Habilitação em Instrumento: Cordas (Contrabaixo Acústico, Viola, Violino, Violoncelo) - integral",
+      "city": "São Paulo",
+      "srv_ebp_ppi": 20,
+      "su": 20
+    },
+    {
+      "edition": 2026,
+      "code": "140",
+      "course": "Música - Bacharelado - Habilitação em Instrumento: Percussão - integral",
+      "city": "São Paulo",
+      "srv_ebp_ppi": 20,
+      "su": 20
+    },
+    {
+      "edition": 2026,
+      "code": "141",
+      "course": "Música - Bacharelado - Habilitação em Instrumento: Sopros (Clarineta, Flauta, Instrumento Antigo - Flauta Doce, Oboé) - integral",
+      "city": "São Paulo",
+      "srv_ebp_ppi": 23,
+      "su": 23
+    },
+    {
+      "edition": 2026,
+      "code": "142",
+      "course": "Música - Bacharelado - Habilitação em Instrumento: Teclados (Piano, Órgão Tubular) - integral",
+      "city": "São Paulo",
+      "srv_ebp_ppi": 26,
+      "su": 26
+    },
+    {
+      "edition": 2026,
+      "code": "143",
+      "course": "Música - Bacharelado - Habilitação em Instrumento: Violão - integral",
+      "city": "São Paulo",
+      "srv_ebp_ppi": 18,
+      "su": 23
+    },
+    {
+      "edition": 2026,
+      "code": "144",
+      "course": "Música - Bacharelado - Habilitação em Regência - integral",
+      "city": "São Paulo",
+      "srv_ebp_ppi": 32,
+      "su": 32
+    },
+    {
+      "edition": 2026,
+      "code": "145",
+      "course": "Nutrição - vespertino/noturno",
+      "city": "Botucatu",
+      "srv_ebp_ppi": 20,
+      "su": 39
+    },
+    {
+      "edition": 2026,
+      "code": "146",
+      "course": "Odontologia - integral",
+      "city": "Araçatuba",
+      "srv_ebp_ppi": 18,
+      "su": 18
+    },
+    {
+      "edition": 2026,
+      "code": "147",
+      "course": "Odontologia - integral",
+      "city": "Araraquara",
+      "srv_ebp_ppi": 18,
+      "su": 37
+    },
+    {
+      "edition": 2026,
+      "code": "148",
+      "course": "Odontologia - integral",
+      "city": "São José dos Campos",
+      "srv_ebp_ppi": 19,
+      "su": 39
+    },
+    {
+      "edition": 2026,
+      "code": "149",
+      "course": "Odontologia - vespertino/noturno",
+      "city": "Araçatuba",
+      "srv_ebp_ppi": 18,
+      "su": 19
+    },
+    {
+      "edition": 2026,
+      "code": "150",
+      "course": "Odontologia - vespertino/noturno",
+      "city": "São José dos Campos",
+      "srv_ebp_ppi": 18,
+      "su": 18
+    },
+    {
+      "edition": 2026,
+      "code": "151",
+      "course": "Pedagogia - Licenciatura - matutino",
+      "city": "Marília",
+      "srv_ebp_ppi": 18,
+      "su": 18
+    },
+    {
+      "edition": 2026,
+      "code": "152",
+      "course": "Pedagogia - Licenciatura - noturno",
+      "city": "Bauru",
+      "srv_ebp_ppi": 18,
+      "su": 19
+    },
+    {
+      "edition": 2026,
+      "code": "153",
+      "course": "Pedagogia - Licenciatura - noturno",
+      "city": "Araraquara",
+      "srv_ebp_ppi": 18,
+      "su": 19
+    },
+    {
+      "edition": 2026,
+      "code": "154",
+      "course": "Pedagogia - Licenciatura - noturno",
+      "city": "Presidente Prudente",
+      "srv_ebp_ppi": 18,
+      "su": 20
+    },
+    {
+      "edition": 2026,
+      "code": "155",
+      "course": "Pedagogia - Licenciatura - noturno",
+      "city": "Marília",
+      "srv_ebp_ppi": 18,
+      "su": 18
+    },
+    {
+      "edition": 2026,
+      "code": "156",
+      "course": "Pedagogia - Licenciatura - noturno",
+      "city": "Rio Claro",
+      "srv_ebp_ppi": 18,
+      "su": 19
+    },
+    {
+      "edition": 2026,
+      "code": "157",
+      "course": "Pedagogia - Licenciatura - noturno",
+      "city": "São José do Rio Preto",
+      "srv_ebp_ppi": 18,
+      "su": 21
+    },
+    {
+      "edition": 2026,
+      "code": "158",
+      "course": "Pedagogia - Licenciatura - vespertino",
+      "city": "Araraquara",
+      "srv_ebp_ppi": 19,
+      "su": 23
+    },
+    {
+      "edition": 2026,
+      "code": "159",
+      "course": "Pedagogia - Licenciatura - vespertino",
+      "city": "Presidente Prudente",
+      "srv_ebp_ppi": 18,
+      "su": 19
+    },
+    {
+      "edition": 2026,
+      "code": "160",
+      "course": "Psicologia - integral",
+      "city": "Bauru",
+      "srv_ebp_ppi": 34,
+      "su": 58
+    },
+    {
+      "edition": 2026,
+      "code": "161",
+      "course": "Psicologia - integral",
+      "city": "Assis",
+      "srv_ebp_ppi": 18,
+      "su": 46
+    },
+    {
+      "edition": 2026,
+      "code": "162",
+      "course": "Psicologia - noturno",
+      "city": "Bauru",
+      "srv_ebp_ppi": 40,
+      "su": 54
+    },
+    {
+      "edition": 2026,
+      "code": "163",
+      "course": "Psicologia - vespertino/noturno",
+      "city": "Assis",
+      "srv_ebp_ppi": 31,
+      "su": 45
+    },
+    {
+      "edition": 2026,
+      "code": "164",
+      "course": "Química - Bacharelado em Química Ambiental e Licenciatura em Química - integral",
+      "city": "São José do Rio Preto",
+      "srv_ebp_ppi": 18,
+      "su": 18
+    },
+    {
+      "edition": 2026,
+      "code": "165",
+      "course": "Química - Bacharelado em Química e em Química Tecnológica - integral",
+      "city": "Araraquara",
+      "srv_ebp_ppi": 18,
+      "su": 18
+    },
+    {
+      "edition": 2026,
+      "code": "166",
+      "course": "Química - Bacharelado em Química Tecnológica - vespertino/noturno",
+      "city": "Bauru",
+      "srv_ebp_ppi": 21,
+      "su": 23
+    },
+    {
+      "edition": 2026,
+      "code": "167",
+      "course": "Química - Licenciatura - noturno",
+      "city": "Bauru",
+      "srv_ebp_ppi": 20,
+      "su": 20
+    },
+    {
+      "edition": 2026,
+      "code": "168",
+      "course": "Química - Licenciatura - noturno",
+      "city": "Presidente Prudente",
+      "srv_ebp_ppi": 21,
+      "su": 22
+    },
+    {
+      "edition": 2026,
+      "code": "169",
+      "course": "Química - Licenciatura - noturno",
+      "city": "Araraquara",
+      "srv_ebp_ppi": 18,
+      "su": 19
+    },
+    {
+      "edition": 2026,
+      "code": "170",
+      "course": "Relações Internacionais - noturno",
+      "city": "Franca",
+      "srv_ebp_ppi": 18,
+      "su": 21
+    },
+    {
+      "edition": 2026,
+      "code": "171",
+      "course": "Relações Internacionais - noturno",
+      "city": "Marília",
+      "srv_ebp_ppi": 18,
+      "su": 19
+    },
+    {
+      "edition": 2026,
+      "code": "172",
+      "course": "Relações Internacionais - vespertino",
+      "city": "Franca",
+      "srv_ebp_ppi": 22,
+      "su": 22
+    },
+    {
+      "edition": 2026,
+      "code": "173",
+      "course": "Relações Públicas - noturno",
+      "city": "Bauru",
+      "srv_ebp_ppi": 18,
+      "su": 18
+    },
+    {
+      "edition": 2026,
+      "code": "174",
+      "course": "Serviço Social - matutino",
+      "city": "Franca",
+      "srv_ebp_ppi": 20,
+      "su": 20
+    },
+    {
+      "edition": 2026,
+      "code": "175",
+      "course": "Serviço Social - noturno",
+      "city": "Franca",
+      "srv_ebp_ppi": 18,
+      "su": 21
+    },
+    {
+      "edition": 2026,
+      "code": "176",
+      "course": "Sistemas de Informação - Bacharelado - noturno",
+      "city": "Bauru",
+      "srv_ebp_ppi": 37,
+      "su": 45
+    },
+    {
+      "edition": 2026,
+      "code": "177",
+      "course": "Terapia Ocupacional - integral",
+      "city": "Marília",
+      "srv_ebp_ppi": 19,
+      "su": 41
+    },
+    {
+      "edition": 2026,
+      "code": "178",
+      "course": "Turismo - integral",
+      "city": "Rosana",
+      "srv_ebp_ppi": 18,
+      "su": 26
+    },
+    {
+      "edition": 2026,
+      "code": "179",
+      "course": "Zootecnia - integral",
+      "city": "Dracena",
+      "srv_ebp_ppi": 18,
+      "su": 23
+    },
+    {
+      "edition": 2026,
+      "code": "180",
+      "course": "Zootecnia - integral",
+      "city": "Jaboticabal",
+      "srv_ebp_ppi": 18,
+      "su": 18
+    },
+    {
+      "edition": 2026,
+      "code": "181",
+      "course": "Zootecnia - integral",
+      "city": "Ilha Solteira",
+      "srv_ebp_ppi": 18,
+      "su": 21
+    },
+    {
+      "edition": 2026,
+      "code": "182",
+      "course": "Zootecnia - integral",
+      "city": "Botucatu",
+      "srv_ebp_ppi": 18,
+      "su": 18
+    },
+    {
+      "edition": 2026,
+      "code": "183",
+      "course": "Treineiro",
+      "city": "",
+      "srv_ebp_ppi": 18,
+      "su": 18
+    }
+  ]
+}
