@@ -245,6 +245,18 @@ function trajectoryPagesFor(start: number, end: number, focusText: string, limit
     .join("\n\n");
 }
 
+function salaryEvidenceFor(start: number, end: number) {
+  const pages = trajectoryPages.filter(({ page }) => page >= start && page <= end);
+  const interviewPage = pages.find(({ normalized }) => /foram entrevistad[oa]s?/.test(normalized));
+  const salaryPages = pages.filter(({ normalized }) =>
+    /remuneracao dos entrevistados|remuneracao media mensal|remuneracao media encontrada|remuneracao media identificada/.test(normalized)
+  );
+  return [...new Map([interviewPage, ...salaryPages].filter(Boolean).map((item) => [item!.page, item!])).values()]
+    .slice(0, 4)
+    .map(({ text }) => text)
+    .join("\n\n");
+}
+
 function trajectoryContextFor(currentQuestion: string, conversationText: string) {
   const current = normalizeText(currentQuestion);
   const conversation = normalizeText(conversationText);
@@ -254,11 +266,22 @@ function trajectoryContextFor(currentQuestion: string, conversationText: string)
   const chaptersMatching = (text: string) => trajectoryChapterStarts.filter(({ names }) => names.some((name) => mentionsPhrase(text, name)));
   const currentMatches = chaptersMatching(current);
   const conversationMatches = chaptersMatching(conversation);
-  const rawMatches = currentMatches.length ? currentMatches : conversationMatches;
+  const isComparison = /(compar|versus|\bvs\b|diferen)/.test(current);
+  const rawMatches = isComparison
+    ? [...new Map([...currentMatches, ...conversationMatches].map((chapter) => [chapter.title, chapter])).values()]
+    : currentMatches.length ? currentMatches : conversationMatches;
   const matched = rawMatches.filter((chapter) => !rawMatches.some((other) => other !== chapter && normalizeText(other.title).includes(normalizeText(chapter.title))));
   const focusText = currentQuestion + "\n" + conversationText.slice(-2000);
+  const wantsPay = /(salari|remuner|renda|ganh)/.test(current);
 
   if (matched.length) {
+    if (wantsPay) {
+      const salaryEvidence = matched.slice(0, 3).map((chapter) => {
+        const evidence = salaryEvidenceFor(chapter.start, chapter.end);
+        return evidence ? "## Evidências prioritárias de remuneração: " + chapter.title + "\n\n" + evidence : "";
+      }).filter(Boolean);
+      if (salaryEvidence.length) return [trajectoriesGuide, ...salaryEvidence].join("\n\n");
+    }
     const excerpts = matched.slice(0, 2).map((chapter) =>
       "## Trechos selecionados: " + chapter.title + "\n\n" + trajectoryPagesFor(chapter.start, chapter.end, focusText, matched.length > 1 ? 5 : 9)
     );

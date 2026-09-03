@@ -25,6 +25,19 @@ function renderInline(text: string): ReactNode[] {
   });
 }
 
+function normalizeHeaderText(value: string) {
+  return value.replace(/\*\*/g, "").normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[^a-z0-9]/gi, "").toLowerCase();
+}
+
+function repairTableHeader(header: string[]) {
+  if (header.filter((cell) => normalizeHeaderText(cell)).length !== 1) return header;
+  const knownHeaders = [
+    ["Formação", "Número de entrevistados", "Média mensal", "Menor valor", "Maior valor"],
+  ];
+  const combined = normalizeHeaderText(header.join(""));
+  return knownHeaders.find((candidate) => candidate.length === header.length && normalizeHeaderText(candidate.join("")) === combined) || header;
+}
+
 function Markdown({ content }: { content: string }) {
   const blocks = content.trim().split(/\n\s*\n/);
   return <div className="markdown">{blocks.map((block, blockIndex) => {
@@ -41,8 +54,9 @@ function Markdown({ content }: { content: string }) {
       const rows = lines
         .filter((_, index) => index !== 1)
         .map((line) => line.trim().replace(/^\||\|$/g, "").split("|").map((cell) => cell.trim()));
-      const header = rows[0] || [];
-      return <div className="table-wrap" key={blockIndex}><table><thead><tr>{header.map((cell, index) => <th key={index}>{renderInline(cell)}</th>)}</tr></thead><tbody>{rows.slice(1).map((row, rowIndex) => <tr key={rowIndex}>{row.map((cell, index) => <td key={index}>{renderInline(cell)}</td>)}</tr>)}</tbody></table></div>;
+      const header = repairTableHeader(rows[0] || []);
+      const body = rows.slice(1).map((row) => Array.from({ length: header.length }, (_, index) => row[index] || ""));
+      return <div className="table-wrap" key={blockIndex}><table><thead><tr>{header.map((cell, index) => <th key={index}>{renderInline(cell)}</th>)}</tr></thead><tbody>{body.map((row, rowIndex) => <tr key={rowIndex}>{row.map((cell, index) => <td key={index}>{renderInline(cell)}</td>)}</tr>)}</tbody></table></div>;
     }
     if (lines.every((line) => /^[-*]\s+/.test(line))) {
       return <ul key={blockIndex}>{lines.map((line, index) => <li key={index}>{renderInline(line.replace(/^[-*]\s+/, ""))}</li>)}</ul>;
