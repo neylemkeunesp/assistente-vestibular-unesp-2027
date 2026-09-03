@@ -50,7 +50,7 @@ export default function Home() {
             <div className="stats-grid">
               <div className="stat"><strong>137</strong><span>cursos em 2027</span></div>
               <div className="stat"><strong>24</strong><span>cidades-sede</span></div>
-              <div className="stat"><strong>4</strong><span>edições de cortes</span></div>
+              <div className="stat"><strong>67</strong><span>profissões apresentadas</span></div>
               <div className="stat"><strong>941</strong><span>páginas de trajetórias</span></div>
             </div>
             <div className="coverage-sources">
