@@ -5,11 +5,12 @@ import { FormEvent, ReactNode, useRef, useState } from "react";
 type Message = { role: "user" | "assistant"; content: string };
 
 const suggestions = [
-  "Quais cursos existem em Botucatu?",
-  "Como funciona a reserva de vagas?",
-  "Qual foi a nota de corte de Medicina de 2023 a 2026?",
-  "Como é morar em Bauru?",
-  "O que o estudo de egressos mostra sobre Medicina?",
+  { label: "Cursos e cidades", question: "Quais cursos existem em Botucatu?" },
+  { label: "Ingresso", question: "Como funciona a reserva de vagas?" },
+  { label: "Notas de corte", question: "Qual foi a nota de corte de Medicina de 2023 a 2026?" },
+  { label: "Vida universitária", question: "Como é morar em Bauru?" },
+  { label: "Carreiras", question: "O que o estudo de egressos mostra sobre Medicina?" },
+  { label: "Permanência", question: "Quais auxílios podem apoiar a permanência estudantil?" },
 ];
 
 function renderInline(text: string): ReactNode[] {
@@ -95,12 +96,20 @@ export default function Assistant() {
 
   return (
     <div className="chat-card">
-      <div className="conversation" ref={conversationRef} aria-live="polite">
+      <div className="chat-header">
+        <div className="assistant-identity">
+          <span className="assistant-mark" aria-hidden="true">U</span>
+          <div><strong>Assistente Unesp</strong><span><i aria-hidden="true" /> Base 2027 disponível</span></div>
+        </div>
+        <span className="chat-source">Respostas com referências</span>
+      </div>
+
+      <div className="conversation" ref={conversationRef} role="log" aria-live="polite" aria-busy={loading}>
         <div className="message-row assistant-row">
           <span className="avatar" aria-hidden="true">U</span>
           <div className="message assistant-message">
-            <strong>Olá! Como posso ajudar?</strong>
-            <p>Posso consultar o Manual do Candidato 2027, comparar cursos e cidades, mostrar notas de corte ou explicar trajetórias de egressos.</p>
+            <strong>Olá! O que você quer descobrir?</strong>
+            <p>Posso comparar cursos e cidades, explicar regras, mostrar notas de corte e apresentar trajetórias de pessoas formadas pela Unesp.</p>
           </div>
         </div>
         {messages.map((message, index) => (
@@ -111,15 +120,18 @@ export default function Assistant() {
             </div>
           </div>
         ))}
-        {loading && <div className="message-row assistant-row"><span className="avatar" aria-hidden="true">U</span><div className="message assistant-message loading-message"><span /><span /><span /><em>Consultando as fontes…</em></div></div>}
+        {loading && <div className="message-row assistant-row" role="status"><span className="avatar" aria-hidden="true">U</span><div className="message assistant-message loading-message"><span /><span /><span /><em>Consultando as fontes…</em></div></div>}
       </div>
 
-      {messages.length === 0 && <div className="suggestions" aria-label="Perguntas sugeridas">{suggestions.map((suggestion) => <button type="button" key={suggestion} onClick={() => void ask(suggestion)}>{suggestion}</button>)}</div>}
+      {messages.length === 0 && <div className="suggestion-area"><p>Comece por uma pergunta</p><div className="suggestions" aria-label="Perguntas sugeridas">{suggestions.map((suggestion, index) => <button type="button" key={suggestion.question} onClick={() => void ask(suggestion.question)}><span className="suggestion-number">{String(index + 1).padStart(2, "0")}</span><span><small>{suggestion.label}</small>{suggestion.question}</span><span className="suggestion-arrow" aria-hidden="true">↗</span></button>)}</div></div>}
 
       <form className="composer" onSubmit={submit}>
         <label className="sr-only" htmlFor="question">Faça sua pergunta</label>
-        <textarea id="question" rows={2} value={question} onChange={(event) => setQuestion(event.target.value)} placeholder="Pergunte sobre cursos, provas, notas de corte ou egressos..." disabled={loading} onKeyDown={(event) => { if (event.key === "Enter" && !event.shiftKey) { event.preventDefault(); void ask(question); } }} />
-        <button type="submit" className="send-button" disabled={loading || !question.trim()}>Enviar</button>
+        <div className="composer-field">
+          <textarea id="question" rows={2} value={question} onChange={(event) => setQuestion(event.target.value)} placeholder="Escreva sua dúvida sobre o Vestibular Unesp…" disabled={loading} aria-describedby="question-hint" onKeyDown={(event) => { if (event.key === "Enter" && !event.shiftKey) { event.preventDefault(); void ask(question); } }} />
+          <span id="question-hint">Enter envia · Shift + Enter cria uma nova linha</span>
+        </div>
+        <button type="submit" className="send-button" disabled={loading || !question.trim()} aria-label={loading ? "Enviando pergunta" : "Enviar pergunta"}><span>Enviar</span><span aria-hidden="true">→</span></button>
       </form>
     </div>
   );
