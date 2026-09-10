@@ -128,6 +128,7 @@ a:focus-visible, button:focus-visible, textarea:focus-visible {
 .send-button:hover { background: var(--brand-dark); transform: translateY(-1px); }
 .send-button:disabled { cursor: not-allowed; opacity: .48; transform: none; }
 .send-button > span:last-child { font-size: 1.08rem; }
+.privacy-note { margin: 9px 7px 0; color: var(--muted); font-size: .72rem; line-height: 1.45; }
 
 .markdown > :first-child { margin-top: 0; }
 .markdown > :last-child { margin-bottom: 0; }

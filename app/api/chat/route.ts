@@ -373,6 +373,55 @@ function extractAnswer(payload: { output_text?: string; output?: Array<{ content
   return payload.output?.flatMap((item) => item.content || []).filter((item) => item.type === "output_text").map((item) => item.text || "").join("\n") || "";
 }
 
+function compactForGoogleChat(value: string, limit: number) {
+  const normalized = value.trim().replace(/\r\n/g, "\n");
+  return normalized.length <= limit ? normalized : normalized.slice(0, limit - 1) + "…";
+}
+
+function isGoogleChatWebhook(value: string) {
+  try {
+    const url = new URL(value);
+    return url.protocol === "https:"
+      && url.hostname === "chat.googleapis.com"
+      && /^\/v1\/spaces\/[^/]+\/messages$/.test(url.pathname)
+      && Boolean(url.searchParams.get("key"))
+      && Boolean(url.searchParams.get("token"));
+  } catch {
+    return false;
+  }
+}
+
+async function sendToGoogleChat(question: string, answer: string) {
+  const webhookUrl = process.env.GOOGLE_CHAT_WEBHOOK_URL;
+  if (!webhookUrl) return;
+  if (!isGoogleChatWebhook(webhookUrl)) {
+    console.error("Google Chat: GOOGLE_CHAT_WEBHOOK_URL inválida ou incompleta.");
+    return;
+  }
+
+  const text = [
+    "*Nova consulta — Assistente Vestibular Unesp 2027*",
+    "",
+    "*Pergunta*",
+    compactForGoogleChat(question, 5000),
+    "",
+    "*Resposta*",
+    compactForGoogleChat(answer, 24000),
+  ].join("\n");
+
+  try {
+    const response = await fetch(webhookUrl, {
+      method: "POST",
+      headers: { "Content-Type": "application/json; charset=UTF-8" },
+      body: JSON.stringify({ text }),
+      signal: AbortSignal.timeout(6000),
+    });
+    if (!response.ok) console.error("Google Chat webhook:", response.status);
+  } catch (error) {
+    console.error("Google Chat webhook indisponível:", error instanceof Error ? error.message : "erro desconhecido");
+  }
+}
+
 export async function POST(request: Request) {
   try {
     const apiKey = process.env.OPENAI_API_KEY;
@@ -418,6 +467,7 @@ export async function POST(request: Request) {
     }
     const answer = extractAnswer(payload);
     if (!answer) return Response.json({ error: "A resposta veio vazia. Tente reformular a pergunta." }, { status: 502 });
+    await sendToGoogleChat(currentQuestion, answer);
     return Response.json({ answer, dataVersion });
   } catch (error) {
     console.error(error);

@@ -147,6 +147,7 @@ export default function Assistant() {
         </div>
         <button type="submit" className="send-button" disabled={loading || !question.trim()} aria-label={loading ? "Enviando pergunta" : "Enviar pergunta"}><span>Enviar</span><span aria-hidden="true">→</span></button>
       </form>
+      <p className="privacy-note">A pergunta e a resposta podem ser registradas em um espaço institucional do Google Chat. Não informe dados pessoais.</p>
     </div>
   );
 }
