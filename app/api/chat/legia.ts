@@ -8,7 +8,8 @@ type JsonRpcMessage = {
 type LegiaDocument = Record<string, unknown>;
 
 const DEFAULT_LEGIA_URL = "http://200.145.2.100:3000/sse";
-const LEGIA_TIMEOUT_MS = 9000;
+const DOCUMENT_SEARCH_TIMEOUT_MS = 9000;
+const SITE_SEARCH_TIMEOUT_MS = 24000;
 const MAX_DOCUMENTS = 6;
 const MAX_SNIPPET_LENGTH = 1100;
 const MAX_CONTEXT_LENGTH = 7000;
@@ -46,6 +47,29 @@ function plainText(value: unknown) {
     .replace(/[ \t]+/g, " ")
     .replace(/\n\s*\n+/g, "\n")
     .trim();
+}
+
+function officialUnespLink(value: string) {
+  try {
+    const url = new URL(value);
+    return (url.protocol === "https:" || url.protocol === "http:")
+      && (url.hostname === "unesp.br" || url.hostname.endsWith(".unesp.br"));
+  } catch {
+    return false;
+  }
+}
+
+function readableSiteAnswer(value: string) {
+  const withLinks = value.replace(
+    /<a\b[^>]*href=["']([^"']+)["'][^>]*>([\s\S]*?)<\/a>/gi,
+    (_match, href: string, label: string) => {
+      const cleanLabel = plainText(label) || href;
+      return officialUnespLink(href) ? `[${cleanLabel}](${href})` : cleanLabel;
+    },
+  );
+  return plainText(withLinks)
+    .replace(/\s+(?=\[[^\]]+\]\(https?:\/\/)/g, "\n")
+    .slice(0, MAX_CONTEXT_LENGTH);
 }
 
 function firstText(document: LegiaDocument, keys: string[]) {
@@ -125,9 +149,16 @@ async function postRpc(endpoint: URL, payload: unknown, signal: AbortSignal) {
   if (!response.ok) throw new Error(`A LegIA respondeu com HTTP ${response.status}.`);
 }
 
-async function searchLegia(question: string, token: string, serverUrl: string) {
+type ToolCaller = (name: string, args: Record<string, unknown>) => Promise<string>;
+
+async function withLegiaSession<T>(
+  token: string,
+  serverUrl: string,
+  timeoutMs: number,
+  operation: (callTool: ToolCaller) => Promise<T>,
+) {
   const controller = new AbortController();
-  const timeout = setTimeout(() => controller.abort(), LEGIA_TIMEOUT_MS);
+  const timeout = setTimeout(() => controller.abort(), timeoutMs);
   let reader: ReadableStreamDefaultReader<Uint8Array> | undefined;
 
   try {
@@ -164,22 +195,112 @@ async function searchLegia(question: string, token: string, serverUrl: string) {
       params: {},
     }, controller.signal);
 
-    await postRpc(endpoint, {
-      jsonrpc: "2.0",
-      id: 2,
-      method: "tools/call",
-      params: {
-        name: "buscar_documentos",
-        arguments: { token, texto: question.slice(0, 1500) },
-      },
-    }, controller.signal);
-    const result = await waitForResponse(2, reader, state, decoder);
-    if (result?.isError) throw new Error("A busca da LegIA não foi concluída.");
-    return result?.content?.find((item) => item.type === "text")?.text || "";
+    let requestId = 2;
+    const callTool: ToolCaller = async (name, args) => {
+      const id = requestId++;
+      await postRpc(endpoint, {
+        jsonrpc: "2.0",
+        id,
+        method: "tools/call",
+        params: { name, arguments: { token, ...args } },
+      }, controller.signal);
+      const result = await waitForResponse(id, reader!, state, decoder);
+      if (result?.isError) throw new Error(`A ferramenta ${name} da LegIA não foi concluída.`);
+      return result?.content?.find((item) => item.type === "text")?.text || "";
+    };
+
+    return await operation(callTool);
   } finally {
     clearTimeout(timeout);
     if (reader) await reader.cancel().catch(() => undefined);
   }
+}
+
+async function searchLegiaDocuments(question: string, token: string, serverUrl: string) {
+  return withLegiaSession(token, serverUrl, DOCUMENT_SEARCH_TIMEOUT_MS, (callTool) =>
+    callTool("buscar_documentos", { texto: question.slice(0, 1500) })
+  );
+}
+
+function webResearchNeeded(question: string) {
+  return /(professor|professora|professores|professoras|docente|docentes|corpo docente|departamento|chefia|coordenador|coordenadora|coordena[cç][aã]o|disciplina|disciplinas|grade hor[aá]ria|hor[aá]rio|quem ministra|quem leciona)/i.test(question);
+}
+
+function findJobId(raw: string) {
+  try {
+    const parsed = JSON.parse(raw) as Record<string, unknown>;
+    for (const key of ["jobId", "job_id", "id"]) {
+      if (typeof parsed[key] === "string" && parsed[key]) return parsed[key] as string;
+    }
+  } catch {
+    // Alguns servidores devolvem apenas o identificador como texto.
+  }
+  return raw.match(/(?:jobId|job_id|id)["'\s:=]+([a-z0-9_-]{8,})/i)?.[1]
+    || raw.trim().match(/^[a-z0-9_-]{8,}$/i)?.[0]
+    || "";
+}
+
+function nestedString(value: unknown, keys: string[]): string {
+  if (!value || typeof value !== "object") return "";
+  const record = value as Record<string, unknown>;
+  for (const key of keys) {
+    if (typeof record[key] === "string" && record[key]) return record[key] as string;
+  }
+  for (const child of Object.values(record)) {
+    const found = nestedString(child, keys);
+    if (found) return found;
+  }
+  return "";
+}
+
+function completedSiteAnswer(raw: string) {
+  const normalized = plainText(raw).toLowerCase();
+  if (/(processando|em processamento|pendente|aguardando|queued|pending|running)/.test(normalized) && raw.length < 500) return "";
+
+  try {
+    const parsed = JSON.parse(raw) as unknown;
+    const status = nestedString(parsed, ["status", "state", "situacao"]).toLowerCase();
+    if (/(processando|pendente|aguardando|queued|pending|running)/.test(status)) return "";
+    const answer = nestedString(parsed, ["resposta", "answer", "resultado", "response", "texto", "content"]);
+    return answer ? readableSiteAnswer(answer) : "";
+  } catch {
+    return raw.trim().length >= 120 ? readableSiteAnswer(raw) : "";
+  }
+}
+
+async function searchOfficialUnespSites(question: string, token: string, serverUrl: string) {
+  return withLegiaSession(token, serverUrl, SITE_SEARCH_TIMEOUT_MS, async (callTool) => {
+    const researchPrompt = [
+      "Pesquise exclusivamente em sites oficiais da Unesp, em domínios unesp.br.",
+      "Para docentes, consulte a página do curso, departamentos e horários de disciplinas.",
+      "Liste os nomes encontrados com os links exatos das fontes e informe o semestre ou a data de referência quando disponíveis.",
+      "Diferencie docentes vinculados ao curso de responsáveis por disciplinas em um semestre específico.",
+      "Não invente contatos e não use fontes externas à Unesp.",
+      `Pergunta: ${question.slice(0, 1200)}`,
+    ].join("\n");
+    const queued = await callTool("perguntar_legia", {
+      pergunta: researchPrompt,
+      useLegislacao: false,
+      useSite: true,
+      useNoticia: false,
+      qtdDocs: 8,
+    });
+    const jobId = findJobId(queued);
+    if (!jobId) return "";
+
+    for (let attempt = 0; attempt < 18; attempt++) {
+      if (attempt) await new Promise((resolve) => setTimeout(resolve, 650));
+      const polled = await callTool("consultar_resposta", { jobId });
+      const answer = completedSiteAnswer(polled);
+      if (answer) {
+        return [
+          "Pesquisa da LegIA em sites oficiais da Unesp. Preserve os links fornecidos e indique a data ou o semestre de referência quando constarem no resultado.",
+          answer,
+        ].join("\n\n");
+      }
+    }
+    return "";
+  });
 }
 
 function formatDocuments(raw: string) {
@@ -219,7 +340,11 @@ export async function legiaContextFor(question: string) {
   if (!token || !question.trim()) return "";
 
   try {
-    return formatDocuments(await searchLegia(question, token, serverUrl));
+    if (webResearchNeeded(question)) {
+      const siteAnswer = await searchOfficialUnespSites(question, token, serverUrl);
+      if (siteAnswer) return siteAnswer;
+    }
+    return formatDocuments(await searchLegiaDocuments(question, token, serverUrl));
   } catch (error) {
     const message = error instanceof Error && error.name === "AbortError"
       ? "tempo limite excedido"

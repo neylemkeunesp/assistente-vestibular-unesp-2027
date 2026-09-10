@@ -244,7 +244,7 @@ public/                     # favicon e imagem social
 .openai/hosting.json        # vínculo com o projeto do OpenAI Sites
 ```
 
-As bases são carregadas no servidor. A rota seleciona trechos relevantes do Manual do Candidato e dos guias temáticos, consulta a ferramenta `buscar_documentos` da LegIA e só então chama a Responses API. O token da LegIA é acrescentado pelo backend e não é enviado ao navegador nem gravado no repositório. Se a LegIA falhar ou exceder o tempo limite, a resposta continua com as demais fontes.
+As bases são carregadas no servidor. A rota seleciona trechos relevantes do Manual do Candidato e dos guias temáticos e consulta a LegIA antes de chamar a Responses API. A ferramenta `buscar_documentos` atende pesquisas documentais; perguntas sobre docentes, departamentos, coordenação e horários acionam `perguntar_legia` com pesquisa em sites oficiais da Unesp. O token da LegIA é acrescentado pelo backend e não é enviado ao navegador nem gravado no repositório. Se a LegIA falhar ou exceder o tempo limite, a resposta continua com as demais fontes.
 
 ## Fontes e limites
 
