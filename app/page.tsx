@@ -61,6 +61,34 @@ export default function Home() {
           </aside>
         </section>
 
+        <section className="institutional-band" aria-labelledby="institutional-band-title">
+          <div className="institutional-copy">
+            <p className="institutional-label">Iniciativa Unesp</p>
+            <h2 id="institutional-band-title">Laboratório do Futuro e CTInf</h2>
+          </div>
+          <div className="institutional-logos">
+            <a
+              className="institutional-logo institutional-logo-laf"
+              href="https://www2.unesp.br/portal#!/laf/"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Conhecer o LAF — Laboratório do Futuro da Unesp"
+            >
+              <img src="/institucional/laf-unesp.png" alt="LAF — Laboratório do Futuro" width="500" height="500" />
+            </a>
+            <span className="institutional-separator" aria-hidden="true" />
+            <a
+              className="institutional-logo institutional-logo-ctinf"
+              href="https://www2.unesp.br/portal#!/ctinf/"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Conhecer a CTInf — Coordenadoria de Tecnologia da Informação da Unesp"
+            >
+              <img src="/institucional/ctinf-unesp.png" alt="CTInf — Coordenadoria de Tecnologia da Informação" width="603" height="182" />
+            </a>
+          </div>
+        </section>
+
         <footer>
           <p>Este assistente orienta, mas não substitui os editais e comunicados oficiais.</p>
           <nav aria-label="Links institucionais">

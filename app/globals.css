@@ -166,6 +166,29 @@ a:focus-visible, button:focus-visible, textarea:focus-visible {
 .coverage-sources > span { display: block; color: #bfc8d4; font-size: .72rem; line-height: 1.55; }
 .coverage-sources a { min-height: 44px; margin-top: 15px; display: inline-flex; align-items: center; gap: 7px; color: #fff; font-size: .76rem; font-weight: 690; text-underline-offset: 3px; }
 
+.institutional-band {
+  margin-top: 34px;
+  padding: 22px 26px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 28px;
+  border: 1px solid rgba(0, 101, 168, .16);
+  border-radius: var(--radius-md);
+  background: rgba(255, 255, 255, .76);
+  box-shadow: var(--shadow-sm);
+}
+.institutional-copy { min-width: 190px; }
+.institutional-label { margin: 0 0 5px; color: var(--brand); font-size: .68rem; font-weight: 820; letter-spacing: .11em; text-transform: uppercase; }
+.institutional-copy h2 { margin: 0; color: var(--ink); font-size: 1rem; line-height: 1.35; letter-spacing: -.015em; }
+.institutional-logos { display: flex; align-items: center; justify-content: flex-end; gap: 24px; }
+.institutional-logo { min-height: 64px; display: inline-flex; align-items: center; justify-content: center; border-radius: 12px; transition: background .18s ease, transform .18s ease; }
+.institutional-logo:hover { background: rgba(0, 101, 168, .055); transform: translateY(-1px); }
+.institutional-logo img { display: block; max-width: 100%; height: auto; object-fit: contain; }
+.institutional-logo-laf { width: 76px; }
+.institutional-logo-ctinf { width: min(270px, 34vw); padding: 8px 10px; }
+.institutional-separator { width: 1px; height: 48px; background: var(--line); }
+
 footer { min-height: 84px; padding: 24px 4px; display: flex; align-items: center; justify-content: space-between; gap: 20px; color: var(--muted); font-size: .78rem; }
 footer p { margin: 0; }
 footer nav { display: flex; gap: 18px; }
@@ -202,6 +225,10 @@ footer a { min-height: 44px; display: inline-flex; align-items: center; color: v
   .coverage { display: block; padding: 24px; border-radius: 22px; }
   .stats-grid { margin-top: 22px; }
   .coverage-sources { margin-top: 24px; }
+  .institutional-band { align-items: flex-start; flex-direction: column; gap: 18px; padding: 22px; }
+  .institutional-logos { width: 100%; justify-content: flex-start; gap: 16px; }
+  .institutional-logo-laf { width: 68px; }
+  .institutional-logo-ctinf { width: min(238px, calc(100vw - 150px)); }
   footer { align-items: flex-start; flex-direction: column; gap: 4px; }
 }
 
