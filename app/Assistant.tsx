@@ -113,7 +113,7 @@ export default function Assistant() {
       <div className="chat-header">
         <div className="assistant-identity">
           <span className="assistant-mark" aria-hidden="true">U</span>
-          <div><strong>Assistente Unesp</strong><span><i aria-hidden="true" /> Base 2027 disponível</span></div>
+          <div><strong>Assistente Unesp</strong><span><i aria-hidden="true" /> Base 2027 + LegIA</span></div>
         </div>
         <span className="chat-source">Respostas com referências</span>
       </div>
@@ -147,7 +147,6 @@ export default function Assistant() {
         </div>
         <button type="submit" className="send-button" disabled={loading || !question.trim()} aria-label={loading ? "Enviando pergunta" : "Enviar pergunta"}><span>Enviar</span><span aria-hidden="true">→</span></button>
       </form>
-      <p className="privacy-note">A pergunta e a resposta podem ser registradas em um espaço institucional do Google Chat. Não informe dados pessoais.</p>
     </div>
   );
 }

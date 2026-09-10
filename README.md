@@ -13,6 +13,8 @@ Aplicação web de IA para responder, em português brasileiro acessível, pergu
 - procura por cursos e notas de corte históricas;
 - trajetórias acadêmicas e profissionais de pessoas egressas.
 
+Além da base local, o backend consulta a LegIA para recuperar documentos institucionais relacionados à pergunta. Para regras do Vestibular 2027, o Manual do Candidato e a Vunesp permanecem como fontes primárias.
+
 As respostas usam Markdown, incluindo tabelas, listas e links interpretados pela interface.
 
 ## Início rápido no Windows
@@ -39,6 +41,8 @@ Edite `.env.local` e substitua o valor de exemplo:
 
 ```dotenv
 OPENAI_API_KEY=sk-sua-chave-aqui
+LEGIA_MCP_URL=http://200.145.2.100:3000/sse
+LEGIA_API_KEY=sua-chave-da-legia
 ```
 
 Inicie o servidor:
@@ -77,7 +81,7 @@ cp .env.example .env.local
 chmod 600 .env.local
 ```
 
-Edite `.env.local` e configure `OPENAI_API_KEY`. Para aceitar conexões de outras máquinas da mesma rede:
+Edite `.env.local` e configure `OPENAI_API_KEY`, `LEGIA_MCP_URL` e `LEGIA_API_KEY`. Para aceitar conexões de outras máquinas da mesma rede:
 
 ```bash
 pnpm dev -- --hostname 0.0.0.0 --port 4173
@@ -129,6 +133,8 @@ Conteúdo:
 
 ```dotenv
 OPENAI_API_KEY=sk-sua-chave-aqui
+LEGIA_MCP_URL=http://200.145.2.100:3000/sse
+LEGIA_API_KEY=sua-chave-da-legia
 NODE_ENV=production
 ```
 
@@ -229,6 +235,7 @@ Erros de validação e de configuração são devolvidos em JSON. Sem `OPENAI_AP
 ```text
 app/
 ├── api/chat/route.ts       # seleção de contexto e chamada à API da OpenAI
+├── api/chat/legia.ts       # cliente MCP SSE da LegIA e seleção de documentos
 ├── data/                   # bases documentais e guias estruturados
 ├── Assistant.tsx           # interface e renderização das respostas
 ├── layout.tsx              # metadados da aplicação
@@ -237,7 +244,7 @@ public/                     # favicon e imagem social
 .openai/hosting.json        # vínculo com o projeto do OpenAI Sites
 ```
 
-As bases são carregadas no servidor. A rota seleciona trechos relevantes do Manual do Candidato e dos guias temáticos antes de chamar a Responses API, evitando enviar toda a coleção em cada pergunta.
+As bases são carregadas no servidor. A rota seleciona trechos relevantes do Manual do Candidato e dos guias temáticos, consulta a ferramenta `buscar_documentos` da LegIA e só então chama a Responses API. O token da LegIA é acrescentado pelo backend e não é enviado ao navegador nem gravado no repositório. Se a LegIA falhar ou exceder o tempo limite, a resposta continua com as demais fontes.
 
 ## Fontes e limites
 
@@ -250,13 +257,16 @@ Este projeto é uma ferramenta de orientação. Ele não substitui edital, manua
 ## Segurança e privacidade
 
 - não registre chaves da API no Git;
+- mantenha `LEGIA_API_KEY` somente no backend;
 - não solicite CPF, RG, senha, laudo ou documentos pessoais no chat;
 - revise atualizações documentais antes de publicar uma nova versão;
 - trate conteúdo gerado pelo modelo como resposta assistida, não como decisão administrativa.
 
 ## Publicação no OpenAI Sites
 
-O projeto contém `.openai/hosting.json` e usa o fluxo de build do `vinext`. Na hospedagem, configure `OPENAI_API_KEY` como segredo do ambiente do servidor. O arquivo `.env.local` é apenas para execução local e está ignorado pelo Git.
+O projeto contém `.openai/hosting.json` e usa o fluxo de build do `vinext`. Na hospedagem, configure `OPENAI_API_KEY` e `LEGIA_API_KEY` como segredos do ambiente do servidor, além de `LEGIA_MCP_URL`. O arquivo `.env.local` é apenas para execução local e está ignorado pelo Git.
+
+> O endpoint atual da LegIA usa HTTP sem TLS. O tráfego entre o servidor da aplicação e a LegIA não é criptografado; prefira um endpoint HTTPS quando ele estiver disponível.
 
 Antes de publicar uma nova versão, execute:
 
