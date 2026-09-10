@@ -17,7 +17,7 @@ export const runtime = "edge";
 type ChatMessage = { role: "user" | "assistant"; content: string };
 type CutoffRecord = (typeof cutoffData.records)[number];
 
-const dataVersion = "manual-cidades-carreiras-cortes-trajetorias-permanencia-legia-web-2027-20260910";
+const dataVersion = "manual-cidades-carreiras-cortes-trajetorias-permanencia-legia-web-luna-2027-20260910";
 const manualPages = manualSource.split(/(?=## Página \d+)/).filter((part) => /^## Página \d+/.test(part));
 const cityNames = [
   "Araçatuba", "Araraquara", "Assis", "Bauru", "Botucatu", "Dracena", "Franca", "Guaratinguetá",
@@ -413,7 +413,7 @@ export async function POST(request: Request) {
     const response = await fetch("https://api.openai.com/v1/responses", {
       method: "POST",
       headers: { "Content-Type": "application/json", Authorization: "Bearer " + apiKey },
-      body: JSON.stringify({ model: "gpt-5.6", instructions: fullInstructions, input: recent, max_output_tokens: maxOutputTokens, store: false })
+      body: JSON.stringify({ model: "gpt-5.6-luna", instructions: fullInstructions, input: recent, max_output_tokens: maxOutputTokens, store: false })
     });
     const payload = await response.json() as { error?: { message?: string }; output_text?: string; output?: Array<{ content?: Array<{ type?: string; text?: string }> }> };
     if (!response.ok) {
